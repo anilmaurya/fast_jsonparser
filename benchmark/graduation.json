@@ -1,0 +1,2117 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "qk7d-gecv",
+      "name" : "2005 - 2015 Graduation Outcomes",
+      "attribution" : "Department of Education (DOE)",
+      "averageRating" : 0,
+      "category" : "Education",
+      "createdAt" : 1457473988,
+      "description" : "Graduation results for all students by year; cohorts of 2001 through 2011 (Classes of 2005 through 2015).  Graduation Outcomes as Calculated by the New York State Education Department. The New York State calculation method was first adopted for the Cohort of 2001 (Class of 2005).  The cohort consists of all students who first entered 9th grade in a given school year (e.g., the Cohort of 2006 entered 9th grade in the 2006-2007 school year).  Graduates are defined as those students earning either a Local or Regents diploma and exclude those earning either a special education (IEP) diploma or GED. \n\nIn order to comply with FERPA regulations on public reporting of education outcomes, rows with a cohort of 20 or fewer students are suppressed.\nDue to the small number of students identified as Native American or Multi-Racial, these ethnicities are not reported on the Ethnicity tab; however, these students are included in the counts on all other tabs.\n4 Year August outcomes are available for the 2004-2011 cohorts at the citywide level and for the 2005-2011 cohorts at the borough, district and school level. 5 Year August outcomes are available for the 2006-2010 cohorts. Cells are blank when data is not available.\nCharter schools are not included in the NYSED calculation of graduation rates for NYC.\nSchool level results are not presented for District 79 and District 75 schools, but their outcomes are included in citywide totals.\nStarting with the 2009 cohort (Class of 2013), students with IEPs could use the compensatory score option (CSO) to meet graduation requirements, which contributed to an increase in the graduation rate. \nStudents are considered English Language Learners by NY State if classified as an ELL as of graduation.",
+      "displayType" : "table",
+      "downloadCount" : 8232,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1536600404,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 18650814,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1457474287,
+      "publicationGroup" : 8777873,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1457474007,
+      "rowsUpdatedBy" : "5fuc-pqz2",
+      "tableId" : 8777873,
+      "totalTimesRated" : 0,
+      "viewCount" : 3164,
+      "viewLastModified" : 1555340887,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1457474297,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 1066268,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1457474297,
+        "workflowId" : 2285,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "failureCount" : 0,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "5fuc-pqz2",
+          "displayName" : "NYC OpenData"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 245938027,
+        "name" : "Cohort Year",
+        "dataTypeName" : "number",
+        "fieldName" : "cohort_year",
+        "position" : 1,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866904,
+        "width" : 128,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "2006.186046511628",
+          "largest" : "2011",
+          "null" : 0,
+          "top" : [ {
+            "item" : "2001",
+            "count" : 20
+          }, {
+            "item" : "2002",
+            "count" : 19
+          }, {
+            "item" : "2003",
+            "count" : 18
+          }, {
+            "item" : "2004",
+            "count" : 17
+          }, {
+            "item" : "2005",
+            "count" : 16
+          }, {
+            "item" : "2006",
+            "count" : 15
+          }, {
+            "item" : "2007",
+            "count" : 14
+          }, {
+            "item" : "2008",
+            "count" : 13
+          }, {
+            "item" : "2009",
+            "count" : 12
+          }, {
+            "item" : "2010",
+            "count" : 11
+          }, {
+            "item" : "2011",
+            "count" : 10
+          } ],
+          "smallest" : "2001",
+          "sum" : "862660"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "true",
+          "align" : "right"
+        }
+      }, {
+        "id" : 245938028,
+        "name" : "Cohort Category",
+        "dataTypeName" : "text",
+        "fieldName" : "cohort_category",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 34866905,
+        "width" : 174,
+        "cachedContents" : {
+          "non_null" : 430,
+          "largest" : "6 Year",
+          "null" : 0,
+          "top" : [ {
+            "item" : "4 Year  June",
+            "count" : 20
+          }, {
+            "item" : "5 Year  June",
+            "count" : 19
+          }, {
+            "item" : "6 Year",
+            "count" : 18
+          }, {
+            "item" : "4 Year August",
+            "count" : 17
+          }, {
+            "item" : "5 Year August",
+            "count" : 16
+          } ],
+          "smallest" : "4 Year August"
+        },
+        "format" : { }
+      }, {
+        "id" : 245938029,
+        "name" : "Demographic",
+        "dataTypeName" : "text",
+        "fieldName" : "demographic",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 34866906,
+        "width" : 232,
+        "cachedContents" : {
+          "non_null" : 430,
+          "largest" : "White",
+          "null" : 0,
+          "top" : [ {
+            "item" : "English Language Learner",
+            "count" : 20
+          }, {
+            "item" : "English Language Proficient",
+            "count" : 19
+          }, {
+            "item" : "Not Student with Disability",
+            "count" : 18
+          }, {
+            "item" : "Student with Disability",
+            "count" : 17
+          }, {
+            "item" : "Asian",
+            "count" : 16
+          }, {
+            "item" : "Black",
+            "count" : 15
+          }, {
+            "item" : "Hispanic",
+            "count" : 14
+          }, {
+            "item" : "White",
+            "count" : 13
+          }, {
+            "item" : "Female",
+            "count" : 12
+          }, {
+            "item" : "Male",
+            "count" : 11
+          } ],
+          "smallest" : "Asian"
+        },
+        "format" : { }
+      }, {
+        "id" : 245938030,
+        "name" : "# Total Cohort",
+        "dataTypeName" : "number",
+        "fieldName" : "total_cohort",
+        "position" : 4,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866907,
+        "width" : 175,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "30728.83023255814",
+          "largest" : "70545",
+          "null" : 0,
+          "top" : [ {
+            "item" : "38643",
+            "count" : 20
+          }, {
+            "item" : "38074",
+            "count" : 19
+          }, {
+            "item" : "37471",
+            "count" : 18
+          }, {
+            "item" : "37059",
+            "count" : 17
+          }, {
+            "item" : "37734",
+            "count" : 16
+          }, {
+            "item" : "39096",
+            "count" : 15
+          }, {
+            "item" : "39596",
+            "count" : 14
+          }, {
+            "item" : "40146",
+            "count" : 13
+          }, {
+            "item" : "40519",
+            "count" : 12
+          }, {
+            "item" : "40166",
+            "count" : 11
+          }, {
+            "item" : "40968",
+            "count" : 10
+          }, {
+            "item" : "40719",
+            "count" : 9
+          }, {
+            "item" : "40139",
+            "count" : 8
+          }, {
+            "item" : "39880",
+            "count" : 7
+          }, {
+            "item" : "38680",
+            "count" : 6
+          }, {
+            "item" : "38495",
+            "count" : 5
+          }, {
+            "item" : "38220",
+            "count" : 4
+          } ],
+          "smallest" : "6974",
+          "sum" : "13213397"
+        },
+        "format" : { }
+      }, {
+        "id" : 245938031,
+        "name" : "# Total Grads",
+        "dataTypeName" : "number",
+        "fieldName" : "total_grads",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866908,
+        "width" : 151,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "20082.30232558140",
+          "largest" : "53974",
+          "null" : 0,
+          "top" : [ {
+            "item" : "24466",
+            "count" : 20
+          }, {
+            "item" : "26267",
+            "count" : 19
+          }, {
+            "item" : "26701",
+            "count" : 18
+          }, {
+            "item" : "27588",
+            "count" : 17
+          }, {
+            "item" : "22758",
+            "count" : 16
+          }, {
+            "item" : "24534",
+            "count" : 15
+          }, {
+            "item" : "26461",
+            "count" : 14
+          }, {
+            "item" : "26938",
+            "count" : 13
+          }, {
+            "item" : "27810",
+            "count" : 12
+          }, {
+            "item" : "22565",
+            "count" : 11
+          }, {
+            "item" : "24573",
+            "count" : 10
+          }, {
+            "item" : "26740",
+            "count" : 9
+          }, {
+            "item" : "27224",
+            "count" : 8
+          }, {
+            "item" : "28173",
+            "count" : 7
+          }, {
+            "item" : "23061",
+            "count" : 6
+          }, {
+            "item" : "24845",
+            "count" : 5
+          }, {
+            "item" : "26876",
+            "count" : 4
+          }, {
+            "item" : "27231",
+            "count" : 3
+          }, {
+            "item" : "23581",
+            "count" : 2
+          }, {
+            "item" : "24973",
+            "count" : 1
+          } ],
+          "smallest" : "1287",
+          "sum" : "8635390"
+        },
+        "format" : { }
+      }, {
+        "id" : 245938032,
+        "name" : "% of cohort Total Grads",
+        "dataTypeName" : "number",
+        "fieldName" : "of_cohort_total_grads_1",
+        "position" : 6,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866909,
+        "width" : 195,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "62.31976744186047",
+          "largest" : "87.70",
+          "null" : 0,
+          "top" : [ {
+            "item" : "65.40",
+            "count" : 20
+          }, {
+            "item" : "66.50",
+            "count" : 19
+          }, {
+            "item" : "68.60",
+            "count" : 18
+          }, {
+            "item" : "55.60",
+            "count" : 17
+          }, {
+            "item" : "59.90",
+            "count" : 16
+          }, {
+            "item" : "65.00",
+            "count" : 15
+          }, {
+            "item" : "66.20",
+            "count" : 14
+          }, {
+            "item" : "68.50",
+            "count" : 13
+          }, {
+            "item" : "56.20",
+            "count" : 12
+          }, {
+            "item" : "61.20",
+            "count" : 11
+          }, {
+            "item" : "67.10",
+            "count" : 10
+          }, {
+            "item" : "68.30",
+            "count" : 9
+          }, {
+            "item" : "70.70",
+            "count" : 8
+          }, {
+            "item" : "59.60",
+            "count" : 7
+          }, {
+            "item" : "64.20",
+            "count" : 6
+          }, {
+            "item" : "69.80",
+            "count" : 5
+          }, {
+            "item" : "61.70",
+            "count" : 4
+          }, {
+            "item" : "65.30",
+            "count" : 3
+          } ],
+          "smallest" : "17.10",
+          "sum" : "26797.50"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938033,
+        "name" : "# of cohort Total Grads",
+        "dataTypeName" : "number",
+        "fieldName" : "of_cohort_total_grads_2",
+        "position" : 7,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866910,
+        "width" : 193,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "16250.74883720930",
+          "largest" : "52374",
+          "null" : 0,
+          "top" : [ {
+            "item" : "20636",
+            "count" : 20
+          }, {
+            "item" : "21476",
+            "count" : 19
+          }, {
+            "item" : "21691",
+            "count" : 18
+          }, {
+            "item" : "22231",
+            "count" : 17
+          }, {
+            "item" : "21515",
+            "count" : 16
+          }, {
+            "item" : "23044",
+            "count" : 15
+          }, {
+            "item" : "24631",
+            "count" : 14
+          }, {
+            "item" : "25024",
+            "count" : 13
+          }, {
+            "item" : "25652",
+            "count" : 12
+          }, {
+            "item" : "21302",
+            "count" : 11
+          }, {
+            "item" : "23046",
+            "count" : 10
+          }, {
+            "item" : "24783",
+            "count" : 9
+          }, {
+            "item" : "25177",
+            "count" : 8
+          }, {
+            "item" : "25874",
+            "count" : 7
+          }, {
+            "item" : "21471",
+            "count" : 6
+          }, {
+            "item" : "22983",
+            "count" : 5
+          }, {
+            "item" : "24537",
+            "count" : 4
+          }, {
+            "item" : "24810",
+            "count" : 3
+          }, {
+            "item" : "22165",
+            "count" : 2
+          }, {
+            "item" : "23299",
+            "count" : 1
+          } ],
+          "smallest" : "256",
+          "sum" : "6987822"
+        },
+        "format" : { }
+      }, {
+        "id" : 245938034,
+        "name" : "% of cohort Total Regents",
+        "dataTypeName" : "number",
+        "fieldName" : "of_cohort_total_regents",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866911,
+        "width" : 217,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "49.48255813953488",
+          "largest" : "85.50",
+          "null" : 0,
+          "top" : [ {
+            "item" : "50.90",
+            "count" : 20
+          }, {
+            "item" : "53.50",
+            "count" : 19
+          }, {
+            "item" : "54.00",
+            "count" : 18
+          }, {
+            "item" : "55.30",
+            "count" : 17
+          }, {
+            "item" : "52.50",
+            "count" : 16
+          }, {
+            "item" : "56.20",
+            "count" : 15
+          }, {
+            "item" : "60.50",
+            "count" : 14
+          }, {
+            "item" : "61.50",
+            "count" : 13
+          }, {
+            "item" : "63.20",
+            "count" : 12
+          }, {
+            "item" : "53.10",
+            "count" : 11
+          }, {
+            "item" : "57.40",
+            "count" : 10
+          }, {
+            "item" : "62.10",
+            "count" : 9
+          }, {
+            "item" : "63.10",
+            "count" : 8
+          }, {
+            "item" : "64.90",
+            "count" : 7
+          }, {
+            "item" : "55.50",
+            "count" : 6
+          }, {
+            "item" : "59.40",
+            "count" : 5
+          }, {
+            "item" : "63.70",
+            "count" : 4
+          }, {
+            "item" : "64.40",
+            "count" : 3
+          }, {
+            "item" : "58.00",
+            "count" : 2
+          }, {
+            "item" : "61.00",
+            "count" : 1
+          } ],
+          "smallest" : "2.90",
+          "sum" : "21277.50"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938035,
+        "name" : "% of grads  Total Regents",
+        "dataTypeName" : "number",
+        "fieldName" : "of_grads_total_regents_1",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866912,
+        "width" : 206,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "75.44813953488372",
+          "largest" : "99.20",
+          "null" : 0,
+          "top" : [ {
+            "item" : "94.80",
+            "count" : 20
+          }, {
+            "item" : "95.70",
+            "count" : 19
+          }, {
+            "item" : "95.00",
+            "count" : 18
+          }, {
+            "item" : "94.40",
+            "count" : 17
+          }, {
+            "item" : "94.50",
+            "count" : 16
+          }, {
+            "item" : "93.90",
+            "count" : 15
+          }, {
+            "item" : "93.10",
+            "count" : 14
+          }, {
+            "item" : "92.90",
+            "count" : 13
+          }, {
+            "item" : "92.20",
+            "count" : 12
+          }, {
+            "item" : "93.80",
+            "count" : 11
+          }, {
+            "item" : "92.70",
+            "count" : 10
+          }, {
+            "item" : "92.50",
+            "count" : 9
+          }, {
+            "item" : "91.80",
+            "count" : 8
+          }, {
+            "item" : "91.30",
+            "count" : 7
+          }, {
+            "item" : "91.10",
+            "count" : 6
+          }, {
+            "item" : "94.00",
+            "count" : 5
+          }, {
+            "item" : "93.30",
+            "count" : 4
+          } ],
+          "smallest" : "13.80",
+          "sum" : "32442.70"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938036,
+        "name" : "# of grads  Total Regents",
+        "dataTypeName" : "number",
+        "fieldName" : "of_grads_total_regents_2",
+        "position" : 10,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866913,
+        "width" : 206,
+        "cachedContents" : {
+          "non_null" : 420,
+          "average" : "5002.169047619048",
+          "largest" : "13479",
+          "null" : 10,
+          "top" : [ {
+            "item" : "113",
+            "count" : 20
+          }, {
+            "item" : "5904",
+            "count" : 19
+          }, {
+            "item" : "6140",
+            "count" : 18
+          }, {
+            "item" : "6051",
+            "count" : 17
+          }, {
+            "item" : "6134",
+            "count" : 16
+          }, {
+            "item" : "6158",
+            "count" : 15
+          }, {
+            "item" : "6160",
+            "count" : 14
+          }, {
+            "item" : "6285",
+            "count" : 13
+          }, {
+            "item" : "6336",
+            "count" : 12
+          } ],
+          "smallest" : "35",
+          "sum" : "2100911"
+        },
+        "format" : { }
+      }, {
+        "id" : 245938037,
+        "name" : "% of cohort  Advanced Regents",
+        "dataTypeName" : "number",
+        "fieldName" : "of_cohort_advanced_regents",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866914,
+        "width" : 170,
+        "cachedContents" : {
+          "non_null" : 420,
+          "average" : "16.53214285714286",
+          "largest" : "47.10",
+          "null" : 10,
+          "top" : [ {
+            "item" : "1.10",
+            "count" : 20
+          }, {
+            "item" : "1.00",
+            "count" : 19
+          }, {
+            "item" : "7.00",
+            "count" : 18
+          }, {
+            "item" : "6.60",
+            "count" : 17
+          }, {
+            "item" : "8.70",
+            "count" : 16
+          }, {
+            "item" : "31.90",
+            "count" : 15
+          }, {
+            "item" : "31.80",
+            "count" : 14
+          }, {
+            "item" : "18.70",
+            "count" : 13
+          }, {
+            "item" : "18.00",
+            "count" : 12
+          }, {
+            "item" : "18.40",
+            "count" : 11
+          }, {
+            "item" : "19.40",
+            "count" : 10
+          }, {
+            "item" : "13.80",
+            "count" : 9
+          }, {
+            "item" : "15.30",
+            "count" : 8
+          }, {
+            "item" : "14.60",
+            "count" : 7
+          }, {
+            "item" : "14.80",
+            "count" : 6
+          }, {
+            "item" : "14.70",
+            "count" : 5
+          }, {
+            "item" : "14.90",
+            "count" : 4
+          }, {
+            "item" : "15.00",
+            "count" : 3
+          }, {
+            "item" : "15.20",
+            "count" : 2
+          }, {
+            "item" : "15.40",
+            "count" : 1
+          } ],
+          "smallest" : "0.40",
+          "sum" : "6943.50"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938038,
+        "name" : "% of grads  Advanced Regents",
+        "dataTypeName" : "number",
+        "fieldName" : "of_grads_advanced_regents_1",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866915,
+        "width" : 187,
+        "cachedContents" : {
+          "non_null" : 420,
+          "average" : "23.75119047619048",
+          "largest" : "58.60",
+          "null" : 10,
+          "top" : [ {
+            "item" : "39.60",
+            "count" : 20
+          }, {
+            "item" : "38.50",
+            "count" : 19
+          }, {
+            "item" : "25.60",
+            "count" : 18
+          }, {
+            "item" : "24.60",
+            "count" : 17
+          }, {
+            "item" : "27.40",
+            "count" : 16
+          }, {
+            "item" : "26.10",
+            "count" : 15
+          }, {
+            "item" : "23.70",
+            "count" : 14
+          }, {
+            "item" : "24.30",
+            "count" : 13
+          }, {
+            "item" : "25.20",
+            "count" : 12
+          }, {
+            "item" : "27.20",
+            "count" : 11
+          }, {
+            "item" : "21.40",
+            "count" : 10
+          }, {
+            "item" : "26.80",
+            "count" : 9
+          }, {
+            "item" : "22.50",
+            "count" : 8
+          }, {
+            "item" : "21.30",
+            "count" : 7
+          }, {
+            "item" : "29.20",
+            "count" : 6
+          }, {
+            "item" : "24.40",
+            "count" : 5
+          }, {
+            "item" : "23.10",
+            "count" : 4
+          }, {
+            "item" : "30.20",
+            "count" : 3
+          }, {
+            "item" : "25.40",
+            "count" : 2
+          }, {
+            "item" : "24.00",
+            "count" : 1
+          } ],
+          "smallest" : "1.90",
+          "sum" : "9975.50"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938039,
+        "name" : "# of grads  Advanced Regents",
+        "dataTypeName" : "number",
+        "fieldName" : "of_grads_advanced_regents_2",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866916,
+        "width" : 183,
+        "cachedContents" : {
+          "non_null" : 420,
+          "average" : "11331.49285714286",
+          "largest" : "38895",
+          "null" : 10,
+          "top" : [ {
+            "item" : "16942",
+            "count" : 20
+          }, {
+            "item" : "18648",
+            "count" : 19
+          }, {
+            "item" : "19039",
+            "count" : 18
+          }, {
+            "item" : "19734",
+            "count" : 17
+          }, {
+            "item" : "15420",
+            "count" : 16
+          }, {
+            "item" : "16849",
+            "count" : 15
+          }, {
+            "item" : "18379",
+            "count" : 14
+          }, {
+            "item" : "18650",
+            "count" : 13
+          }, {
+            "item" : "15880",
+            "count" : 12
+          }, {
+            "item" : "16963",
+            "count" : 11
+          } ],
+          "smallest" : "218",
+          "sum" : "4759227"
+        },
+        "format" : { }
+      }, {
+        "id" : 245938040,
+        "name" : "% of cohort  Regents w/o Advanced",
+        "dataTypeName" : "number",
+        "fieldName" : "of_cohort_regents_w_o_advanced",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866917,
+        "width" : 255,
+        "cachedContents" : {
+          "non_null" : 420,
+          "average" : "33.16738095238095",
+          "largest" : "58.10",
+          "null" : 10,
+          "top" : [ {
+            "item" : "49.60",
+            "count" : 20
+          }, {
+            "item" : "46.80",
+            "count" : 19
+          }, {
+            "item" : "47.70",
+            "count" : 18
+          }, {
+            "item" : "49.50",
+            "count" : 17
+          }, {
+            "item" : "39.90",
+            "count" : 16
+          }, {
+            "item" : "43.60",
+            "count" : 15
+          }, {
+            "item" : "48.40",
+            "count" : 14
+          }, {
+            "item" : "41.50",
+            "count" : 13
+          }, {
+            "item" : "44.40",
+            "count" : 12
+          } ],
+          "smallest" : "2.30",
+          "sum" : "13930.30"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938041,
+        "name" : "% of grads  Regents w/o Advanced",
+        "dataTypeName" : "number",
+        "fieldName" : "of_grads_regents_w_o_advanced_1",
+        "position" : 15,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866918,
+        "width" : 243,
+        "cachedContents" : {
+          "non_null" : 420,
+          "average" : "51.92547619047619",
+          "largest" : "82.50",
+          "null" : 10,
+          "top" : [ {
+            "item" : "68.20",
+            "count" : 20
+          }, {
+            "item" : "68.90",
+            "count" : 19
+          }, {
+            "item" : "70.30",
+            "count" : 18
+          }, {
+            "item" : "70.00",
+            "count" : 17
+          }, {
+            "item" : "66.90",
+            "count" : 16
+          }, {
+            "item" : "67.80",
+            "count" : 15
+          }, {
+            "item" : "68.40",
+            "count" : 14
+          }, {
+            "item" : "68.50",
+            "count" : 13
+          }, {
+            "item" : "67.30",
+            "count" : 12
+          }, {
+            "item" : "67.90",
+            "count" : 11
+          } ],
+          "smallest" : "11.90",
+          "sum" : "21808.70"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938042,
+        "name" : "# of grads  Regents w/o Advanced",
+        "dataTypeName" : "number",
+        "fieldName" : "of_grads_regents_w_o_advanced_2",
+        "position" : 16,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866919,
+        "width" : 262,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "3839.4",
+          "largest" : "17392",
+          "null" : 0,
+          "top" : [ {
+            "item" : "3830",
+            "count" : 20
+          }, {
+            "item" : "4791",
+            "count" : 19
+          }, {
+            "item" : "5010",
+            "count" : 18
+          }, {
+            "item" : "5357",
+            "count" : 17
+          }, {
+            "item" : "1243",
+            "count" : 16
+          }, {
+            "item" : "1490",
+            "count" : 15
+          }, {
+            "item" : "1830",
+            "count" : 14
+          }, {
+            "item" : "1914",
+            "count" : 13
+          }, {
+            "item" : "2158",
+            "count" : 12
+          }, {
+            "item" : "1263",
+            "count" : 11
+          }, {
+            "item" : "1527",
+            "count" : 10
+          }, {
+            "item" : "1957",
+            "count" : 9
+          }, {
+            "item" : "2047",
+            "count" : 8
+          }, {
+            "item" : "2299",
+            "count" : 7
+          }, {
+            "item" : "1590",
+            "count" : 6
+          }, {
+            "item" : "1862",
+            "count" : 5
+          }, {
+            "item" : "2339",
+            "count" : 4
+          }, {
+            "item" : "2421",
+            "count" : 3
+          }, {
+            "item" : "1416",
+            "count" : 2
+          }, {
+            "item" : "1674",
+            "count" : 1
+          } ],
+          "smallest" : "117",
+          "sum" : "1650942"
+        },
+        "format" : { }
+      }, {
+        "id" : 245938043,
+        "name" : "% of cohort Local",
+        "dataTypeName" : "number",
+        "fieldName" : "of_cohort_local",
+        "position" : 17,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866920,
+        "width" : 178,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "12.86023255813953",
+          "largest" : "30.40",
+          "null" : 0,
+          "top" : [ {
+            "item" : "17.80",
+            "count" : 20
+          }, {
+            "item" : "4.00",
+            "count" : 19
+          }, {
+            "item" : "3.80",
+            "count" : 18
+          }, {
+            "item" : "4.40",
+            "count" : 17
+          }, {
+            "item" : "4.50",
+            "count" : 16
+          }, {
+            "item" : "22.60",
+            "count" : 15
+          }, {
+            "item" : "16.20",
+            "count" : 14
+          }, {
+            "item" : "12.80",
+            "count" : 13
+          }, {
+            "item" : "5.30",
+            "count" : 12
+          }, {
+            "item" : "3.10",
+            "count" : 11
+          }, {
+            "item" : "4.90",
+            "count" : 10
+          }, {
+            "item" : "5.10",
+            "count" : 9
+          }, {
+            "item" : "5.80",
+            "count" : 8
+          }, {
+            "item" : "4.10",
+            "count" : 7
+          }, {
+            "item" : "4.80",
+            "count" : 6
+          }, {
+            "item" : "6.10",
+            "count" : 5
+          }, {
+            "item" : "6.30",
+            "count" : 4
+          }, {
+            "item" : "3.70",
+            "count" : 3
+          } ],
+          "smallest" : "0.60",
+          "sum" : "5529.90"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938044,
+        "name" : "% of grads Local",
+        "dataTypeName" : "number",
+        "fieldName" : "of_grads_local",
+        "position" : 18,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866921,
+        "width" : 166,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "24.60116279069767",
+          "largest" : "86.90",
+          "null" : 0,
+          "top" : [ {
+            "item" : "5.20",
+            "count" : 20
+          }, {
+            "item" : "4.30",
+            "count" : 19
+          }, {
+            "item" : "5.00",
+            "count" : 18
+          }, {
+            "item" : "5.60",
+            "count" : 17
+          }, {
+            "item" : "35.50",
+            "count" : 16
+          }, {
+            "item" : "6.10",
+            "count" : 15
+          }, {
+            "item" : "6.90",
+            "count" : 14
+          }, {
+            "item" : "7.10",
+            "count" : 13
+          }, {
+            "item" : "7.80",
+            "count" : 12
+          }, {
+            "item" : "6.20",
+            "count" : 11
+          }, {
+            "item" : "7.30",
+            "count" : 10
+          }, {
+            "item" : "7.50",
+            "count" : 9
+          }, {
+            "item" : "8.20",
+            "count" : 8
+          }, {
+            "item" : "8.70",
+            "count" : 7
+          }, {
+            "item" : "8.90",
+            "count" : 6
+          }, {
+            "item" : "6.00",
+            "count" : 5
+          }, {
+            "item" : "6.70",
+            "count" : 4
+          } ],
+          "smallest" : "0.80",
+          "sum" : "10578.50"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938045,
+        "name" : "# Still Enrolled",
+        "dataTypeName" : "number",
+        "fieldName" : "still_enrolled",
+        "position" : 19,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866922,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "4519.990697674419",
+          "largest" : "18972",
+          "null" : 0,
+          "top" : [ {
+            "item" : "8906",
+            "count" : 20
+          }, {
+            "item" : "3346",
+            "count" : 19
+          }, {
+            "item" : "3017",
+            "count" : 18
+          }, {
+            "item" : "1748",
+            "count" : 17
+          }, {
+            "item" : "11595",
+            "count" : 16
+          }, {
+            "item" : "9862",
+            "count" : 15
+          }, {
+            "item" : "4980",
+            "count" : 14
+          }, {
+            "item" : "4543",
+            "count" : 13
+          }, {
+            "item" : "2563",
+            "count" : 12
+          }, {
+            "item" : "11552",
+            "count" : 11
+          }, {
+            "item" : "9575",
+            "count" : 10
+          }, {
+            "item" : "4926",
+            "count" : 9
+          }, {
+            "item" : "4466",
+            "count" : 8
+          }, {
+            "item" : "2657",
+            "count" : 7
+          }, {
+            "item" : "10575",
+            "count" : 6
+          }, {
+            "item" : "8799",
+            "count" : 5
+          }, {
+            "item" : "4364",
+            "count" : 4
+          }, {
+            "item" : "4021",
+            "count" : 3
+          }, {
+            "item" : "9805",
+            "count" : 2
+          }, {
+            "item" : "8423",
+            "count" : 1
+          } ],
+          "smallest" : "129",
+          "sum" : "1943596"
+        },
+        "format" : { }
+      }, {
+        "id" : 245938046,
+        "name" : "% of cohort Still Enrolled",
+        "dataTypeName" : "number",
+        "fieldName" : "of_cohort_still_enrolled",
+        "position" : 20,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866923,
+        "width" : 202,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "15.62093023255814",
+          "largest" : "48.30",
+          "null" : 0,
+          "top" : [ {
+            "item" : "4.90",
+            "count" : 20
+          }, {
+            "item" : "7.00",
+            "count" : 19
+          }, {
+            "item" : "13.30",
+            "count" : 18
+          }, {
+            "item" : "4.30",
+            "count" : 17
+          }, {
+            "item" : "28.30",
+            "count" : 16
+          }, {
+            "item" : "24.10",
+            "count" : 15
+          }, {
+            "item" : "12.20",
+            "count" : 14
+          }, {
+            "item" : "11.20",
+            "count" : 13
+          }, {
+            "item" : "6.30",
+            "count" : 12
+          }, {
+            "item" : "28.80",
+            "count" : 11
+          }, {
+            "item" : "23.90",
+            "count" : 10
+          }, {
+            "item" : "12.40",
+            "count" : 9
+          }, {
+            "item" : "6.70",
+            "count" : 8
+          }, {
+            "item" : "27.30",
+            "count" : 7
+          }, {
+            "item" : "22.70",
+            "count" : 6
+          }, {
+            "item" : "11.30",
+            "count" : 5
+          }, {
+            "item" : "10.40",
+            "count" : 4
+          }, {
+            "item" : "25.70",
+            "count" : 3
+          }, {
+            "item" : "22.00",
+            "count" : 2
+          } ],
+          "smallest" : "1.10",
+          "sum" : "6717.00"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      }, {
+        "id" : 245938047,
+        "name" : "# Dropped Out",
+        "dataTypeName" : "number",
+        "fieldName" : "dropped_out",
+        "position" : 21,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866924,
+        "width" : 142,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "5014.179069767442",
+          "largest" : "19482",
+          "null" : 0,
+          "top" : [ {
+            "item" : "3178",
+            "count" : 20
+          }, {
+            "item" : "2740",
+            "count" : 19
+          }, {
+            "item" : "5982",
+            "count" : 18
+          }, {
+            "item" : "5406",
+            "count" : 17
+          }, {
+            "item" : "5345",
+            "count" : 16
+          }, {
+            "item" : "5326",
+            "count" : 15
+          }, {
+            "item" : "7281",
+            "count" : 14
+          }, {
+            "item" : "7252",
+            "count" : 13
+          }, {
+            "item" : "7806",
+            "count" : 12
+          }, {
+            "item" : "4845",
+            "count" : 11
+          }, {
+            "item" : "4843",
+            "count" : 10
+          }, {
+            "item" : "6735",
+            "count" : 9
+          }, {
+            "item" : "6719",
+            "count" : 8
+          }, {
+            "item" : "7406",
+            "count" : 7
+          }, {
+            "item" : "4133",
+            "count" : 6
+          }, {
+            "item" : "4131",
+            "count" : 5
+          }, {
+            "item" : "5963",
+            "count" : 4
+          }, {
+            "item" : "5953",
+            "count" : 3
+          }, {
+            "item" : "3926",
+            "count" : 2
+          }, {
+            "item" : "3924",
+            "count" : 1
+          } ],
+          "smallest" : "513",
+          "sum" : "2156097"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 245938048,
+        "name" : "% of cohort Dropped Out",
+        "dataTypeName" : "number",
+        "fieldName" : "of_cohort_dropped_out",
+        "position" : 22,
+        "renderTypeName" : "number",
+        "tableColumnId" : 34866925,
+        "width" : 213,
+        "cachedContents" : {
+          "non_null" : 430,
+          "average" : "17.38372093023256",
+          "largest" : "45.00",
+          "null" : 0,
+          "top" : [ {
+            "item" : "9.80",
+            "count" : 20
+          }, {
+            "item" : "8.40",
+            "count" : 19
+          }, {
+            "item" : "8.60",
+            "count" : 18
+          }, {
+            "item" : "12.40",
+            "count" : 17
+          }, {
+            "item" : "7.60",
+            "count" : 16
+          }, {
+            "item" : "21.20",
+            "count" : 15
+          }, {
+            "item" : "15.90",
+            "count" : 14
+          }, {
+            "item" : "13.80",
+            "count" : 13
+          }, {
+            "item" : "13.00",
+            "count" : 12
+          }, {
+            "item" : "12.10",
+            "count" : 11
+          }, {
+            "item" : "16.80",
+            "count" : 10
+          }, {
+            "item" : "18.60",
+            "count" : 9
+          }, {
+            "item" : "10.70",
+            "count" : 8
+          }, {
+            "item" : "15.50",
+            "count" : 7
+          }, {
+            "item" : "10.30",
+            "count" : 6
+          } ],
+          "smallest" : "4.60",
+          "sum" : "7475.00"
+        },
+        "format" : {
+          "precisionStyle" : "percentage",
+          "percentScale" : "100",
+          "view" : "percent_bar_and_text"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "rdfSubject" : "0",
+        "rdfClass" : "",
+        "attachments" : [ {
+          "filename" : "Regents_DD.xlsx",
+          "assetId" : "722bfcbe-ec9e-44ba-b47d-415faa02cafb",
+          "name" : "Regents_DD.xlsx"
+        } ],
+        "custom_fields" : {
+          "Update" : {
+            "Automation" : "No",
+            "Date Made Public" : "3/8/2016",
+            "Update Frequency" : "Annually"
+          },
+          "Dataset Information" : {
+            "Agency" : "Department of Education (DOE)"
+          }
+        },
+        "rowLabel" : "Row",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "5fuc-pqz2",
+        "displayName" : "NYC OpenData",
+        "profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+        "screenName" : "NYC OpenData",
+        "type" : "interactive",
+        "userSegment" : "site_member",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "5fuc-pqz2",
+        "displayName" : "NYC OpenData",
+        "profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+        "screenName" : "NYC OpenData",
+        "type" : "interactive",
+        "userSegment" : "site_member",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "regents", "exams", "schools", "graduation" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-8ezw_fvpi~9vcu", "00000000-0000-0000-13BA-9C4637CEEB7D", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "English Language Learner", "10540", "2791", "26.50", "992", "9.00", "35.50", "315", "3.00", "11.30", "677", "6.40", "24.30", "1803", "17.10", "64.60", "3895", "37.00", "3220", "30.60" ]
+, [ "row-t2yg.eh7e~sddq", "00000000-0000-0000-CDCB-E0DEDBC2FABC", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "English Language Learner", "10540", "3920", "37.20", "1233", "11.70", "31.50", "371", "3.50", "9.50", "862", "8.20", "22.00", "2701", "25.60", "68.90", "1516", "14.40", "4193", "39.80" ]
+, [ "row-izud_8uvm_5mvi", "00000000-0000-0000-8E9D-003AB51D26C4", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "English Language Learner", "10540", "4296", "40.80", "1291", "12.20", "30.10", "380", "3.60", "8.80", "911", "8.60", "21.20", "3028", "28.70", "70.50", "655", "6.20", "4598", "43.60" ]
+, [ "row-6d6m.hkrp_u2g4", "00000000-0000-0000-30F7-6D14D65EAF7C", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "English Language Learner", "7454", "1691", "22.70", "639", "8.60", "37.80", "132", "1.80", "7.80", "507", "6.80", "30.00", "1062", "14.20", "62.80", "3062", "41.10", "2330", "31.30" ]
+, [ "row-ugfs.eggj~p8kf", "00000000-0000-0000-2659-9200A4525471", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "English Language Learner", "7454", "2354", "31.60", "794", "10.70", "33.70", "176", "2.40", "7.50", "618", "8.30", "26.30", "1578", "21.20", "67.00", "1457", "19.50", "3041", "40.80" ]
+, [ "row-ki35.2fvi~esju", "00000000-0000-0000-ECD0-FBA0DC831614", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "English Language Learner", "7454", "2729", "36.60", "856", "11.50", "31.40", "185", "2.50", "6.80", "671", "9.00", "24.60", "1891", "25.40", "69.30", "697", "9.40", "3356", "45.00" ]
+, [ "row-88dc_bt6p~tmdc", "00000000-0000-0000-FA52-2FC059D4A4EE", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "English Language Learner", "8163", "2052", "25.10", "909", "11.10", "44.30", "290", "3.60", "14.10", "619", "7.60", "30.20", "1143", "14.00", "55.70", "3360", "41.20", "2394", "29.30" ]
+, [ "row-wx6d~iasz_krwi", "00000000-0000-0000-3C34-2F2E77E84515", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "English Language Learner", "8163", "3105", "38.00", "1159", "14.20", "37.30", "358", "4.40", "11.50", "801", "9.80", "25.80", "1946", "23.80", "62.70", "1327", "16.30", "3111", "38.10" ]
+, [ "row-yswx~g7en.p3jm", "00000000-0000-0000-B1AC-0CC480CF66BB", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "English Language Learner", "8041", "3394", "42.20", "1216", "15.10", "35.80", "363", "4.50", "10.70", "853", "10.60", "25.10", "2178", "27.10", "64.20", "570", "7.10", "3361", "41.80" ]
+, [ "row-p8s2~8xaq.f8tc", "00000000-0000-0000-9F23-93F2C06C8F35", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "English Language Learner", "8486", "3039", "35.80", "1504", "17.70", "49.50", "487", "5.70", "16.00", "1017", "12.00", "33.50", "1535", "18.10", "50.50", "3288", "38.70", "1840", "21.70" ]
+, [ "row-kzk7~cxu8-fwrm", "00000000-0000-0000-4272-81254A4C304E", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "English Language Learner", "8486", "3404", "40.10", "1599", "18.80", "47.00", null, null, null, null, null, null, "1809", "21.30", "53.10", "2923", "34.40", "1840", "21.70" ]
+, [ "row-uyib-iwas_8tx5", "00000000-0000-0000-331A-E88E79EDBE6A", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "English Language Learner", "8320", "4065", "48.90", "1799", "21.60", "44.30", "558", "6.70", "13.70", "1241", "14.90", "30.50", "2266", "27.20", "55.70", "1151", "13.80", "2389", "28.70" ]
+, [ "row-j9wf_agtn~eknq", "00000000-0000-0000-44B2-41F9A6EFA549", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "English Language Learner", "8306", "4394", "52.90", "1873", "22.50", "42.60", "568", "6.80", "12.90", "1305", "15.70", "29.70", "2521", "30.40", "57.40", "619", "7.50", "2710", "32.60" ]
+, [ "row-trvk-sa7r~r2pv", "00000000-0000-0000-B96D-3D0F9F52EC21", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "English Language Learner", "8778", "3481", "39.70", "1908", "21.70", "54.80", "583", "6.60", "16.70", "1325", "15.10", "38.10", "1572", "17.90", "45.20", "3060", "34.90", "1700", "19.40" ]
+, [ "row-izdf-abne-qb9m", "00000000-0000-0000-714D-802B7E431CE7", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "English Language Learner", "8778", "3899", "44.40", "2015", "23.00", "51.70", "594", "6.80", "15.20", "1421", "16.20", "36.40", "1883", "21.50", "48.30", "2642", "30.10", "1700", "19.40" ]
+, [ "row-f6z2-npva-afwh", "00000000-0000-0000-8634-94393BC80044", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "English Language Learner", "8743", "4546", "52.00", "2232", "25.50", "49.10", "642", "7.30", "14.10", "1590", "18.20", "35.00", "2314", "26.50", "50.90", "1016", "11.60", "2531", "28.90" ]
+, [ "row-966r-5mp5-mwn6", "00000000-0000-0000-ADEF-FCAD40949A63", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "English Language Learner", "8673", "4852", "55.90", "2304", "26.60", "47.50", "647", "7.50", "13.30", "1657", "19.10", "34.20", "2548", "29.40", "52.50", "454", "5.20", "2711", "31.30" ]
+, [ "row-66jd-9mgi_mad3", "00000000-0000-0000-1DFA-FE0BC8E8349D", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "English Language Learner", "9056", "3755", "41.50", "2437", "26.90", "64.90", "593", "6.50", "15.80", "1844", "20.40", "49.10", "1318", "14.60", "35.10", "3002", "33.10", "1797", "19.80" ]
+, [ "row-ig5i_d778-zfvn", "00000000-0000-0000-1EAB-EE232D03FB91", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "English Language Learner", "9056", "4175", "46.10", "2573", "28.40", "61.60", "608", "6.70", "14.60", "1965", "21.70", "47.10", "1602", "17.70", "38.40", "2588", "28.60", "1791", "19.80" ]
+, [ "row-yirn_s9yd-ha4t", "00000000-0000-0000-7132-A9E6DAE739AF", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "English Language Learner", "9158", "4775", "52.10", "2783", "30.40", "58.30", "633", "6.90", "13.30", "2150", "23.50", "45.00", "1992", "21.80", "41.70", "1095", "12.00", "2575", "28.10" ]
+, [ "row-htrq-8v9e_nm4g", "00000000-0000-0000-E3DE-0982BF61A048", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "English Language Learner", "9158", "4878", "53.30", "2812", "30.70", "57.60", "633", "6.90", "13.00", "2179", "23.80", "44.70", "2066", "22.60", "42.40", "1005", "11.00", "2559", "27.90" ]
+, [ "row-sewn~upvc_4qet", "00000000-0000-0000-8703-818C2549507D", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "English Language Learner", "8829", "5069", "57.40", "2867", "32.50", "56.60", "633", "7.20", "12.50", "2234", "25.30", "44.10", "2202", "24.90", "43.40", "341", "3.90", "2740", "31.00" ]
+, [ "row-tuwi~mrbf-ke23", "00000000-0000-0000-1A8F-FD9566BE9F53", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "English Language Learner", "9444", "3720", "39.40", "2765", "29.30", "74.30", "562", "6.00", "15.10", "2203", "23.30", "59.20", "955", "10.10", "25.70", "3407", "36.10", "1896", "20.10" ]
+, [ "row-2rux-dmxh~nu3m", "00000000-0000-0000-2BE9-6EF2E4405BAE", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "English Language Learner", "9444", "4263", "45.10", "3013", "31.90", "70.70", "575", "6.10", "13.50", "2438", "25.80", "57.20", "1250", "13.20", "29.30", "2881", "30.50", "1883", "19.90" ]
+, [ "row-d88f~ndvv.xb5u", "00000000-0000-0000-1252-113BCBC2455B", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "English Language Learner", "9156", "4824", "52.70", "3241", "35.40", "67.20", "591", "6.50", "12.30", "2650", "28.90", "54.90", "1583", "17.30", "32.80", "873", "9.50", "2856", "31.20" ]
+, [ "row-tjkp-mzpk_rnk4", "00000000-0000-0000-73A5-EDDD1C6B40E0", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "English Language Learner", "9156", "4977", "54.40", "3302", "36.10", "66.30", "592", "6.50", "11.90", "2710", "29.60", "54.50", "1675", "18.30", "33.70", "755", "8.20", "2825", "30.90" ]
+, [ "row-2322.ygj6_r3e9", "00000000-0000-0000-2AC6-2110CCE8E9EC", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "English Language Learner", "9134", "5124", "56.10", "3386", "37.10", "66.10", "593", "6.50", "11.60", "2793", "30.60", "54.50", "1738", "19.00", "33.90", "416", "4.60", "2958", "32.40" ]
+, [ "row-5ky2-5h8v.t9bx", "00000000-0000-0000-6BF0-DA3B655AB83D", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "English Language Learner", "9174", "3247", "35.40", "2933", "32.00", "90.30", "615", "6.70", "18.90", "2318", "25.30", "71.40", "314", "3.40", "9.70", "3715", "40.50", "1868", "20.40" ]
+, [ "row-ceuq_w5pe~j39p", "00000000-0000-0000-F398-2503F13E27D9", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "English Language Learner", "9174", "3716", "40.50", "3318", "36.20", "89.30", "624", "6.80", "16.80", "2694", "29.40", "72.50", "398", "4.30", "10.70", "3257", "35.50", "1861", "20.30" ]
+, [ "row-hef7~8se7.2ugu", "00000000-0000-0000-D146-6587B1352056", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "English Language Learner", "8914", "4151", "46.60", "3654", "41.00", "88.00", "635", "7.10", "15.30", "3019", "33.90", "72.70", "497", "5.60", "12.00", "1700", "19.10", "2523", "28.30" ]
+, [ "row-c9h5_z4hw_h6t2", "00000000-0000-0000-C92C-2C480C253D14", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "English Language Learner", "8914", "4297", "48.20", "3776", "42.40", "87.90", "638", "7.20", "14.80", "3138", "35.20", "73.00", "521", "5.80", "12.10", "1567", "17.60", "2513", "28.20" ]
+, [ "row-7nhq_uxa3.72ws", "00000000-0000-0000-4FB4-9BFA998C22BA", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "English Language Learner", "8932", "4500", "50.40", "3918", "43.90", "87.10", "639", "7.20", "14.20", "3279", "36.70", "72.90", "582", "6.50", "12.90", "931", "10.40", "2755", "30.80" ]
+, [ "row-j8p8_qsgd~mt7q", "00000000-0000-0000-9D53-584867EBA91C", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "English Language Learner", "9253", "2987", "32.30", "2697", "29.10", "90.30", "600", "6.50", "20.10", "2097", "22.70", "70.20", "290", "3.10", "9.70", "3974", "42.90", "1988", "21.50" ]
+, [ "row-jwxb_v6ur-zi4j", "00000000-0000-0000-7B31-61E8CF9F9529", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "English Language Learner", "9253", "3580", "38.70", "3219", "34.80", "89.90", "631", "6.80", "17.60", "2588", "28.00", "72.30", "361", "3.90", "10.10", "3393", "36.70", "1987", "21.50" ]
+, [ "row-8qr3-z34a.6ycz", "00000000-0000-0000-FDFF-FB800E8577CF", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "English Language Learner", "8936", "4138", "46.30", "3672", "41.10", "88.70", "651", "7.30", "15.70", "3021", "33.80", "73.00", "466", "5.20", "11.30", "1663", "18.60", "2729", "30.50" ]
+, [ "row-n997.7nwg_q2hf", "00000000-0000-0000-CE73-51BC9508FB7A", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "Male", "37734", "20500", "54.30", "14404", "38.20", "70.30", null, null, null, null, null, null, "6101", "16.20", "29.80", "10133", "26.90", "5982", "15.90" ]
+, [ "row-adu2~aq84_xa2v", "00000000-0000-0000-CED9-9CF6EF6FA5F5", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "English Language Learner", "8936", "4300", "48.10", "3805", "42.60", "88.50", "651", "7.30", "15.10", "3154", "35.30", "73.30", "495", "5.50", "11.50", "1509", "16.90", "2725", "30.50" ]
+, [ "row-vusv~a6rw.4fy5", "00000000-0000-0000-40BF-268C222AD866", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "English Language Learner", "8858", "4531", "51.20", "3986", "45.00", "88.00", "653", "7.40", "14.40", "3333", "37.60", "73.60", "545", "6.20", "12.00", "936", "10.60", "2967", "33.50" ]
+, [ "row-kvqd.mk7u_jxdh", "00000000-0000-0000-CB84-A6AFD0F1F20E", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "English Language Learner", "8294", "2692", "32.50", "2449", "29.50", "91.00", "413", "5.00", "15.30", "2036", "24.50", "75.60", "243", "2.90", "9.00", "3462", "41.70", "1854", "22.40" ]
+, [ "row-jjb5-wat2~deib", "00000000-0000-0000-0DC4-B8F8987E9D63", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "English Language Learner", "8294", "3091", "37.30", "2792", "33.70", "90.30", "432", "5.20", "14.00", "2360", "28.50", "76.40", "299", "3.60", "9.70", "3064", "36.90", "1853", "22.30" ]
+, [ "row-yg2a~uybb-vhqi", "00000000-0000-0000-8EE1-EA26C97EADF3", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "English Language Learner", "7985", "3599", "45.10", "3181", "39.80", "88.40", "448", "5.60", "12.40", "2733", "34.20", "75.90", "418", "5.20", "11.60", "1355", "17.00", "2605", "32.60" ]
+, [ "row-7k43.xvsc.58x8", "00000000-0000-0000-C55D-31C3203FC157", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "English Language Learner", "7985", "3700", "46.30", "3266", "40.90", "88.30", "449", "5.60", "12.10", "2817", "35.30", "76.10", "434", "5.40", "11.70", "1264", "15.80", "2596", "32.50" ]
+, [ "row-2j5b.6u9e~fb7b", "00000000-0000-0000-ECB8-4E35ED809CCA", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "English Language Learner", "7326", "2673", "36.50", "2395", "32.70", "89.60", "368", "5.00", "13.80", "2027", "27.70", "75.80", "278", "3.80", "10.40", "2784", "38.00", "1579", "21.60" ]
+, [ "row-6apd~38fe_msp9", "00000000-0000-0000-E3E0-F5A39102B293", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "English Language Learner", "7326", "2970", "40.50", "2619", "35.70", "88.20", "374", "5.10", "12.60", "2245", "30.60", "75.60", "351", "4.80", "11.80", "2490", "34.00", "1577", "21.50" ]
+, [ "row-jxcw-9vbx_zja8", "00000000-0000-0000-0BD5-C203057C8BB7", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "English Language Proficient", "63603", "31712", "49.90", "21205", "33.30", "66.90", "8934", "14.00", "28.20", "12271", "19.30", "38.70", "10530", "16.60", "33.20", "17199", "27.00", "13117", "20.60" ]
+, [ "row-un3z~6wpz-k3sq", "00000000-0000-0000-6F1B-C1A7092D14DE", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "English Language Proficient", "63603", "37397", "58.80", "22692", "35.70", "60.70", "9078", "14.30", "24.30", "13614", "21.40", "36.40", "14764", "23.20", "39.50", "6819", "10.70", "17189", "27.00" ]
+, [ "row-dsit_cydd~kurk", "00000000-0000-0000-4C46-2DC3D997DC7E", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "English Language Proficient", "63603", "39055", "61.40", "23047", "36.20", "59.00", "9093", "14.30", "23.30", "13954", "21.90", "35.70", "16152", "25.40", "41.40", "3241", "5.10", "18940", "29.80" ]
+, [ "row-f8h4~vt65.3z46", "00000000-0000-0000-8BB4-31864CF82AEA", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "English Language Proficient", "67057", "34861", "52.00", "24459", "36.50", "70.20", "9303", "13.90", "26.70", "15156", "22.60", "43.50", "10427", "15.50", "29.90", "18659", "27.80", "11428", "17.00" ]
+, [ "row-5xa8~nsve~824g", "00000000-0000-0000-42C1-5EC90AB9073A", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "English Language Proficient", "67057", "41481", "61.90", "26684", "39.80", "64.30", "9569", "14.30", "23.10", "17115", "25.50", "41.30", "15047", "22.40", "36.30", "7470", "11.10", "15393", "23.00" ]
+, [ "row-28ve~dxaw-32sj", "00000000-0000-0000-654C-FE39E6E1DC65", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "English Language Proficient", "67057", "43338", "64.60", "27081", "40.40", "62.50", "9583", "14.30", "22.10", "17498", "26.10", "40.40", "16507", "24.60", "38.10", "4032", "6.00", "16784", "25.00" ]
+, [ "row-73bv_d9rg.ia8b", "00000000-0000-0000-8FD2-36B5D0B27138", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "English Language Proficient", "65725", "36938", "56.20", "26536", "40.40", "71.80", "11066", "16.80", "30.00", "15470", "23.50", "41.90", "10402", "15.80", "28.20", "17993", "27.40", "9310", "14.20" ]
+, [ "row-arg3-yhuy-w463", "00000000-0000-0000-6DCF-51A114095174", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "English Language Proficient", "65725", "43160", "65.70", "28728", "43.70", "66.60", "11236", "17.10", "26.00", "17492", "26.60", "40.50", "14432", "22.00", "33.40", "7193", "10.90", "12984", "19.80" ]
+, [ "row-wc7z.inwh.3stp", "00000000-0000-0000-0308-1E1D425ACA8E", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "English Language Proficient", "65986", "45192", "68.50", "29267", "44.40", "64.80", "11244", "17.00", "24.90", "18023", "27.30", "39.90", "15925", "24.10", "35.20", "3550", "5.40", "14156", "21.50" ]
+, [ "row-75dj_q7nm_yxpc", "00000000-0000-0000-A9F4-48356E7D69EE", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "English Language Proficient", "66523", "39274", "59.00", "29148", "43.80", "74.20", "12105", "18.20", "30.80", "17043", "25.60", "43.40", "10126", "15.20", "25.80", "17556", "26.40", "8287", "12.50" ]
+, [ "row-6jd4_87d8.df4p", "00000000-0000-0000-1549-65BF4E11EFFB", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "English Language Proficient", "66523", "42086", "63.30", "30377", "45.70", "72.20", null, null, null, null, null, null, "11713", "17.60", "27.80", "14746", "22.20", "8286", "12.50" ]
+, [ "row-99cf~8aqb_nim2", "00000000-0000-0000-FDCC-3459D25E13DB", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "English Language Proficient", "67305", "45894", "68.20", "31740", "47.20", "69.20", "12283", "18.20", "26.80", "19457", "28.90", "42.40", "14154", "21.00", "30.80", "6214", "9.20", "11397", "16.90" ]
+, [ "row-ftt2~dav2_876e", "00000000-0000-0000-4C21-2C6CF518B721", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "English Language Proficient", "67355", "47985", "71.20", "32358", "48.00", "67.40", "12282", "18.20", "25.60", "20076", "29.80", "41.80", "15627", "23.20", "32.60", "3849", "5.70", "12596", "18.70" ]
+, [ "row-kcwb-3d9e.p789", "00000000-0000-0000-2808-4D6ABA4EC2E3", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "English Language Proficient", "68600", "42134", "61.40", "32581", "47.50", "77.30", "11929", "17.40", "28.30", "20652", "30.10", "49.00", "9553", "13.90", "22.70", "16283", "23.70", "7457", "10.90" ]
+, [ "row-pva8_qc9x-7s69", "00000000-0000-0000-1C85-2E74FD48A9F4", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "English Language Proficient", "68600", "44600", "65.00", "33703", "49.10", "75.60", "12023", "17.50", "27.00", "21680", "31.60", "48.60", "10897", "15.90", "24.40", "13822", "20.10", "7455", "10.90" ]
+, [ "row-nuv2-v82z.i9tj", "00000000-0000-0000-B851-7C8182E52FC4", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "English Language Proficient", "69404", "48442", "69.80", "35379", "51.00", "73.00", "12132", "17.50", "25.00", "23247", "33.50", "48.00", "13063", "18.80", "27.00", "5650", "8.10", "11728", "16.90" ]
+, [ "row-kkj9-9ics-wtm9", "00000000-0000-0000-B633-15F3E6A666CD", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "English Language Proficient", "69321", "50425", "72.70", "36008", "51.90", "71.40", "12136", "17.50", "24.10", "23872", "34.40", "47.30", "14417", "20.80", "28.60", "2971", "4.30", "12379", "17.90" ]
+, [ "row-jvgs.izpi_7ytn", "00000000-0000-0000-4F29-593DE74DFCB9", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "English Language Proficient", "69290", "44031", "63.50", "36133", "52.10", "82.10", "12292", "17.70", "27.90", "23841", "34.40", "54.10", "7898", "11.40", "17.90", "15135", "21.80", "7700", "11.10" ]
+, [ "row-tubw_zu9i_denz", "00000000-0000-0000-A0C3-3CFB04CBF720", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "English Language Proficient", "69290", "46831", "67.60", "37578", "54.20", "80.20", "12393", "17.90", "26.50", "25185", "36.30", "53.80", "9253", "13.40", "19.80", "12387", "17.90", "7649", "11.00" ]
+, [ "row-gbpw_2uwc_nhv5", "00000000-0000-0000-0028-0127D9D6F714", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "English Language Proficient", "69998", "50161", "71.70", "39135", "55.90", "78.00", "12442", "17.80", "24.80", "26693", "38.10", "53.20", "11026", "15.80", "22.00", "5133", "7.30", "11527", "16.50" ]
+, [ "row-qa3f-f73k~whmp", "00000000-0000-0000-3D2F-220CB7F582B5", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "English Language Proficient", "69998", "50830", "72.60", "39377", "56.30", "77.50", "12442", "17.80", "24.50", "26935", "38.50", "53.00", "11453", "16.40", "22.50", "4645", "6.60", "11317", "16.20" ]
+, [ "row-559g_xrvs~2w6c", "00000000-0000-0000-B466-E141B13DE077", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "English Language Proficient", "69217", "52052", "75.20", "39822", "57.50", "76.50", "12431", "18.00", "23.90", "27391", "39.60", "52.60", "12230", "17.70", "23.50", "2143", "3.10", "11878", "17.20" ]
+, [ "row-ap4f-5xfx_k4km", "00000000-0000-0000-6D7D-BC6324BD0EF6", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "English Language Proficient", "70032", "44660", "63.80", "39341", "56.20", "88.10", "12396", "17.70", "27.80", "26945", "38.50", "60.30", "5319", "7.60", "11.90", "15553", "22.20", "7844", "11.20" ]
+, [ "row-dkjt.j8p2~8dn6", "00000000-0000-0000-2E24-4350AC660ECB", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "English Language Proficient", "70032", "47806", "68.30", "41203", "58.80", "86.20", "12502", "17.90", "26.20", "28701", "41.00", "60.00", "6603", "9.40", "13.80", "12522", "17.90", "7748", "11.10" ]
+, [ "row-9ye8_i9w4.tnwh", "00000000-0000-0000-104F-682A3564FCC6", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "English Language Proficient", "69766", "50580", "72.50", "42529", "61.00", "84.10", "12432", "17.80", "24.60", "30097", "43.10", "59.50", "8051", "11.50", "15.90", "4634", "6.60", "11802", "16.90" ]
+, [ "row-2hh3.gapx-m8p5", "00000000-0000-0000-CC07-7B9E894F9723", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "English Language Proficient", "69766", "51176", "73.40", "42802", "61.40", "83.60", "12433", "17.80", "24.30", "30369", "43.50", "59.30", "8374", "12.00", "16.40", "4207", "6.00", "11642", "16.70" ]
+, [ "row-bk9c-dcxx_t6mi", "00000000-0000-0000-7E58-1AB6B889EA7D", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "English Language Proficient", "69864", "52527", "75.20", "43581", "62.40", "83.00", "12516", "17.90", "23.80", "31065", "44.50", "59.10", "8946", "12.80", "17.00", "2371", "3.40", "12082", "17.30" ]
+, [ "row-pamd.6vre.tmx9", "00000000-0000-0000-49BD-F750AA440220", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "English Language Proficient", "70545", "44926", "63.70", "43091", "61.10", "95.90", "12560", "17.80", "28.00", "30531", "43.30", "68.00", "1835", "2.60", "4.10", "16670", "23.60", "7263", "10.30" ]
+, [ "row-wime_iisf-pgc6", "00000000-0000-0000-D0E8-9DE8422C9905", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "English Language Proficient", "70545", "47857", "67.80", "45686", "64.80", "95.50", "12640", "17.90", "26.40", "33046", "46.80", "69.10", "2171", "3.10", "4.50", "13806", "19.60", "7235", "10.30" ]
+, [ "row-fg99~pxip-uyvx", "00000000-0000-0000-9B71-31E423FB25F9", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "English Language Proficient", "70448", "50981", "72.40", "48300", "68.60", "94.70", "12678", "18.00", "24.90", "35622", "50.60", "69.90", "2681", "3.80", "5.30", "6787", "9.60", "10116", "14.40" ]
+, [ "row-g52b~4vfv.hwmq", "00000000-0000-0000-7EC7-294A41E6BE74", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "English Language Proficient", "70448", "51710", "73.40", "48902", "69.40", "94.60", "12683", "18.00", "24.50", "36219", "51.40", "70.00", "2808", "4.00", "5.40", "6133", "8.70", "10059", "14.30" ]
+, [ "row-krub~2rep_swg2", "00000000-0000-0000-4821-A7C97B94140C", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "English Language Proficient", "70301", "53075", "75.50", "49943", "71.00", "94.10", "12685", "18.00", "23.90", "37258", "53.00", "70.20", "3132", "4.50", "5.90", "3420", "4.90", "10790", "15.30" ]
+, [ "row-d2eu~sjy3.7mzf", "00000000-0000-0000-7D26-62210734A62B", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "English Language Proficient", "69468", "45249", "65.10", "43292", "62.30", "95.70", "12800", "18.40", "28.30", "30492", "43.90", "67.40", "1957", "2.80", "4.30", "16272", "23.40", "6382", "9.20" ]
+, [ "row-8fja~n3wg.r9py", "00000000-0000-0000-0022-177539E82A18", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "English Language Proficient", "69468", "48390", "69.70", "46039", "66.30", "95.10", "12904", "18.60", "26.70", "33135", "47.70", "68.50", "2351", "3.40", "4.90", "13184", "19.00", "6376", "9.20" ]
+, [ "row-u3zj~nrgq.738p", "00000000-0000-0000-8C5C-00F5F09998FD", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "English Language Proficient", "69379", "51744", "74.60", "48799", "70.30", "94.30", "12933", "18.60", "25.00", "35866", "51.70", "69.30", "2945", "4.20", "5.70", "6730", "9.70", "9037", "13.00" ]
+, [ "row-mwc3_jtzk_udy7", "00000000-0000-0000-BB8E-64C831665CFF", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "English Language Proficient", "69379", "52481", "75.60", "49399", "71.20", "94.10", "12937", "18.60", "24.70", "36462", "52.60", "69.50", "3082", "4.40", "5.90", "6031", "8.70", "9006", "13.00" ]
+, [ "row-4adn_iiaz-3s3x", "00000000-0000-0000-32C7-0E94D465FDDA", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "English Language Proficient", "69429", "53974", "77.70", "50530", "72.80", "93.60", "12939", "18.60", "24.00", "37591", "54.10", "69.60", "3444", "5.00", "6.40", "3605", "5.20", "9851", "14.20" ]
+, [ "row-jmq2.kcvu.gn63", "00000000-0000-0000-C0B9-CD824BEEB18B", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "English Language Proficient", "67230", "45757", "68.10", "43325", "64.40", "94.70", "12874", "19.10", "28.10", "30451", "45.30", "66.50", "2432", "3.60", "5.30", "14886", "22.10", "5457", "8.10" ]
+, [ "row-6dyu.wwa2.nsrk", "00000000-0000-0000-DEB1-8AA3160E71EA", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "English Language Proficient", "67230", "48590", "72.30", "45771", "68.10", "94.20", "12989", "19.30", "26.70", "32782", "48.80", "67.50", "2819", "4.20", "5.80", "12063", "17.90", "5456", "8.10" ]
+, [ "row-bye7.y988~2wdw", "00000000-0000-0000-B2DC-E343D5170D57", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "English Language Proficient", "67257", "51895", "77.20", "48371", "71.90", "93.20", "13019", "19.40", "25.10", "35352", "52.60", "68.10", "3524", "5.20", "6.80", "5847", "8.70", "7923", "11.80" ]
+, [ "row-7n34-ju5p~bhag", "00000000-0000-0000-AE51-E4DE53F5C157", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "English Language Proficient", "67257", "52432", "78.00", "48788", "72.50", "93.10", "13021", "19.40", "24.80", "35767", "53.20", "68.20", "3644", "5.40", "6.90", "5338", "7.90", "7899", "11.70" ]
+, [ "row-8ht2_vmwi_7afq", "00000000-0000-0000-F01D-024DA51F6D26", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "English Language Proficient", "67037", "47326", "70.60", "44993", "67.10", "95.10", "13196", "19.70", "27.90", "31797", "47.40", "67.20", "2333", "3.50", "4.90", "13535", "20.20", "5087", "7.60" ]
+, [ "row-8hsh-r8gh-6g34", "00000000-0000-0000-B38A-FE474ED211D8", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "English Language Proficient", "67037", "49439", "73.70", "46745", "69.70", "94.60", "13265", "19.80", "26.80", "33480", "49.90", "67.70", "2694", "4.00", "5.40", "11437", "17.10", "5087", "7.60" ]
+, [ "row-26bw~xdfd~yuta", "00000000-0000-0000-01DB-0F3E43D4C31D", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "Not Student with Disability", "64593", "32863", "50.90", "21941", "34.00", "66.80", "9211", "14.30", "28.00", "12730", "19.70", "38.70", "10937", "16.90", "33.30", "18305", "28.30", "13062", "20.20" ]
+, [ "row-395e.ex9c_dk75", "00000000-0000-0000-6F21-02ADFD2DE05C", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "Not Student with Disability", "64593", "39364", "60.90", "23647", "36.60", "60.10", "9411", "14.60", "23.90", "14236", "22.00", "36.20", "15777", "24.40", "40.10", "7386", "11.40", "17426", "27.00" ]
+, [ "row-iej2-dn3x~7f25", "00000000-0000-0000-974C-6B98D942D3BE", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "Not Student with Disability", "64593", "41293", "63.90", "24053", "37.20", "58.20", "9433", "14.60", "22.80", "14620", "22.60", "35.40", "17392", "26.90", "42.10", "3287", "5.10", "19482", "30.20" ]
+, [ "row-ed2y~k8ib~hfrw", "00000000-0000-0000-8C44-9E04A402F4A8", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "Not Student with Disability", "67537", "35265", "52.20", "24798", "36.70", "70.30", "9400", "13.90", "26.70", "15398", "22.80", "43.70", "10501", "15.50", "29.80", "18972", "28.10", "11832", "17.50" ]
+, [ "row-tqgi_qbhk-3faj", "00000000-0000-0000-1857-25E254929662", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "Not Student with Disability", "67537", "42249", "62.60", "27152", "40.20", "64.30", "9708", "14.40", "23.00", "17444", "25.80", "41.30", "15360", "22.70", "36.40", "7313", "10.80", "16253", "24.10" ]
+, [ "row-avcg~mft2_6mnx", "00000000-0000-0000-5135-2BE2E52A3B75", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "Not Student with Disability", "67537", "44169", "65.40", "27589", "40.90", "62.50", "9731", "14.40", "22.00", "17858", "26.40", "40.40", "16843", "24.90", "38.10", "4045", "6.00", "17572", "26.00" ]
+, [ "row-728e_3tfg_j36j", "00000000-0000-0000-1891-5B263326203D", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "Not Student with Disability", "64766", "37324", "57.60", "27046", "41.80", "72.50", "11284", "17.40", "30.20", "15762", "24.30", "42.20", "10278", "15.90", "27.50", "16946", "26.20", "9614", "14.80" ]
+, [ "row-s2jq~x7nn_i8ed", "00000000-0000-0000-9388-97E32FACB8F6", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "Not Student with Disability", "64766", "43826", "67.70", "29392", "45.40", "67.10", "11520", "17.80", "26.30", "17872", "27.60", "40.80", "14434", "22.30", "32.90", "6880", "10.60", "13058", "20.20" ]
+, [ "row-7ufv_rrum-wmsi", "00000000-0000-0000-7A02-780343C0ACBE", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "Not Student with Disability", "65187", "45871", "70.40", "29957", "46.00", "65.30", "11533", "17.70", "25.10", "18424", "28.30", "40.20", "15914", "24.40", "34.70", "3324", "5.10", "14361", "22.00" ]
+, [ "row-ag8q.ekc8.kyjy", "00000000-0000-0000-5752-8B097AC37487", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "Not Student with Disability", "64874", "40021", "61.70", "29933", "46.10", "74.80", "12481", "19.20", "31.20", "17452", "26.90", "43.60", "10088", "15.60", "25.20", "16642", "25.70", "7942", "12.20" ]
+, [ "row-jntk_tzz4-gy9m", "00000000-0000-0000-2D8B-D2FB6AE2B7FC", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "Not Student with Disability", "64874", "42947", "66.20", "31206", "48.10", "72.70", null, null, null, null, null, null, "11747", "18.10", "27.40", "13717", "21.10", "7941", "12.20" ]
+, [ "row-znhf~vk3j~rjyn", "00000000-0000-0000-132B-248FE9105B23", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "Not Student with Disability", "65807", "46928", "71.30", "32715", "49.70", "69.70", "12728", "19.30", "27.10", "19987", "30.40", "42.60", "14213", "21.60", "30.30", "5733", "8.70", "11057", "16.80" ]
+, [ "row-auwm_u3fy-bpps", "00000000-0000-0000-97E0-A8C2802F6101", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "Not Student with Disability", "66005", "49050", "74.30", "33371", "50.60", "68.00", "12737", "19.30", "26.00", "20634", "31.30", "42.10", "15679", "23.80", "32.00", "3468", "5.30", "12318", "18.70" ]
+, [ "row-gv59~iaxe.wbw8", "00000000-0000-0000-7270-F64A0B857FA0", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "Not Student with Disability", "66625", "42954", "64.50", "33530", "50.30", "78.10", "12399", "18.60", "28.90", "21131", "31.70", "49.20", "9422", "14.10", "21.90", "15131", "22.70", "6903", "10.40" ]
+, [ "row-s9pq~ydzy_in36", "00000000-0000-0000-479C-E9206E6E91A6", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "Not Student with Disability", "66625", "45634", "68.50", "34725", "52.10", "76.10", "12503", "18.80", "27.40", "22222", "33.40", "48.70", "10908", "16.40", "23.90", "12452", "18.70", "6901", "10.40" ]
+, [ "row-s58t_ge7v.dtzi", "00000000-0000-0000-20FF-D585ED0BF04F", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "Not Student with Disability", "67538", "49532", "73.30", "36498", "54.00", "73.70", "12661", "18.70", "25.60", "23837", "35.30", "48.10", "13034", "19.30", "26.30", "5061", "7.50", "11158", "16.50" ]
+, [ "row-bnq6~53z3_5juk", "00000000-0000-0000-1241-C6BBD8AB5D0F", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "Not Student with Disability", "67582", "51536", "76.30", "37169", "55.00", "72.10", "12670", "18.70", "24.60", "24499", "36.30", "47.50", "14367", "21.30", "27.90", "2528", "3.70", "11834", "17.50" ]
+, [ "row-qdrc_r3mx_2jtm", "00000000-0000-0000-46CA-8EBD42EDB29A", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "Not Student with Disability", "66979", "44619", "66.60", "37300", "55.70", "83.60", "12757", "19.00", "28.60", "24543", "36.60", "55.00", "7319", "10.90", "16.40", "13894", "20.70", "7120", "10.60" ]
+, [ "row-uyb9~ssrx-38m5", "00000000-0000-0000-D9A2-0545FB2AF574", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "Not Student with Disability", "66979", "47516", "70.90", "38824", "58.00", "81.70", "12869", "19.20", "27.10", "25955", "38.80", "54.60", "8692", "13.00", "18.30", "11048", "16.50", "7070", "10.60" ]
+, [ "row-45ei_z8hk-9qwe", "00000000-0000-0000-1CEE-45111A46349A", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "Not Student with Disability", "66955", "50937", "76.10", "40507", "60.50", "79.50", "12942", "19.30", "25.40", "27565", "41.20", "54.10", "10430", "15.60", "20.50", "3700", "5.50", "10939", "16.30" ]
+, [ "row-xxyc~89yn.dz2f", "00000000-0000-0000-B70F-974C8D18FC7D", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "Not Student with Disability", "66955", "51605", "77.10", "40770", "60.90", "79.00", "12942", "19.30", "25.10", "27828", "41.60", "53.90", "10835", "16.20", "21.00", "3208", "4.80", "10737", "16.00" ]
+, [ "row-x8b5-4dwb.gdwi", "00000000-0000-0000-15F5-BC0B9354E221", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "Not Student with Disability", "66643", "52773", "79.20", "41232", "61.90", "78.10", "12928", "19.40", "24.50", "28304", "42.50", "53.60", "11541", "17.30", "21.90", "1546", "2.30", "11004", "16.50" ]
+, [ "row-u9g8_pcbm_n3fu", "00000000-0000-0000-0DDB-30E624E1E8C1", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "Not Student with Disability", "67469", "45110", "66.90", "40618", "60.20", "90.00", "12845", "19.00", "28.50", "27773", "41.20", "61.60", "4492", "6.70", "10.00", "14096", "20.90", "7229", "10.70" ]
+, [ "row-ccn4_bzjx-gndz", "00000000-0000-0000-28E0-CE6B44E89842", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "Not Student with Disability", "67469", "48351", "71.70", "42623", "63.20", "88.20", "12962", "19.20", "26.80", "29661", "44.00", "61.30", "5728", "8.50", "11.80", "10920", "16.20", "7136", "10.60" ]
+, [ "row-q8zw~c553.sm4i", "00000000-0000-0000-DD22-F8259BD1978B", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "Not Student with Disability", "67019", "51149", "76.30", "44092", "65.80", "86.20", "12907", "19.30", "25.20", "31185", "46.50", "61.00", "7057", "10.50", "13.80", "3648", "5.40", "11089", "16.50" ]
+, [ "row-46tv_tygr_4vsb", "00000000-0000-0000-F894-2112113B40A8", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "Not Student with Disability", "67019", "51784", "77.30", "44408", "66.30", "85.80", "12909", "19.30", "24.90", "31499", "47.00", "60.80", "7376", "11.00", "14.20", "3182", "4.70", "10920", "16.30" ]
+, [ "row-gr4s~qqmh-rgc7", "00000000-0000-0000-27E7-A32168E069EE", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "Not Student with Disability", "67526", "53131", "78.70", "45228", "67.00", "85.10", "12992", "19.20", "24.50", "32236", "47.70", "60.70", "7903", "11.70", "14.90", "1633", "2.40", "11509", "17.00" ]
+, [ "row-hgph-4ecy-mu95", "00000000-0000-0000-E30A-9A44AE745759", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "Not Student with Disability", "66695", "44576", "66.80", "44185", "66.20", "99.10", "13040", "19.60", "29.30", "31145", "46.70", "69.90", "391", "0.60", "0.90", "14869", "22.30", "6535", "9.80" ]
+, [ "row-8uzx.pkxa_gcsi", "00000000-0000-0000-7015-7F55B84C232B", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "Not Student with Disability", "66695", "47603", "71.40", "47072", "70.60", "98.90", "13129", "19.70", "27.60", "33943", "50.90", "71.30", "531", "0.80", "1.10", "11873", "17.80", "6504", "9.80" ]
+, [ "row-yg2p_ywai-kt4c", "00000000-0000-0000-DBB9-A7C8CEB23700", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "Not Student with Disability", "67309", "50804", "75.50", "49931", "74.20", "98.30", "13178", "19.60", "25.90", "36753", "54.60", "72.30", "873", "1.30", "1.70", "5642", "8.40", "9791", "14.50" ]
+, [ "row-chf6.ptcg.xcgg", "00000000-0000-0000-3AEA-A039AA1FF797", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "Not Student with Disability", "67309", "51560", "76.60", "50635", "75.20", "98.20", "13186", "19.60", "25.60", "37449", "55.60", "72.60", "925", "1.40", "1.80", "4952", "7.40", "9731", "14.50" ]
+, [ "row-2gq2_cusa-sngi", "00000000-0000-0000-8395-03316CD322BE", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "Not Student with Disability", "67217", "52825", "78.60", "51767", "77.00", "98.00", "13188", "19.60", "25.00", "38579", "57.40", "73.00", "1058", "1.60", "2.00", "2778", "4.10", "10478", "15.60" ]
+, [ "row-n2r2-hkj3_dssc", "00000000-0000-0000-58A1-2571EB413CE7", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "Not Student with Disability", "67912", "44643", "65.70", "44182", "65.10", "99.00", "13285", "19.60", "29.80", "30897", "45.50", "69.20", "461", "0.70", "1.00", "16008", "23.60", "6467", "9.50" ]
+, [ "row-ehhr.2snc~mgna", "00000000-0000-0000-8BAA-A61D10ADE067", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "Not Student with Disability", "67912", "47916", "70.60", "47324", "69.70", "98.80", "13418", "19.80", "28.00", "33906", "49.90", "70.80", "592", "0.90", "1.20", "12747", "18.80", "6461", "9.50" ]
+, [ "row-2whp_3k9z.krvn", "00000000-0000-0000-3E36-4879F785D795", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "Not Student with Disability", "67444", "51131", "75.80", "50396", "74.70", "98.60", "13471", "20.00", "26.30", "36925", "54.70", "72.20", "735", "1.10", "1.40", "6026", "8.90", "9259", "13.70" ]
+, [ "row-mwnf~4dur.aut8", "00000000-0000-0000-6853-37D4135D4693", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "Not Student with Disability", "67444", "51891", "76.90", "51107", "75.80", "98.50", "13475", "20.00", "26.00", "37632", "55.80", "72.50", "784", "1.20", "1.50", "5301", "7.90", "9225", "13.70" ]
+, [ "row-8tmf~zx8q~psdk", "00000000-0000-0000-95E5-4722DC6D521D", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "Not Student with Disability", "67428", "53267", "79.00", "52374", "77.70", "98.30", "13479", "20.00", "25.30", "38895", "57.70", "73.00", "893", "1.30", "1.70", "3031", "4.50", "10042", "14.90" ]
+, [ "row-ipyp-c3iy-d3h2", "00000000-0000-0000-ED5D-5313D232DE1D", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "Not Student with Disability", "63409", "44011", "69.40", "43639", "68.80", "99.20", "13136", "20.70", "29.80", "30503", "48.10", "69.30", "372", "0.60", "0.80", "13434", "21.20", "5393", "8.50" ]
+, [ "row-4z7r~ctvy-pvmj", "00000000-0000-0000-4AF7-476B0FE7E440", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "Not Student with Disability", "63409", "46779", "73.80", "46312", "73.00", "99.00", "13267", "20.90", "28.40", "33045", "52.10", "70.60", "467", "0.70", "1.00", "10671", "16.80", "5391", "8.50" ]
+, [ "row-5msh-xhe4-xdz8", "00000000-0000-0000-9177-3C47D54A7FE9", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "Not Student with Disability", "63175", "49811", "78.80", "49146", "77.80", "98.70", "13315", "21.10", "26.70", "35831", "56.70", "71.90", "665", "1.10", "1.30", "4796", "7.60", "7849", "12.40" ]
+, [ "row-wvpa~aavg~kpp7", "00000000-0000-0000-DD54-606CA4F17F2E", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "Not Student with Disability", "63175", "50329", "79.70", "49626", "78.60", "98.60", "13318", "21.10", "26.50", "36308", "57.50", "72.10", "703", "1.10", "1.40", "4309", "6.80", "7818", "12.40" ]
+, [ "row-wv9g.d3f7_vanm", "00000000-0000-0000-5163-F03073ED7C4A", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "Not Student with Disability", "61895", "45308", "73.20", "44779", "72.30", "98.80", "13400", "21.60", "29.60", "31379", "50.70", "69.30", "529", "0.90", "1.20", "11321", "18.30", "4750", "7.70" ]
+, [ "row-tj9d~ac6a_2gca", "00000000-0000-0000-B506-FCE6C43671BA", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "Not Student with Disability", "61895", "47284", "76.40", "46637", "75.30", "98.60", "13474", "21.80", "28.50", "33163", "53.60", "70.10", "647", "1.00", "1.40", "9350", "15.10", "4748", "7.70" ]
+, [ "row-vemq_43rv_y56e", "00000000-0000-0000-A6E8-6803B52C7BCE", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "Student with Disability", "9550", "1640", "17.10", "256", "3.00", "15.60", "38", "0.40", "2.30", "218", "2.30", "13.30", "1396", "14.60", "85.10", "2789", "29.20", "3275", "34.30" ]
+, [ "row-7qzz.4dyb.nu98", "00000000-0000-0000-5E8A-45E415BAB19A", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "Student with Disability", "9550", "1953", "20.50", "278", "2.90", "14.20", "38", "0.40", "1.90", "240", "2.50", "12.30", "1688", "17.70", "86.40", "949", "9.90", "3956", "41.40" ]
+, [ "row-fyvu.et7x_y9jc", "00000000-0000-0000-EFA0-0E3C89E06316", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "Student with Disability", "9550", "2058", "21.50", "285", "3.00", "13.80", "40", "0.40", "1.90", "245", "2.60", "11.90", "1788", "18.70", "86.90", "609", "6.40", "4056", "42.50" ]
+, [ "row-9yh6.v6jp.zrgs", "00000000-0000-0000-88C5-88BEE065DBAA", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "Student with Disability", "6974", "1287", "18.50", "300", "4.30", "23.30", "35", "0.50", "2.70", "265", "3.80", "20.60", "988", "14.20", "76.80", "2749", "39.40", "1926", "27.60" ]
+, [ "row-98zg-2gam_ideu", "00000000-0000-0000-8F07-58D0241F4700", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "Student with Disability", "6974", "1586", "22.70", "326", "4.70", "20.60", "37", "0.50", "2.30", "289", "4.10", "18.20", "1265", "18.10", "79.80", "1614", "23.10", "2181", "31.30" ]
+, [ "row-7esh_qp87_fy78", "00000000-0000-0000-A609-1EFDF38EFCDF", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "Student with Disability", "6974", "1898", "27.20", "348", "5.00", "18.30", "37", "0.50", "1.90", "311", "4.50", "16.40", "1555", "22.30", "81.90", "684", "9.80", "2568", "36.80" ]
+, [ "row-cvzz_phqz-cv5h", "00000000-0000-0000-B94C-4E5DD6271ACE", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "Student with Disability", "9122", "1666", "18.30", "399", "4.40", "23.90", "72", "0.80", "4.30", "327", "3.60", "19.60", "1267", "13.90", "76.10", "4407", "48.30", "2090", "22.90" ]
+, [ "row-2zwg.ys6j.gxev", "00000000-0000-0000-3C9F-6E2FC0547E8C", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "Student with Disability", "9122", "2439", "26.70", "495", "5.40", "20.30", "74", "0.80", "3.00", "421", "4.60", "17.30", "1944", "21.30", "79.70", "1640", "18.00", "3037", "33.30" ]
+, [ "row-u2tm.p6zv_grb2", "00000000-0000-0000-C309-4E3DB3AA0B3E", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "Student with Disability", "8840", "2715", "30.70", "526", "6.00", "19.40", "74", "0.80", "2.70", "452", "5.10", "16.60", "2189", "24.80", "80.60", "796", "9.00", "3156", "35.70" ]
+, [ "row-sdzs-q9wq.822e", "00000000-0000-0000-6E13-90A4C806DC32", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "Student with Disability", "10135", "2292", "22.50", "719", "7.00", "31.40", "111", "1.10", "4.80", "608", "6.00", "26.50", "1573", "15.50", "68.60", "4202", "41.50", "2185", "21.60" ]
+, [ "row-7ba2.6sfz.ukqe", "00000000-0000-0000-D549-D96219961073", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "Student with Disability", "10135", "2543", "25.10", "770", "7.60", "30.30", null, null, null, null, null, null, "1775", "17.50", "69.80", "3952", "39.00", "2185", "21.60" ]
+, [ "row-u7vd.49hc.deea", "00000000-0000-0000-3C4B-B612A94D477C", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "Student with Disability", "9818", "3031", "30.90", "824", "8.40", "27.20", "113", "1.20", "3.70", "711", "7.20", "23.50", "2207", "22.50", "72.80", "1632", "16.60", "2729", "27.80" ]
+, [ "row-7wqt_fhp3_c8y9", "00000000-0000-0000-8D93-EC27E99C3410", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "Student with Disability", "9656", "3329", "34.50", "860", "8.90", "25.80", "113", "1.20", "3.40", "747", "7.70", "22.40", "2469", "25.60", "74.20", "1000", "10.40", "2988", "30.90" ]
+, [ "row-bvzy_vxcm~mq4y", "00000000-0000-0000-CBC0-DFAB457A5A09", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "Student with Disability", "10754", "2661", "24.70", "959", "8.90", "36.00", "113", "1.10", "4.20", "846", "7.90", "31.80", "1703", "15.80", "64.00", "4212", "39.20", "2254", "21.00" ]
+, [ "row-esui-ybdq~agys", "00000000-0000-0000-6469-4666D3DB8F51", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "Student with Disability", "10754", "2865", "26.60", "993", "9.20", "34.70", "114", "1.10", "4.00", "879", "8.20", "30.70", "1872", "17.40", "65.30", "4012", "37.30", "2254", "21.00" ]
+, [ "row-je5s_6awa~3jqn", "00000000-0000-0000-DC82-8A155A3290EF", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "Student with Disability", "10609", "3456", "32.60", "1113", "10.50", "32.20", "113", "1.10", "3.30", "1000", "9.40", "28.90", "2343", "22.10", "67.80", "1605", "15.10", "3101", "29.20" ]
+, [ "row-sz9h~ij6h~f2i4", "00000000-0000-0000-0C42-04F8BA000BD4", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "Student with Disability", "10412", "3741", "35.90", "1143", "11.00", "30.60", "113", "1.10", "3.00", "1030", "9.90", "27.50", "2598", "25.00", "69.40", "897", "8.60", "3256", "31.30" ]
+, [ "row-3g8z_zcn4~3i5i", "00000000-0000-0000-C893-8969F23CFDC1", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "Student with Disability", "11367", "3167", "27.90", "1270", "11.20", "40.10", "128", "1.10", "4.00", "1142", "10.00", "36.10", "1897", "16.70", "59.90", "4243", "37.30", "2377", "20.90" ]
+, [ "row-jkr2.i29j.5ytz", "00000000-0000-0000-F6DA-B4229936D530", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "Student with Disability", "11367", "3490", "30.70", "1327", "11.70", "38.00", "132", "1.20", "3.80", "1195", "10.50", "34.20", "2163", "19.00", "62.00", "3927", "34.50", "2370", "20.80" ]
+, [ "row-9ua2-gq37_qjm4", "00000000-0000-0000-13AC-71564206B19D", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "Student with Disability", "12201", "3999", "32.80", "1411", "11.60", "35.30", "133", "1.10", "3.30", "1278", "10.50", "32.00", "2588", "21.20", "64.70", "2528", "20.70", "3163", "25.90" ]
+, [ "row-ser6_5pw8.zkng", "00000000-0000-0000-EA9B-1A54B40A10AC", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "Student with Disability", "12201", "4103", "33.60", "1419", "11.60", "34.60", "133", "1.10", "3.20", "1286", "10.50", "31.30", "2684", "22.00", "65.40", "2442", "20.00", "3139", "25.70" ]
+, [ "row-64cy~bvnj_maj2", "00000000-0000-0000-4AAE-BA3E77765B2D", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "Student with Disability", "11403", "4348", "38.10", "1457", "12.80", "33.50", "136", "1.20", "3.10", "1321", "11.60", "30.40", "2891", "25.40", "66.50", "938", "8.20", "3614", "31.70" ]
+, [ "row-7wvn.cagy~5wa2", "00000000-0000-0000-FA62-67810B94DE95", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "Student with Disability", "12007", "3270", "27.20", "1488", "12.40", "45.50", "113", "0.90", "3.50", "1375", "11.50", "42.00", "1782", "14.80", "54.50", "4864", "40.50", "2511", "20.90" ]
+, [ "row-bb6v.svyw.hb62", "00000000-0000-0000-D93B-2D00B26EA62F", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "Student with Disability", "12007", "3718", "31.00", "1593", "13.30", "42.80", "115", "1.00", "3.10", "1478", "12.30", "39.80", "2125", "17.70", "57.20", "4483", "37.30", "2495", "20.80" ]
+, [ "row-9qbv_idvi~3mv7", "00000000-0000-0000-7A5B-0BAAF4C71A5C", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "Student with Disability", "11903", "4255", "35.70", "1678", "14.10", "39.40", "116", "1.00", "2.70", "1562", "13.10", "36.70", "2577", "21.70", "60.60", "1859", "15.60", "3569", "30.00" ]
+, [ "row-2xri.iw8x~dekh", "00000000-0000-0000-DA52-68B1629E4364", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "Student with Disability", "11903", "4369", "36.70", "1696", "14.20", "38.80", "116", "1.00", "2.70", "1580", "13.30", "36.20", "2673", "22.50", "61.20", "1780", "15.00", "3547", "29.80" ]
+, [ "row-xswu~46nq_s38f", "00000000-0000-0000-7D07-BD4B372F0A3A", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "Student with Disability", "11472", "4520", "39.40", "1739", "15.20", "38.50", "117", "1.00", "2.60", "1622", "14.10", "35.90", "2781", "24.20", "61.50", "1154", "10.10", "3531", "30.80" ]
+, [ "row-mnu6_kwbe-xki7", "00000000-0000-0000-D802-743A9601F77D", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "Student with Disability", "13024", "3597", "27.60", "1839", "14.10", "51.10", "135", "1.00", "3.80", "1704", "13.10", "47.40", "1758", "13.50", "48.90", "5516", "42.40", "2596", "19.90" ]
+, [ "row-t8kq.h7de.u8cb", "00000000-0000-0000-3EAF-D0626F2AD43A", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "Student with Disability", "13024", "3970", "30.50", "1932", "14.80", "48.70", "135", "1.00", "3.40", "1797", "13.80", "45.30", "2038", "15.60", "51.30", "5190", "39.80", "2592", "19.90" ]
+, [ "row-t45x_j3bw.xmyu", "00000000-0000-0000-07FC-D7A81180FA9A", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "Student with Disability", "12053", "4328", "35.90", "2023", "16.80", "46.70", "135", "1.10", "3.10", "1888", "15.70", "43.60", "2305", "19.10", "53.30", "2845", "23.60", "2848", "23.60" ]
+, [ "row-4jy5.a7md_c8nw", "00000000-0000-0000-512F-23F13E80DEF2", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "Student with Disability", "12053", "4447", "36.90", "2043", "17.00", "45.90", "135", "1.10", "3.00", "1908", "15.80", "42.90", "2404", "19.90", "54.10", "2748", "22.80", "2841", "23.60" ]
+, [ "row-c23w.3ptt_gxsj", "00000000-0000-0000-E8A1-66CAB95600C4", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "Student with Disability", "12016", "4750", "39.50", "2094", "17.40", "44.10", "136", "1.10", "2.90", "1958", "16.30", "41.20", "2656", "22.10", "55.90", "1573", "13.10", "3067", "25.50" ]
+, [ "row-pdzi.36v7~bj5a", "00000000-0000-0000-F292-4801BC42AE9B", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "Student with Disability", "10809", "3593", "33.20", "1807", "16.70", "50.30", "115", "1.10", "3.20", "1692", "15.70", "47.10", "1786", "16.50", "49.70", "4238", "39.20", "1903", "17.60" ]
+, [ "row-bthk~45r5~k5s5", "00000000-0000-0000-C334-BC02C65FE733", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "Student with Disability", "10809", "4054", "37.50", "1934", "17.90", "47.70", "117", "1.10", "2.90", "1817", "16.80", "44.80", "2120", "19.60", "52.30", "3830", "35.40", "1902", "17.60" ]
+, [ "row-eu7i_39y5.t9t2", "00000000-0000-0000-4BC0-1B858535EC70", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "Student with Disability", "10871", "4751", "43.70", "2075", "19.10", "43.70", "113", "1.00", "2.40", "1962", "18.00", "41.30", "2676", "24.60", "56.30", "2367", "21.80", "2507", "23.10" ]
+, [ "row-5x77.5ezz~p3ws", "00000000-0000-0000-18AC-808579D7EC07", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "Student with Disability", "10871", "4890", "45.00", "2097", "19.30", "42.90", "113", "1.00", "2.30", "1984", "18.30", "40.60", "2793", "25.70", "57.10", "2239", "20.60", "2506", "23.10" ]
+, [ "row-3zuk.tamn_y6rq", "00000000-0000-0000-B230-8FCC93976B0C", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "Student with Disability", "10859", "5238", "48.20", "2142", "19.70", "40.90", "113", "1.00", "2.20", "2029", "18.70", "38.70", "3096", "28.50", "59.10", "1510", "13.90", "2776", "25.60" ]
+, [ "row-9qrz-6ajd~undq", "00000000-0000-0000-2838-8BD6E5E3BDD7", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "Student with Disability", "12115", "4438", "36.60", "2135", "17.60", "48.10", "151", "1.20", "3.40", "1984", "16.40", "44.70", "2303", "19.00", "51.90", "4914", "40.60", "1918", "15.80" ]
+, [ "row-cxit-q64v_mh9s", "00000000-0000-0000-D75A-8380CDA2D09B", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "Student with Disability", "12115", "4902", "40.50", "2251", "18.60", "45.90", "154", "1.30", "3.10", "2097", "17.30", "42.80", "2651", "21.90", "54.10", "4456", "36.80", "1918", "15.80" ]
+, [ "row-xh4e~9u7y~2c3j", "00000000-0000-0000-27BA-CF9960DE6BD9", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "Student with Disability", "12067", "5683", "47.10", "2406", "19.90", "42.30", "152", "1.30", "2.70", "2254", "18.70", "39.70", "3277", "27.20", "57.70", "2406", "19.90", "2679", "22.20" ]
+, [ "row-pixg_fsxe-nj9b", "00000000-0000-0000-6252-E081C98DE3F9", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "Student with Disability", "12067", "5803", "48.10", "2428", "20.10", "41.80", "152", "1.30", "2.60", "2276", "18.90", "39.20", "3375", "28.00", "58.20", "2293", "19.00", "2677", "22.20" ]
+, [ "row-2env_5j9w.xmag", "00000000-0000-0000-D8B3-EAA3A83D94AF", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "Student with Disability", "12468", "4691", "37.60", "2609", "20.90", "55.60", "164", "1.30", "3.50", "2445", "19.60", "52.10", "2082", "16.70", "44.40", "4998", "40.10", "1916", "15.40" ]
+, [ "row-yhdb_3jb6-n8c2", "00000000-0000-0000-215B-21BA6B685F98", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "Student with Disability", "12468", "5125", "41.10", "2727", "21.90", "53.20", "165", "1.30", "3.20", "2562", "20.50", "50.00", "2398", "19.20", "46.80", "4577", "36.70", "1916", "15.40" ]
+, [ "row-8q6n_u9nu.jn7j", "00000000-0000-0000-5E95-0D01E45772C1", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "Asian", "9807", "6501", "66.30", "5261", "53.60", "80.90", "3277", "33.40", "50.40", "1984", "20.20", "30.50", "1245", "12.70", "19.20", "1934", "19.70", "1281", "13.10" ]
+, [ "row-7abj_xp86-cima", "00000000-0000-0000-E9D2-C4AE4C14575D", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "Asian", "9807", "7377", "75.20", "5618", "57.30", "76.20", "3369", "34.40", "45.70", "2249", "22.90", "30.50", "1767", "18.00", "24.00", "582", "5.90", "1705", "17.40" ]
+, [ "row-5r46-nr6y~ff4r", "00000000-0000-0000-680F-628B21DF14A1", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "Asian", "9807", "7599", "77.50", "5691", "58.00", "74.90", "3380", "34.50", "44.50", "2311", "23.60", "30.40", "1921", "19.60", "25.30", "202", "2.10", "1856", "18.90" ]
+, [ "row-wn2k.tzhj~q93w", "00000000-0000-0000-15C4-1972883DA0DF", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "Asian", "10554", "7082", "67.10", "6062", "57.40", "85.60", "3601", "34.10", "50.80", "2461", "23.30", "34.80", "1025", "9.70", "14.50", "2014", "19.10", "1257", "11.90" ]
+, [ "row-54sr-fgjh~54f4", "00000000-0000-0000-9833-B531F36C9FB0", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "Asian", "10554", "8054", "76.30", "6554", "62.10", "81.40", "3743", "35.50", "46.50", "2811", "26.60", "34.90", "1521", "14.40", "18.90", "627", "5.90", "1633", "15.50" ]
+, [ "row-a32y~uurf-s4t6", "00000000-0000-0000-D13D-A5A15D0C4827", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "Asian", "10554", "8260", "78.30", "6632", "62.80", "80.30", "3754", "35.60", "45.40", "2878", "27.30", "34.80", "1649", "15.60", "20.00", "278", "2.60", "1765", "16.70" ]
+, [ "row-678k_y3c9_mu37", "00000000-0000-0000-F9FC-7DD08B392F19", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "Asian", "10403", "7467", "71.80", "6568", "63.10", "88.00", "4274", "41.10", "57.20", "2294", "22.10", "30.70", "899", "8.60", "12.00", "1867", "17.90", "999", "9.60" ]
+, [ "row-5wd2~36vq~de7n", "00000000-0000-0000-F15A-0583B238D0B5", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "Asian", "10403", "8372", "80.50", "7062", "67.90", "84.40", "4410", "42.40", "52.70", "2652", "25.50", "31.70", "1310", "12.60", "15.60", "562", "5.40", "1340", "12.90" ]
+, [ "row-wfsk.qy4s_7w9t", "00000000-0000-0000-7104-6CABF5D6A728", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "Asian", "10408", "8569", "82.30", "7150", "68.70", "83.40", "4420", "42.50", "51.60", "2730", "26.20", "31.90", "1419", "13.60", "16.60", "223", "2.10", "1434", "13.80" ]
+, [ "row-gyhd~657j-j9vm", "00000000-0000-0000-8C2C-1C2E75170086", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "Asian", "10897", "8075", "74.10", "7188", "66.00", "89.00", "4729", "43.40", "58.60", "2459", "22.60", "30.50", "887", "8.10", "11.00", "1946", "17.90", "808", "7.40" ]
+, [ "row-rees_5668.6fvq", "00000000-0000-0000-2DDD-60A998CA075C", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "Asian", "10897", "8455", "77.60", "7414", "68.00", "87.70", null, null, null, null, null, null, "1043", "9.60", "12.30", "1566", "14.40", "808", "7.40" ]
+, [ "row-raea.ihvp_kig4", "00000000-0000-0000-3172-4248C8881A26", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "Asian", "10891", "8999", "82.60", "7719", "70.90", "85.80", "4860", "44.60", "54.00", "2859", "26.30", "31.80", "1280", "11.80", "14.20", "537", "4.90", "1100", "10.10" ]
+, [ "row-3gq5_tp5i-y9gd", "00000000-0000-0000-51FC-952B889F4E8B", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "Asian", "10884", "9221", "84.70", "7829", "71.90", "84.90", "4864", "44.70", "52.70", "2965", "27.20", "32.20", "1392", "12.80", "15.10", "293", "2.70", "1191", "10.90" ]
+, [ "row-5yae.b3u3.ivbh", "00000000-0000-0000-49CC-49BF9F57E5DD", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "Asian", "11075", "8511", "76.80", "7640", "69.00", "89.80", "4850", "43.80", "57.00", "2790", "25.20", "32.80", "871", "7.90", "10.20", "1711", "15.40", "656", "5.90" ]
+, [ "row-e7ke~3t6q_9w32", "00000000-0000-0000-6A18-0EF13A00A5D2", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "Asian", "11075", "8876", "80.10", "7867", "71.00", "88.60", "4903", "44.30", "55.20", "2964", "26.80", "33.40", "1009", "9.10", "11.40", "1346", "12.20", "656", "5.90" ]
+, [ "row-9hgj-7m8z.7pmv", "00000000-0000-0000-FDD2-905A04C97E45", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "Asian", "11124", "9403", "84.50", "8200", "73.70", "87.20", "4991", "44.90", "53.10", "3209", "28.80", "34.10", "1203", "10.80", "12.80", "453", "4.10", "1026", "9.20" ]
+, [ "row-2zdk.vc3w~27jj", "00000000-0000-0000-6786-EF350A540548", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "Asian", "11094", "9592", "86.50", "8299", "74.80", "86.50", "4997", "45.00", "52.10", "3302", "29.80", "34.40", "1293", "11.70", "13.50", "194", "1.70", "1066", "9.60" ]
+, [ "row-jw6s_8swn.ts2m", "00000000-0000-0000-FE3F-83B66A903FC0", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "Asian", "11368", "8969", "78.90", "8337", "73.30", "93.00", "5083", "44.70", "56.70", "3254", "28.60", "36.30", "632", "5.60", "7.00", "1554", "13.70", "710", "6.20" ]
+, [ "row-wkzv-jggg_uqkh", "00000000-0000-0000-8B09-AF461E11643B", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "Asian", "11368", "9364", "82.40", "8603", "75.70", "91.90", "5146", "45.30", "55.00", "3457", "30.40", "36.90", "761", "6.70", "8.10", "1163", "10.20", "706", "6.20" ]
+, [ "row-fk2j_w887_scd8", "00000000-0000-0000-49F6-5C9F2A8875D6", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "Asian", "11445", "9785", "85.50", "8880", "77.60", "90.80", "5188", "45.30", "53.00", "3692", "32.30", "37.70", "905", "7.90", "9.20", "441", "3.90", "1018", "8.90" ]
+, [ "row-p2f4.ywav_tren", "00000000-0000-0000-9571-70644F5BF33C", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "Asian", "11445", "9851", "86.10", "8921", "77.90", "90.60", "5188", "45.30", "52.70", "3733", "32.60", "37.90", "930", "8.10", "9.40", "390", "3.40", "1001", "8.70" ]
+, [ "row-urds.5b2j.egdf", "00000000-0000-0000-FF2C-19C1D4617451", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "Asian", "11371", "9976", "87.70", "8996", "79.10", "90.20", "5195", "45.70", "52.10", "3801", "33.40", "38.10", "980", "8.60", "9.80", "129", "1.10", "1063", "9.30" ]
+, [ "row-5dxh.k46j~q92b", "00000000-0000-0000-A0C3-2120CB5E4812", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "Asian", "11967", "9494", "79.30", "9006", "75.30", "94.90", "5384", "45.00", "56.70", "3622", "30.30", "38.20", "488", "4.10", "5.10", "1642", "13.70", "716", "6.00" ]
+, [ "row-bthr~92w6_umcu", "00000000-0000-0000-A510-773FCEF18F2E", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "Asian", "11967", "9925", "82.90", "9324", "77.90", "93.90", "5439", "45.40", "54.80", "3885", "32.50", "39.10", "601", "5.00", "6.10", "1218", "10.20", "711", "5.90" ]
+, [ "row-xqb5_g7ti_m8zd", "00000000-0000-0000-8588-452517C657AB", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "Asian", "11880", "10220", "86.00", "9494", "79.90", "92.90", "5434", "45.70", "53.20", "4060", "34.20", "39.70", "726", "6.10", "7.10", "400", "3.40", "1081", "9.10" ]
+, [ "row-hsq7~j9tk.xq3m", "00000000-0000-0000-332C-6B897DF09277", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "Asian", "11880", "10297", "86.70", "9536", "80.30", "92.60", "5435", "45.70", "52.80", "4101", "34.50", "39.80", "761", "6.40", "7.40", "342", "2.90", "1064", "9.00" ]
+, [ "row-ah5q_wiha.edgy", "00000000-0000-0000-449A-07A83EC10B39", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "Asian", "11925", "10443", "87.60", "9653", "80.90", "92.40", "5464", "45.80", "52.30", "4189", "35.10", "40.10", "790", "6.60", "7.60", "192", "1.60", "1099", "9.20" ]
+, [ "row-zxux-i89h.qezn", "00000000-0000-0000-32E1-AC102188C9B2", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "Asian", "12514", "9900", "79.10", "9774", "78.10", "98.70", "5685", "45.40", "57.40", "4089", "32.70", "41.30", "126", "1.00", "1.30", "1821", "14.60", "700", "5.60" ]
+, [ "row-3fbf_zhw8-b62h", "00000000-0000-0000-A42F-D40EDD3B68C3", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "Asian", "12514", "10272", "82.10", "10132", "81.00", "98.60", "5720", "45.70", "55.70", "4412", "35.30", "43.00", "140", "1.10", "1.40", "1453", "11.60", "698", "5.60" ]
+, [ "row-2wt8-yghi.mt53", "00000000-0000-0000-95F6-E8A942A93821", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "Asian", "12480", "10628", "85.20", "10465", "83.90", "98.50", "5752", "46.10", "54.10", "4713", "37.80", "44.30", "163", "1.30", "1.50", "690", "5.50", "990", "7.90" ]
+, [ "row-wah9~dxb3-3n5a", "00000000-0000-0000-5C64-9980EAD04ABA", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "Asian", "12480", "10726", "85.90", "10560", "84.60", "98.50", "5759", "46.10", "53.70", "4801", "38.50", "44.80", "166", "1.30", "1.50", "600", "4.80", "982", "7.90" ]
+, [ "row-gkc5-9qte~v5px", "00000000-0000-0000-6E2E-D67D63C7A14A", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "Asian", "12483", "10847", "86.90", "10670", "85.50", "98.40", "5761", "46.20", "53.10", "4909", "39.30", "45.30", "177", "1.40", "1.60", "335", "2.70", "1076", "8.60" ]
+, [ "row-5zu5.ikcb_smd9", "00000000-0000-0000-3D7C-A33C1B3AE291", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "Asian", "13126", "10160", "77.40", "10039", "76.50", "98.80", "5849", "44.60", "57.60", "4190", "31.90", "41.20", "121", "0.90", "1.20", "2034", "15.50", "835", "6.40" ]
+, [ "row-p2c7_vw84~xptf", "00000000-0000-0000-E6A2-ABA28A9E2479", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "Asian", "13126", "10648", "81.10", "10505", "80.00", "98.70", "5923", "45.10", "55.60", "4582", "34.90", "43.00", "143", "1.10", "1.30", "1552", "11.80", "832", "6.30" ]
+, [ "row-vutw~nwz6_bjkx", "00000000-0000-0000-2472-FD9D8EA50641", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "Asian", "13105", "11049", "84.30", "10874", "83.00", "98.40", "5955", "45.40", "53.90", "4919", "37.50", "44.50", "175", "1.30", "1.60", "727", "5.50", "1205", "9.20" ]
+, [ "row-dkzn-aa9c-9bav", "00000000-0000-0000-98C4-749B1FD26958", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "Asian", "13105", "11134", "85.00", "10956", "83.60", "98.40", "5958", "45.50", "53.50", "4998", "38.10", "44.90", "178", "1.40", "1.60", "644", "4.90", "1203", "9.20" ]
+, [ "row-cbcq~z25b-tttq", "00000000-0000-0000-FC5A-1D274CBEB4BE", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "Asian", "13107", "11272", "86.00", "11077", "84.50", "98.30", "5960", "45.50", "52.90", "5117", "39.00", "45.40", "195", "1.50", "1.70", "418", "3.20", "1281", "9.80" ]
+, [ "row-zw43~v5ny~4hbh", "00000000-0000-0000-E79F-58AEAE7F5734", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "Asian", "12967", "10300", "79.40", "10179", "78.50", "98.80", "5866", "45.20", "57.00", "4313", "33.30", "41.90", "121", "0.90", "1.20", "1834", "14.10", "756", "5.80" ]
+, [ "row-xwpb.x352_5tsk", "00000000-0000-0000-8984-640ADB3196FE", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "Asian", "12967", "10706", "82.60", "10559", "81.40", "98.60", "5927", "45.70", "55.40", "4632", "35.70", "43.30", "147", "1.10", "1.40", "1428", "11.00", "756", "5.80" ]
+, [ "row-ia35.qza7.tcdd", "00000000-0000-0000-F87D-CAB01DE499DF", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "Asian", "12904", "11093", "86.00", "10900", "84.50", "98.30", "5955", "46.10", "53.70", "4945", "38.30", "44.60", "193", "1.50", "1.70", "637", "4.90", "1050", "8.10" ]
+, [ "row-jw6k~p6nf.vqfr", "00000000-0000-0000-D913-DAFA6B0D6CED", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "Asian", "12904", "11159", "86.50", "10961", "84.90", "98.20", "5957", "46.20", "53.40", "5004", "38.80", "44.80", "198", "1.50", "1.80", "578", "4.50", "1043", "8.10" ]
+, [ "row-h7je-76hr~zqff", "00000000-0000-0000-E8D4-8E39F97D9907", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "Asian", "12834", "10583", "82.50", "10466", "81.50", "98.90", "5997", "46.70", "56.70", "4469", "34.80", "42.20", "117", "0.90", "1.10", "1602", "12.50", "589", "4.60" ]
+, [ "row-z46v-qpxx_zaqp", "00000000-0000-0000-0D70-4593906B7A16", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "Asian", "12834", "10910", "85.00", "10774", "83.90", "98.80", "6042", "47.10", "55.40", "4732", "36.90", "43.40", "136", "1.10", "1.20", "1275", "9.90", "589", "4.60" ]
+, [ "row-c5mg_fxjw~87tr", "00000000-0000-0000-AF23-4AC86D5ECEC1", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "Black", "26107", "10477", "40.10", "5481", "21.00", "52.30", "1308", "5.00", "12.50", "4173", "16.00", "39.80", "5000", "19.20", "47.70", "8750", "33.50", "5956", "22.80" ]
+, [ "row-jrqv-qyr9-wdxb", "00000000-0000-0000-C3B9-354C0FD05336", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "Black", "26107", "12990", "49.80", "5941", "22.80", "45.70", "1332", "5.10", "10.30", "4609", "17.70", "35.50", "7065", "27.10", "54.40", "3734", "14.30", "8058", "30.90" ]
+, [ "row-gxqc_6unt-ijmq", "00000000-0000-0000-2695-7AC88D18908E", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "Black", "26107", "13815", "52.90", "6072", "23.30", "44.00", "1335", "5.10", "9.70", "4737", "18.10", "34.30", "7797", "29.90", "56.40", "1832", "7.00", "9015", "34.50" ]
+, [ "row-zkp6.9cin_t9mi", "00000000-0000-0000-5817-CA0C8E32945D", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "Black", "25676", "11012", "42.90", "6413", "25.00", "58.20", "1287", "5.00", "11.70", "5126", "20.00", "46.50", "4616", "18.00", "41.90", "8777", "34.20", "4786", "18.60" ]
+, [ "row-5tfe_yee2-9yw7", "00000000-0000-0000-FA24-C7EBA3B45098", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "Black", "25676", "13662", "53.20", "7070", "27.50", "51.70", "1328", "5.20", "9.70", "5742", "22.40", "42.00", "6699", "26.10", "49.00", "3843", "15.00", "6678", "26.00" ]
+, [ "row-z9kq~c33s-5vtk", "00000000-0000-0000-F42F-B1DF6300D2E3", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "Black", "25676", "14564", "56.70", "7212", "28.10", "49.50", "1330", "5.20", "9.10", "5882", "22.90", "40.40", "7459", "29.10", "51.20", "2058", "8.00", "7422", "28.90" ]
+, [ "row-79n6-g993.gqnq", "00000000-0000-0000-1F7F-6A0EBE520C3A", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "Black", "25579", "12220", "47.80", "7409", "29.00", "60.60", "1784", "7.00", "14.60", "5625", "22.00", "46.00", "4811", "18.80", "39.40", "8574", "33.50", "3949", "15.40" ]
+, [ "row-rthu_h7qj~sy3a", "00000000-0000-0000-A8F7-A24F531D171B", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "Black", "25579", "14886", "58.20", "8142", "31.80", "54.70", "1805", "7.10", "12.10", "6337", "24.80", "42.60", "6744", "26.40", "45.30", "3646", "14.30", "5673", "22.20" ]
+, [ "row-3p23.swu8.vbkc", "00000000-0000-0000-E8C7-EC07E08B9AA6", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "Black", "25624", "15801", "61.70", "8342", "32.60", "52.80", "1805", "7.00", "11.40", "6537", "25.50", "41.40", "7459", "29.10", "47.20", "1778", "6.90", "6317", "24.70" ]
+, [ "row-4w6e_7k7m.qsm8", "00000000-0000-0000-1F36-744A8E558558", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "Black", "25791", "13258", "51.40", "8460", "32.80", "63.80", "2000", "7.80", "15.10", "6460", "25.00", "48.70", "4798", "18.60", "36.20", "8323", "32.30", "3390", "13.10" ]
+, [ "row-ud6t.u7qr.x6w3", "00000000-0000-0000-C2F6-2BCF4F9B0AAC", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "Black", "25791", "14428", "55.90", "8878", "34.40", "61.50", null, null, null, null, null, null, "5551", "21.50", "38.50", "7154", "27.70", "3389", "13.10" ]
+, [ "row-929j-ej33~jjv3", "00000000-0000-0000-898A-182D9D4D96D3", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "Black", "26051", "16053", "61.60", "9317", "35.80", "58.00", "2022", "7.80", "12.60", "7295", "28.00", "45.40", "6736", "25.90", "42.00", "3137", "12.00", "4879", "18.70" ]
+, [ "row-ea9n-e9v6_yitc", "00000000-0000-0000-0E49-1D8400D8B9B9", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "Black", "26040", "17028", "65.40", "9545", "36.70", "56.10", "2023", "7.80", "11.90", "7522", "28.90", "44.20", "7483", "28.70", "43.90", "1814", "7.00", "5586", "21.50" ]
+, [ "row-weeh.m9bf~ngfw", "00000000-0000-0000-9B48-7DDA0888D3F0", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "Black", "26634", "14346", "53.90", "9943", "37.30", "69.30", "1931", "7.30", "13.50", "8012", "30.10", "55.80", "4403", "16.50", "30.70", "7732", "29.00", "3190", "12.00" ]
+, [ "row-67xj-want_5d6k", "00000000-0000-0000-2E60-A12A4ED618D3", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "Black", "26634", "15398", "57.80", "10336", "38.80", "67.10", "1946", "7.30", "12.60", "8390", "31.50", "54.50", "5062", "19.00", "32.90", "6681", "25.10", "3190", "12.00" ]
+, [ "row-ayy4-5y9b-9uyh", "00000000-0000-0000-DAD0-2F14C3FBBCCE", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "Black", "26950", "16991", "63.00", "10890", "40.40", "64.10", "1961", "7.30", "11.50", "8929", "33.10", "52.60", "6101", "22.60", "35.90", "2730", "10.10", "5386", "20.00" ]
+, [ "row-uj8j~auie~rm6x", "00000000-0000-0000-CF98-F07F22AEA54C", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "Black", "26885", "17939", "66.70", "11131", "41.40", "62.00", "1961", "7.30", "10.90", "9170", "34.10", "51.10", "6808", "25.30", "38.00", "1387", "5.20", "5748", "21.40" ]
+, [ "row-jitv~8vcf~dhx6", "00000000-0000-0000-39DF-B96388732B23", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "Black", "26618", "14872", "55.90", "11136", "41.80", "74.90", "1971", "7.40", "13.30", "9165", "34.40", "61.60", "3736", "14.00", "25.10", "7112", "26.70", "3390", "12.70" ]
+, [ "row-f8ht-hub8~gsmj", "00000000-0000-0000-435F-ECBDE88098D8", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "Black", "26618", "16124", "60.60", "11695", "43.90", "72.50", "1984", "7.50", "12.30", "9711", "36.50", "60.20", "4429", "16.60", "27.50", "5881", "22.10", "3369", "12.70" ]
+, [ "row-j87g~bvqz.6i4a", "00000000-0000-0000-E12C-FAE7B050B382", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "Black", "26903", "17591", "65.40", "12257", "45.60", "69.70", "1990", "7.40", "11.30", "10267", "38.20", "58.40", "5334", "19.80", "30.30", "2527", "9.40", "5181", "19.30" ]
+, [ "row-4y4j_5z3u.spw6", "00000000-0000-0000-2854-E3A973D790E1", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "Black", "26903", "17905", "66.60", "12348", "45.90", "69.00", "1990", "7.40", "11.10", "10358", "38.50", "57.80", "5557", "20.70", "31.00", "2286", "8.50", "5090", "18.90" ]
+, [ "row-6g7w.8bkj_ppnc", "00000000-0000-0000-0E55-912760721DCC", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "Black", "26435", "18483", "69.90", "12501", "47.30", "67.60", "1988", "7.50", "10.80", "10513", "39.80", "56.90", "5982", "22.60", "32.40", "978", "3.70", "5349", "20.20" ]
+, [ "row-37e3_9gzj_z2cu", "00000000-0000-0000-6973-4FD9EFAD25E2", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "Black", "26332", "14570", "55.30", "12084", "45.90", "82.90", "1809", "6.90", "12.40", "10275", "39.00", "70.50", "2486", "9.40", "17.10", "7307", "27.70", "3412", "13.00" ]
+, [ "row-yzw2~tkgk_inyz", "00000000-0000-0000-A768-434B5494126E", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "Black", "26332", "15896", "60.40", "12760", "48.50", "80.30", "1825", "6.90", "11.50", "10935", "41.50", "68.80", "3136", "11.90", "19.70", "6035", "22.90", "3367", "12.80" ]
+, [ "row-43ed.scyq-af56", "00000000-0000-0000-1083-511FF3B1CF06", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "Black", "26183", "17212", "65.70", "13358", "51.00", "77.60", "1823", "7.00", "10.60", "11535", "44.10", "67.00", "3854", "14.70", "22.40", "2243", "8.60", "5290", "20.20" ]
+, [ "row-a4e3~73ic_brpj", "00000000-0000-0000-2C5E-6DE9D79264DA", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "Black", "26183", "17474", "66.70", "13452", "51.40", "77.00", "1823", "7.00", "10.40", "11629", "44.40", "66.60", "4022", "15.40", "23.00", "2044", "7.80", "5231", "20.00" ]
+, [ "row-mhwh_sgjf_289b", "00000000-0000-0000-B4AF-E3B5601E2135", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "Black", "26101", "18000", "69.00", "13681", "52.40", "76.00", "1828", "7.00", "10.20", "11853", "45.40", "65.90", "4319", "16.50", "24.00", "1127", "4.30", "5461", "20.90" ]
+, [ "row-mdsg.zb4b.vj9f", "00000000-0000-0000-C929-98ED7FE0118E", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "Black", "25736", "14152", "55.00", "13304", "51.70", "94.00", "1679", "6.50", "11.90", "11625", "45.20", "82.10", "848", "3.30", "6.00", "7607", "29.60", "3087", "12.00" ]
+, [ "row-cweb_v2f3~cyrb", "00000000-0000-0000-2B0B-88FE1D4034F8", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "Black", "25736", "15391", "59.80", "14384", "55.90", "93.50", "1688", "6.60", "11.00", "12696", "49.30", "82.50", "1007", "3.90", "6.50", "6401", "24.90", "3072", "11.90" ]
+, [ "row-f7zm_q9zv~m83f", "00000000-0000-0000-73A9-151A5C924D04", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "Black", "25576", "16665", "65.20", "15405", "60.20", "92.40", "1690", "6.60", "10.10", "13715", "53.60", "82.30", "1260", "4.90", "7.60", "3264", "12.80", "4304", "16.80" ]
+, [ "row-qnis.c8mg.2bwz", "00000000-0000-0000-C14B-94BBC7220A1D", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "Black", "25576", "17006", "66.50", "15675", "61.30", "92.20", "1690", "6.60", "9.90", "13985", "54.70", "82.20", "1331", "5.20", "7.80", "2966", "11.60", "4272", "16.70" ]
+, [ "row-c9ik~s338.qcqk", "00000000-0000-0000-2EB2-72683A0CC9C6", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "Black", "25507", "17641", "69.20", "16148", "63.30", "91.50", "1690", "6.60", "9.60", "14458", "56.70", "82.00", "1493", "5.90", "8.50", "1643", "6.40", "4621", "18.10" ]
+, [ "row-42rd_pcu6~8huc", "00000000-0000-0000-1674-53DC4CF5C106", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "Black", "24463", "13689", "56.00", "12839", "52.50", "93.80", "1618", "6.60", "11.80", "11221", "45.90", "82.00", "850", "3.50", "6.20", "7299", "29.80", "2676", "10.90" ]
+, [ "row-wxcb.uwtt.5bte", "00000000-0000-0000-2070-F302F382AD69", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "Black", "24463", "14966", "61.20", "13922", "56.90", "93.00", "1626", "6.60", "10.90", "12296", "50.30", "82.20", "1044", "4.30", "7.00", "6049", "24.70", "2674", "10.90" ]
+, [ "row-dmeu.jtcj-q6nk", "00000000-0000-0000-B907-DC8D19C6FC8F", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "Black", "24303", "16327", "67.20", "15004", "61.70", "91.90", "1626", "6.70", "10.00", "13378", "55.00", "81.90", "1323", "5.40", "8.10", "3173", "13.10", "3825", "15.70" ]
+, [ "row-smr3-ksdi.ucgc", "00000000-0000-0000-5749-23C187A3CB6A", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "Black", "24303", "16653", "68.50", "15255", "62.80", "91.60", "1627", "6.70", "9.80", "13628", "56.10", "81.80", "1398", "5.80", "8.40", "2868", "11.80", "3811", "15.70" ]
+, [ "row-6cdb_6ch3_rfrp", "00000000-0000-0000-1A83-3B80F98EC5ED", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "Black", "24291", "17327", "71.30", "15747", "64.80", "90.90", "1627", "6.70", "9.40", "14120", "58.10", "81.50", "1580", "6.50", "9.10", "1698", "7.00", "4241", "17.50" ]
+, [ "row-ti65-niaf_s7fc", "00000000-0000-0000-25CB-06FA1F0247E7", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "Black", "22588", "13292", "58.80", "12260", "54.30", "92.20", "1565", "6.90", "11.80", "10695", "47.30", "80.50", "1032", "4.60", "7.80", "6513", "28.80", "2163", "9.60" ]
+, [ "row-fvqj_h9em~ktkd", "00000000-0000-0000-7A0F-F9FA09644E20", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "Black", "22588", "14408", "63.80", "13192", "58.40", "91.60", "1583", "7.00", "11.00", "11609", "51.40", "80.60", "1216", "5.40", "8.40", "5402", "23.90", "2163", "9.60" ]
+, [ "row-rbc4_x6ht~7dbz", "00000000-0000-0000-498F-E4D772F90FD4", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "Black", "22414", "15758", "70.30", "14250", "63.60", "90.40", "1585", "7.10", "10.10", "12665", "56.50", "80.40", "1508", "6.70", "9.60", "2608", "11.60", "3202", "14.30" ]
+, [ "row-cbnh_ivsm-2vgp", "00000000-0000-0000-EFEF-0D4C9F926CFA", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "Black", "22414", "15962", "71.20", "14402", "64.30", "90.20", "1585", "7.10", "9.90", "12817", "57.20", "80.30", "1560", "7.00", "9.80", "2415", "10.80", "3193", "14.20" ]
+, [ "row-8n7b.mxys-qifu", "00000000-0000-0000-895D-BF259B4BB77A", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "Black", "22062", "13603", "61.70", "12618", "57.20", "92.80", "1530", "6.90", "11.20", "11088", "50.30", "81.50", "985", "4.50", "7.20", "5866", "26.60", "2056", "9.30" ]
+, [ "row-wccc~p2v3.4757", "00000000-0000-0000-6FB9-4ADE68FBBEC0", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "Black", "22062", "14437", "65.40", "13281", "60.20", "92.00", "1538", "7.00", "10.70", "11743", "53.20", "81.30", "1156", "5.20", "8.00", "5037", "22.80", "2056", "9.30" ]
+, [ "row-kyhf.jyq9-w9gk", "00000000-0000-0000-6113-80CA067CD4CE", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "Hispanic", "25890", "9682", "37.40", "5283", "20.40", "54.60", "1361", "5.30", "14.10", "3922", "15.10", "40.50", "4407", "17.00", "45.50", "8275", "32.00", "6983", "27.00" ]
+, [ "row-8pu7-7ai3-4pd4", "00000000-0000-0000-7FC9-EB08905CF9DC", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "Hispanic", "25890", "12273", "47.40", "5861", "22.60", "47.80", "1407", "5.40", "11.50", "4454", "17.20", "36.30", "6447", "24.90", "52.50", "3399", "13.10", "8945", "34.60" ]
+, [ "row-xks2~nm39.iygz", "00000000-0000-0000-6B41-032C5ED60383", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "Hispanic", "25890", "13091", "50.60", "6020", "23.30", "46.00", "1414", "5.50", "10.80", "4606", "17.80", "35.20", "7149", "27.60", "54.60", "1584", "6.10", "9839", "38.00" ]
+, [ "row-qn2u~ieq9-bq4r", "00000000-0000-0000-1E6B-19FA19C5CC6C", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "Hispanic", "26372", "10580", "40.10", "6173", "23.40", "58.30", "1374", "5.20", "13.00", "4799", "18.20", "45.40", "4418", "16.80", "41.80", "8798", "33.40", "6105", "23.10" ]
+, [ "row-f556_v6hu-9jwt", "00000000-0000-0000-AA7D-A2F0476A7B87", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "Hispanic", "26372", "13369", "50.70", "7006", "26.60", "52.40", "1443", "5.50", "10.80", "5563", "21.10", "41.60", "6470", "24.50", "48.40", "3781", "14.30", "8016", "30.40" ]
+, [ "row-x9us_c2um_62c4", "00000000-0000-0000-BF2A-C7B87CC84C7B", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "Hispanic", "26372", "14322", "54.30", "7198", "27.30", "50.30", "1451", "5.50", "10.10", "5747", "21.80", "40.10", "7231", "27.40", "50.50", "2023", "7.70", "8723", "33.10" ]
+, [ "row-vrpc_9fkf-q88y", "00000000-0000-0000-75F3-94B4C7CCEFF7", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "Hispanic", "26774", "11656", "43.50", "7109", "26.60", "61.00", "2067", "7.70", "17.70", "5042", "18.80", "43.30", "4547", "17.00", "39.00", "8947", "33.40", "5426", "20.30" ]
+, [ "row-4272~e47m_v4vu", "00000000-0000-0000-3B13-2C09F89E4C91", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "Hispanic", "26774", "14591", "54.50", "7951", "29.70", "54.50", "2116", "7.90", "14.50", "5835", "21.80", "40.00", "6640", "24.80", "45.50", "3675", "13.70", "7314", "27.30" ]
+, [ "row-9h3q_vpfw~vpwc", "00000000-0000-0000-B757-02B46BD11036", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "Hispanic", "26838", "15620", "58.20", "8196", "30.50", "52.50", "2119", "7.90", "13.60", "6077", "22.60", "38.90", "7424", "27.70", "47.50", "1792", "6.70", "7905", "29.50" ]
+, [ "row-rz9s~9xth_rms8", "00000000-0000-0000-ED2C-EAE7F676CDEE", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "Hispanic", "27812", "13537", "48.70", "8673", "31.20", "64.10", "2510", "9.00", "18.50", "6163", "22.20", "45.50", "4864", "17.50", "35.90", "8729", "31.40", "4891", "17.60" ]
+, [ "row-uvsr_ufme~ihc7", "00000000-0000-0000-D63D-3EAF4F82C6F9", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "Hispanic", "27812", "14811", "53.30", "9146", "32.90", "61.80", null, null, null, null, null, null, "5669", "20.40", "38.30", "7456", "26.80", "4891", "17.60" ]
+, [ "row-sdc9.srvz.erbw", "00000000-0000-0000-3C04-E64CF6F331EF", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "Hispanic", "28082", "16680", "59.40", "9777", "34.80", "58.60", "2556", "9.10", "15.30", "7221", "25.70", "43.30", "6903", "24.60", "41.40", "3152", "11.20", "6426", "22.90" ]
+, [ "row-xw83~xms3_9b8w", "00000000-0000-0000-AC33-0472BBA65B73", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "Hispanic", "28142", "17739", "63.00", "10059", "35.70", "56.70", "2559", "9.10", "14.40", "7500", "26.70", "42.30", "7680", "27.30", "43.30", "1922", "6.80", "7078", "25.20" ]
+, [ "row-prxq~gyf8.kbwe", "00000000-0000-0000-CE7F-5C4369FE9642", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "Hispanic", "29192", "15135", "51.80", "10414", "35.70", "68.80", "2514", "8.60", "16.60", "7900", "27.10", "52.20", "4720", "16.20", "31.20", "8282", "28.40", "4388", "15.00" ]
+, [ "row-yetb-fkch~icep", "00000000-0000-0000-1535-BBBAAA1113C0", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "Hispanic", "29192", "16330", "55.90", "10861", "37.20", "66.50", "2538", "8.70", "15.50", "8323", "28.50", "51.00", "5468", "18.70", "33.50", "7089", "24.30", "4387", "15.00" ]
+, [ "row-tb3a-cy7z.rkgh", "00000000-0000-0000-735D-839758EE20B6", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "Hispanic", "29546", "18298", "61.90", "11660", "39.50", "63.70", "2566", "8.70", "14.00", "9094", "30.80", "49.70", "6638", "22.50", "36.30", "2938", "9.90", "6583", "22.30" ]
+, [ "row-x3hq.r3gw~6t8e", "00000000-0000-0000-AC51-CEB277478EBC", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "Hispanic", "29506", "19302", "65.40", "11958", "40.50", "62.00", "2569", "8.70", "13.30", "9389", "31.80", "48.60", "7344", "24.90", "38.00", "1513", "5.10", "6966", "23.60" ]
+, [ "row-8e7j-pcfq-znfm", "00000000-0000-0000-6ABE-E6B8B2FEE11F", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "Hispanic", "29721", "16007", "53.90", "12104", "40.70", "75.60", "2573", "8.70", "16.10", "9531", "32.10", "59.50", "3903", "13.10", "24.40", "7882", "26.50", "4528", "15.20" ]
+, [ "row-prr4.sanz_ym5a", "00000000-0000-0000-CB33-7EA4BB849546", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "Hispanic", "29721", "17289", "58.20", "12689", "42.70", "73.40", "2592", "8.70", "15.00", "10097", "34.00", "58.40", "4600", "15.50", "26.60", "6628", "22.30", "4501", "15.10" ]
+, [ "row-4wsu~4cnt~ctkt", "00000000-0000-0000-BD56-CFEEFC98E0AB", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "Hispanic", "30093", "18991", "63.10", "13408", "44.60", "70.60", "2609", "8.70", "13.70", "10799", "35.90", "56.90", "5583", "18.60", "29.40", "2700", "9.00", "6700", "22.30" ]
+, [ "row-4cej-7pdn-xxfz", "00000000-0000-0000-CF53-B465A8E42D74", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "Hispanic", "30093", "19330", "64.20", "13525", "44.90", "70.00", "2609", "8.70", "13.50", "10916", "36.30", "56.50", "5805", "19.30", "30.00", "2451", "8.10", "6598", "21.90" ]
+, [ "row-4g2q-26dq-db5u", "00000000-0000-0000-2B8E-C233D4B789FF", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "Hispanic", "29614", "19943", "67.30", "13753", "46.40", "69.00", "2596", "8.80", "13.00", "11157", "37.70", "55.90", "6190", "20.90", "31.00", "1066", "3.60", "6974", "23.50" ]
+, [ "row-qnh8-bbt8_w4wy", "00000000-0000-0000-03E1-DFD60EFD1518", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "Hispanic", "30811", "16602", "53.90", "13924", "45.20", "83.90", "2590", "8.40", "15.60", "11334", "36.80", "68.30", "2678", "8.70", "16.10", "8424", "27.30", "4757", "15.40" ]
+, [ "row-6uxc.qhm8~i4a4", "00000000-0000-0000-EE65-D443CB585B8F", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "Hispanic", "30811", "18192", "59.00", "14806", "48.10", "81.40", "2622", "8.50", "14.40", "12184", "39.50", "67.00", "3386", "11.00", "18.60", "6895", "22.40", "4703", "15.30" ]
+, [ "row-qxin~8atc-w9ct", "00000000-0000-0000-CD59-190E649333E1", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "Hispanic", "30527", "19638", "64.30", "15452", "50.60", "78.70", "2576", "8.40", "13.10", "12876", "42.20", "65.60", "4186", "13.70", "21.30", "2390", "7.80", "7077", "23.20" ]
+, [ "row-htww.cv35~avh2", "00000000-0000-0000-A111-FB5A975A5726", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "Hispanic", "30527", "19984", "65.50", "15619", "51.20", "78.20", "2577", "8.40", "12.90", "13042", "42.70", "65.30", "4365", "14.30", "21.80", "2143", "7.00", "6984", "22.90" ]
+, [ "row-n548-7wbp-sjb8", "00000000-0000-0000-3252-60BAF5FE2D99", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "Hispanic", "30613", "20701", "67.60", "16061", "52.50", "77.60", "2618", "8.60", "12.60", "13443", "43.90", "64.90", "4640", "15.20", "22.40", "1176", "3.80", "7251", "23.70" ]
+, [ "row-c6q6_hvjh.96ff", "00000000-0000-0000-C534-FA743A484CF5", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "Hispanic", "30770", "16212", "52.70", "15340", "49.90", "94.60", "2604", "8.50", "16.10", "12736", "41.40", "78.60", "872", "2.80", "5.40", "9112", "29.60", "4537", "14.70" ]
+, [ "row-xsfh~2uy5.gmnm", "00000000-0000-0000-C1CE-DC26E4C325B5", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "Hispanic", "30770", "17680", "57.50", "16603", "54.00", "93.90", "2628", "8.50", "14.90", "13975", "45.40", "79.00", "1077", "3.50", "6.10", "7681", "25.00", "4520", "14.70" ]
+, [ "row-vux8-p8qc-w4p9", "00000000-0000-0000-BB4D-C76053FD530C", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "Hispanic", "30641", "19295", "63.00", "17934", "58.50", "92.90", "2635", "8.60", "13.70", "15299", "49.90", "79.30", "1361", "4.40", "7.10", "3786", "12.40", "6223", "20.30" ]
+, [ "row-e8a9-vw2s.8sb5", "00000000-0000-0000-02F6-59CCD933BC60", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "Hispanic", "30641", "19682", "64.20", "18261", "59.60", "92.80", "2635", "8.60", "13.40", "15626", "51.00", "79.40", "1421", "4.60", "7.20", "3430", "11.20", "6201", "20.20" ]
+, [ "row-4qk3_nswc~sfip", "00000000-0000-0000-FBCC-1E827D001FD3", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "Hispanic", "30596", "20402", "66.70", "18796", "61.40", "92.10", "2635", "8.60", "12.90", "16161", "52.80", "79.20", "1606", "5.20", "7.90", "1927", "6.30", "6673", "21.80" ]
+, [ "row-tjm2.ecni.aivz", "00000000-0000-0000-5F9F-6E0B8C4FC077", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "Hispanic", "30331", "16268", "53.60", "15297", "50.40", "94.00", "2627", "8.70", "16.10", "12670", "41.80", "77.90", "971", "3.20", "6.00", "9064", "29.90", "4170", "13.70" ]
+, [ "row-2e4k-85cy~e7kt", "00000000-0000-0000-E1A5-000298D47C0B", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "Hispanic", "30331", "17879", "58.90", "16698", "55.10", "93.40", "2660", "8.80", "14.90", "14038", "46.30", "78.50", "1181", "3.90", "6.60", "7481", "24.70", "4168", "13.70" ]
+, [ "row-2jse-cj2t~8eya", "00000000-0000-0000-A5D1-4E39B98F6EE1", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "Hispanic", "30142", "19716", "65.40", "18213", "60.40", "92.40", "2674", "8.90", "13.60", "15539", "51.60", "78.80", "1503", "5.00", "7.60", "3710", "12.30", "5722", "19.00" ]
+, [ "row-cj7d_k8hp_5csi", "00000000-0000-0000-30EA-C955A208F24B", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "Hispanic", "30142", "20136", "66.80", "18563", "61.60", "92.20", "2674", "8.90", "13.30", "15889", "52.70", "78.90", "1573", "5.20", "7.80", "3309", "11.00", "5707", "18.90" ]
+, [ "row-kw7b~t6y8_wvyd", "00000000-0000-0000-3707-1719CAF83D1C", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "Hispanic", "30114", "20909", "69.40", "19155", "63.60", "91.60", "2675", "8.90", "12.80", "16480", "54.70", "78.80", "1754", "5.80", "8.40", "1939", "6.40", "6208", "20.60" ]
+, [ "row-rpsx~6bvv-x8nn", "00000000-0000-0000-080B-D1D3D1233ACD", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "Hispanic", "29049", "16448", "56.60", "15269", "52.60", "92.80", "2580", "8.90", "15.70", "12689", "43.70", "77.10", "1179", "4.10", "7.20", "8293", "28.50", "3688", "12.70" ]
+, [ "row-xzsd_y7z8-qnrj", "00000000-0000-0000-9520-C74DFAAB8A0B", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "Hispanic", "29049", "17845", "61.40", "16474", "56.70", "92.30", "2610", "9.00", "14.60", "13864", "47.70", "77.70", "1371", "4.70", "7.70", "6902", "23.80", "3686", "12.70" ]
+, [ "row-xf4t-8dmb_5uey", "00000000-0000-0000-85E9-96EBE08F8F88", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "Hispanic", "28883", "19476", "67.40", "17716", "61.30", "91.00", "2616", "9.10", "13.40", "15100", "52.30", "77.50", "1760", "6.10", "9.00", "3262", "11.30", "5276", "18.30" ]
+, [ "row-egbn.97hx~avav", "00000000-0000-0000-0A51-FF99F7CE2BA2", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "Hispanic", "28883", "19789", "68.50", "17961", "62.20", "90.80", "2617", "9.10", "13.20", "15344", "53.10", "77.50", "1828", "6.30", "9.20", "2966", "10.30", "5262", "18.20" ]
+, [ "row-w8xy.bjkr-hvr2", "00000000-0000-0000-B52A-E6AEF9142FC2", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "Hispanic", "28842", "17411", "60.40", "16201", "56.20", "93.10", "2698", "9.40", "15.50", "13503", "46.80", "77.60", "1210", "4.20", "6.90", "7352", "25.50", "3439", "11.90" ]
+, [ "row-mz6a.fehp.b5ik", "00000000-0000-0000-2421-86325E0F80A6", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "Hispanic", "28842", "18452", "64.00", "17019", "59.00", "92.20", "2713", "9.40", "14.70", "14306", "49.60", "77.50", "1433", "5.00", "7.80", "6322", "21.90", "3438", "11.90" ]
+, [ "row-ttqf.ecu6~u9xe", "00000000-0000-0000-E5D4-126FE6E917A3", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "White", "12104", "7750", "64.00", "6116", "50.50", "78.90", "3287", "27.20", "42.40", "2829", "23.40", "36.50", "1644", "13.60", "21.20", "2053", "17.00", "2065", "17.10" ]
+, [ "row-zm3f_deba_mhjq", "00000000-0000-0000-7D27-A26817F3C687", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "White", "12104", "8567", "70.80", "6444", "53.20", "75.20", "3325", "27.50", "38.80", "3119", "25.80", "36.40", "2137", "17.70", "24.90", "578", "4.80", "2604", "21.50" ]
+, [ "row-ps9g-eg7j.myyu", "00000000-0000-0000-E004-3935851AE928", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "White", "12104", "8729", "72.10", "6494", "53.70", "74.40", "3328", "27.50", "38.10", "3166", "26.20", "36.30", "2257", "18.60", "25.90", "258", "2.10", "2745", "22.70" ]
+, [ "row-e59s_judx.y6hj", "00000000-0000-0000-11E5-BFCB2D3867DF", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "White", "11633", "7776", "66.80", "6391", "54.90", "82.20", "3155", "27.10", "40.60", "3236", "27.80", "41.60", "1387", "11.90", "17.80", "2038", "17.50", "1542", "13.30" ]
+, [ "row-ueuv~5whf~rjpu", "00000000-0000-0000-4335-16095DC85AAB", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "White", "11633", "8622", "74.10", "6782", "58.30", "78.70", "3212", "27.60", "37.30", "3570", "30.70", "41.40", "1872", "16.10", "21.70", "636", "5.50", "2015", "17.30" ]
+, [ "row-gnxg.zx7a.p6eu", "00000000-0000-0000-BA34-4AF9CCCBBF27", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "White", "11633", "8783", "75.50", "6826", "58.70", "77.70", "3214", "27.60", "36.60", "3612", "31.00", "41.10", "1989", "17.10", "22.60", "348", "3.00", "2130", "18.30" ]
+, [ "row-m7rq-w2nu_2f8k", "00000000-0000-0000-1BF7-AD77E922014F", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "White", "10440", "7202", "69.00", "6029", "57.70", "83.70", "3102", "29.70", "43.10", "2927", "28.00", "40.60", "1173", "11.20", "16.30", "1784", "17.10", "1272", "12.20" ]
+, [ "row-wn8c~ac3u.2ej2", "00000000-0000-0000-4106-906360958714", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "White", "10440", "7896", "75.60", "6372", "61.00", "80.70", "3132", "30.00", "39.70", "3240", "31.00", "41.00", "1524", "14.60", "19.30", "563", "5.40", "1685", "16.10" ]
+, [ "row-ic8v.6vrw-d33t", "00000000-0000-0000-7F16-5D10BCE27F5D", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "White", "10464", "8053", "77.00", "6425", "61.40", "79.80", "3132", "29.90", "38.90", "3293", "31.50", "40.90", "1628", "15.60", "20.20", "295", "2.80", "1761", "16.80" ]
+, [ "row-d6n6~9juj-h2dv", "00000000-0000-0000-CA0C-70DF9CBEFE22", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "White", "10004", "7155", "71.50", "6123", "61.20", "85.60", "3297", "33.00", "46.10", "2826", "28.20", "39.50", "1032", "10.30", "14.40", "1701", "17.00", "976", "9.80" ]
+, [ "row-3psg~hyr5.b5r6", "00000000-0000-0000-1D7A-71638E9CB347", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "White", "10004", "7486", "74.80", "6318", "63.20", "84.40", null, null, null, null, null, null, "1169", "11.70", "15.60", "1370", "13.70", "976", "9.80" ]
+, [ "row-98yy-rj7t.atfz", "00000000-0000-0000-B313-5A7C6EAFD713", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "White", "10092", "7892", "78.20", "6496", "64.40", "82.30", "3343", "33.10", "42.40", "3153", "31.20", "40.00", "1396", "13.80", "17.70", "495", "4.90", "1282", "12.70" ]
+, [ "row-vfx5.s2rd_gec5", "00000000-0000-0000-BD44-BBA1C8940943", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "White", "10091", "8040", "79.70", "6560", "65.00", "81.60", "3343", "33.10", "41.60", "3217", "31.90", "40.00", "1480", "14.70", "18.40", "410", "4.10", "1345", "13.30" ]
+, [ "row-n24x.5k3g_268y", "00000000-0000-0000-7A50-4D00BEA45F64", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "White", "9900", "7316", "73.90", "6270", "63.30", "85.70", "3163", "31.90", "43.20", "3107", "31.40", "42.50", "1046", "10.60", "14.30", "1467", "14.80", "829", "8.40" ]
+, [ "row-y3vz-wzka.3kan", "00000000-0000-0000-F725-698BB1CE1522", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "White", "9900", "7571", "76.50", "6421", "64.90", "84.80", "3176", "32.10", "41.90", "3245", "32.80", "42.90", "1150", "11.60", "15.20", "1214", "12.30", "828", "8.40" ]
+, [ "row-cj3c-mxyz~8jkd", "00000000-0000-0000-C1A9-6727F5981E2B", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "White", "9962", "7940", "79.70", "6615", "66.40", "83.30", "3201", "32.10", "40.30", "3414", "34.30", "43.00", "1325", "13.30", "16.70", "491", "4.90", "1143", "11.50" ]
+, [ "row-fnj5~2st3-banv", "00000000-0000-0000-2C24-A4EF1AEFF616", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "White", "9959", "8074", "81.10", "6671", "67.00", "82.60", "3201", "32.10", "39.60", "3470", "34.80", "43.00", "1403", "14.10", "17.40", "311", "3.10", "1182", "11.90" ]
+, [ "row-ba8h-3n7g~dmrd", "00000000-0000-0000-E926-BD73DFEA8847", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "White", "10077", "7606", "75.50", "6736", "66.80", "88.60", "3187", "31.60", "41.90", "3549", "35.20", "46.70", "870", "8.60", "11.40", "1447", "14.40", "806", "8.00" ]
+, [ "row-aj8a~pyhr-3dn5", "00000000-0000-0000-4668-6E7BB8224F34", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "White", "10077", "7881", "78.20", "6896", "68.40", "87.50", "3208", "31.80", "40.70", "3688", "36.60", "46.80", "985", "9.80", "12.50", "1176", "11.70", "802", "8.00" ]
+, [ "row-fjye_2bew-kacw", "00000000-0000-0000-AD11-428F8D675013", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "White", "10155", "8201", "80.80", "7096", "69.90", "86.50", "3216", "31.70", "39.20", "3880", "38.20", "47.30", "1105", "10.90", "13.50", "495", "4.90", "1117", "11.00" ]
+, [ "row-4cgb-jibb~b2er", "00000000-0000-0000-DCDC-67A915C10181", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "White", "10155", "8250", "81.20", "7117", "70.10", "86.30", "3216", "31.70", "39.00", "3901", "38.40", "47.30", "1133", "11.20", "13.70", "461", "4.50", "1102", "10.90" ]
+, [ "row-w9uj_9vg4~neyv", "00000000-0000-0000-07FE-6DB9AFAF8323", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "White", "10077", "8342", "82.80", "7162", "71.10", "85.90", "3214", "31.90", "38.50", "3948", "39.20", "47.30", "1180", "11.70", "14.10", "280", "2.80", "1136", "11.30" ]
+, [ "row-xryz_ay3c_cmdq", "00000000-0000-0000-DA0E-4A5FE875713E", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "White", "9915", "7491", "75.60", "6905", "69.60", "92.20", "3131", "31.60", "41.80", "3774", "38.10", "50.40", "586", "5.90", "7.80", "1450", "14.60", "784", "7.90" ]
+, [ "row-ipqa~9nnd~qsfk", "00000000-0000-0000-128E-770FE7E773CF", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "White", "9915", "7818", "78.90", "7134", "72.00", "91.30", "3147", "31.70", "40.30", "3987", "40.20", "51.00", "684", "6.90", "8.70", "1133", "11.40", "780", "7.90" ]
+, [ "row-ju5y-5ai9.hsnb", "00000000-0000-0000-7A42-EC0A63CDC1AB", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "White", "9890", "8074", "81.60", "7263", "73.40", "90.00", "3146", "31.80", "39.00", "4117", "41.60", "51.00", "811", "8.20", "10.00", "431", "4.40", "1100", "11.10" ]
+, [ "row-qc2w~sffi.jta6", "00000000-0000-0000-0507-58E4B430EB1B", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "White", "9890", "8135", "82.30", "7293", "73.70", "89.60", "3146", "31.80", "38.70", "4147", "41.90", "51.00", "842", "8.50", "10.40", "392", "4.00", "1079", "10.90" ]
+, [ "row-9663-jjc6-pvnc", "00000000-0000-0000-C555-C59A3D1F251D", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "White", "9914", "8233", "83.00", "7363", "74.30", "89.40", "3155", "31.80", "38.30", "4208", "42.40", "51.10", "870", "8.80", "10.60", "266", "2.70", "1113", "11.20" ]
+, [ "row-b8wk_92d7_h7w2", "00000000-0000-0000-6ADC-E75846F6AA8C", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "White", "10189", "7657", "75.10", "7376", "72.40", "96.30", "3161", "31.00", "41.30", "4215", "41.40", "55.00", "281", "2.80", "3.70", "1661", "16.30", "745", "7.30" ]
+, [ "row-gna5_jxwm-27k8", "00000000-0000-0000-434B-B665ADDEE196", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "White", "10189", "7957", "78.10", "7638", "75.00", "96.00", "3181", "31.20", "40.00", "4457", "43.70", "56.00", "319", "3.10", "4.00", "1364", "13.40", "744", "7.30" ]
+, [ "row-zy6b~8kkj.nuwp", "00000000-0000-0000-4F47-7F7DD402A273", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "White", "10159", "8244", "81.10", "7882", "77.60", "95.60", "3189", "31.40", "38.70", "4693", "46.20", "56.90", "362", "3.60", "4.40", "670", "6.60", "1014", "10.00" ]
+, [ "row-ia4t-uha6_b5f7", "00000000-0000-0000-1257-5CED26CCF135", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "White", "10159", "8287", "81.60", "7911", "77.90", "95.50", "3190", "31.40", "38.50", "4721", "46.50", "57.00", "376", "3.70", "4.50", "632", "6.20", "1010", "9.90" ]
+, [ "row-p7px_ixt2.87uf", "00000000-0000-0000-F598-90E0ABA52D3B", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "White", "10142", "8371", "82.50", "7972", "78.60", "95.20", "3191", "31.50", "38.10", "4781", "47.10", "57.10", "399", "3.90", "4.80", "396", "3.90", "1066", "10.50" ]
+, [ "row-kfq9_6ks2_zvut", "00000000-0000-0000-7660-FAD0CA037357", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "White", "10282", "7856", "76.40", "7565", "73.60", "96.30", "3249", "31.60", "41.40", "4316", "42.00", "54.90", "291", "2.80", "3.70", "1688", "16.40", "610", "5.90" ]
+, [ "row-46nh.mtnm.fmxq", "00000000-0000-0000-4117-92519DCD0743", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "White", "10282", "8191", "79.70", "7864", "76.50", "96.00", "3267", "31.80", "39.90", "4597", "44.70", "56.10", "327", "3.20", "4.00", "1357", "13.20", "610", "5.90" ]
+, [ "row-xtj4~7vju_tu3a", "00000000-0000-0000-1F2A-54D7EBC4A0E7", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "White", "10256", "8482", "82.70", "8094", "78.90", "95.40", "3270", "31.90", "38.60", "4824", "47.00", "56.90", "388", "3.80", "4.60", "726", "7.10", "894", "8.70" ]
+, [ "row-tfkj.baxx_f2ez", "00000000-0000-0000-47FB-07B829C05873", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "White", "10256", "8543", "83.30", "8137", "79.30", "95.20", "3270", "31.90", "38.30", "4867", "47.50", "57.00", "406", "4.00", "4.80", "669", "6.50", "890", "8.70" ]
+, [ "row-x9ef~2sut_f5b4", "00000000-0000-0000-D577-BF082F4FFC38", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "White", "10257", "8661", "84.40", "8229", "80.20", "95.00", "3271", "31.90", "37.80", "4958", "48.30", "57.20", "432", "4.20", "5.00", "455", "4.40", "963", "9.40" ]
+, [ "row-rgjs_ayhi~dhuh", "00000000-0000-0000-A188-CF8F011EE6DF", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "White", "10342", "8050", "77.80", "7723", "74.70", "95.90", "3187", "30.80", "39.60", "4536", "43.90", "56.30", "327", "3.20", "4.10", "1568", "15.20", "631", "6.10" ]
+, [ "row-vkkg.z4wv-e9a2", "00000000-0000-0000-C423-244C2A746532", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "White", "10342", "8342", "80.70", "7974", "77.10", "95.60", "3211", "31.00", "38.50", "4763", "46.10", "57.10", "368", "3.60", "4.40", "1276", "12.30", "631", "6.10" ]
+, [ "row-q7su_6bnt-wauz", "00000000-0000-0000-4D94-34D74D99DD8A", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "White", "10420", "8745", "83.90", "8286", "79.50", "94.80", "3221", "30.90", "36.80", "5065", "48.60", "57.90", "459", "4.40", "5.20", "635", "6.10", "877", "8.40" ]
+, [ "row-5w9i~hzwg~5ji2", "00000000-0000-0000-4FA7-0226A6766B2A", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "White", "10420", "8794", "84.40", "8324", "79.90", "94.70", "3221", "30.90", "36.60", "5103", "49.00", "58.00", "470", "4.50", "5.30", "589", "5.70", "874", "8.40" ]
+, [ "row-miz2~ackk~663e", "00000000-0000-0000-28A1-4365D08C9651", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "White", "9896", "7925", "80.10", "7641", "77.20", "96.40", "3209", "32.40", "40.50", "4432", "44.80", "55.90", "284", "2.90", "3.60", "1330", "13.40", "514", "5.20" ]
+, [ "row-rdyj~742e_fhtr", "00000000-0000-0000-17F8-8336793CE3A5", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "White", "9896", "8119", "82.00", "7817", "79.00", "96.30", "3216", "32.50", "39.60", "4601", "46.50", "56.70", "302", "3.10", "3.70", "1138", "11.50", "513", "5.20" ]
+, [ "row-g79g_ccux~xmbg", "00000000-0000-0000-59BC-DB4187D7EB62", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "Female", "36069", "19424", "53.90", "12455", "34.50", "64.10", "5147", "14.30", "26.50", "7308", "20.30", "37.60", "6985", "19.40", "36.00", "9075", "25.20", "6699", "18.60" ]
+, [ "row-vqe9-mxy9.qxat", "00000000-0000-0000-6D1C-8A3A4F075BF3", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "Female", "36069", "22680", "62.90", "13210", "36.60", "58.20", "5243", "14.50", "23.10", "7967", "22.10", "35.10", "9501", "26.30", "41.90", "3265", "9.10", "8931", "24.80" ]
+, [ "row-3wgn-v6pq.ffdr", "00000000-0000-0000-AE9D-E629338EC84A", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "Female", "36069", "23594", "65.40", "13365", "37.10", "56.60", "5249", "14.60", "22.20", "8116", "22.50", "34.40", "10292", "28.50", "43.60", "1302", "3.60", "9893", "27.40" ]
+, [ "row-cbcb~kc6w-fx4a", "00000000-0000-0000-4B73-57C7215404E2", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "Female", "37040", "20565", "55.50", "13986", "37.80", "68.00", "5155", "13.90", "25.10", "8831", "23.80", "42.90", "6601", "17.80", "32.10", "9628", "26.00", "5810", "15.70" ]
+, [ "row-nec7_3n66.45tx", "00000000-0000-0000-F965-40E27B20B443", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "Female", "37040", "24040", "64.90", "15053", "40.60", "62.60", "5283", "14.30", "22.00", "9770", "26.40", "40.60", "9116", "24.60", "37.90", "3818", "10.30", "7845", "21.20" ]
+, [ "row-ymis.p7rt.7k95", "00000000-0000-0000-DA80-C3F3179ECEC1", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "Female", "37040", "25053", "67.60", "15231", "41.10", "60.80", "5290", "14.30", "21.10", "9941", "26.80", "39.70", "9951", "26.90", "39.70", "1958", "5.30", "8590", "23.20" ]
+, [ "row-u7uz~famb.fgrw", "00000000-0000-0000-4BFA-4A80FCE656C4", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "Female", "36829", "21942", "59.60", "15381", "41.80", "70.10", "6375", "17.30", "29.10", "9006", "24.50", "41.00", "6561", "17.80", "29.90", "9253", "25.10", "4862", "13.20" ]
+, [ "row-btzy~8ifs.m46z", "00000000-0000-0000-5D91-1A235E4F5156", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "Female", "36829", "25263", "68.60", "16371", "44.50", "64.80", "6465", "17.60", "25.60", "9906", "26.90", "39.20", "8892", "24.10", "35.20", "3597", "9.80", "6782", "18.40" ]
+, [ "row-2ppu~9byx_yve5", "00000000-0000-0000-8E47-4AE7F7FE21E9", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "Female", "36893", "26309", "71.30", "16590", "45.00", "63.10", "6471", "17.50", "24.60", "10119", "27.40", "38.50", "9719", "26.30", "36.90", "1665", "4.50", "7383", "20.00" ]
+, [ "row-9xkz_xtsx~wufn", "00000000-0000-0000-6CB0-C3DF045BFCD4", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "Female", "37275", "23485", "63.00", "16970", "45.50", "72.30", "6910", "18.50", "29.40", "10060", "27.00", "42.80", "6515", "17.50", "27.70", "9040", "24.30", "4145", "11.10" ]
+, [ "row-4t88.kxwt-b4u8", "00000000-0000-0000-114F-07952A88CE42", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year August", "Female", "37275", "24990", "67.00", "17572", "47.10", "70.30", null, null, null, null, null, null, "7421", "19.90", "29.70", "7536", "20.20", "4144", "11.10" ]
+, [ "row-5fpi~eppi~ivnb", "00000000-0000-0000-4B2B-552CA3B026DC", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "Female", "37530", "27044", "72.10", "18281", "48.70", "67.60", "7024", "18.70", "26.00", "11257", "30.00", "41.60", "8763", "23.30", "32.40", "2984", "8.00", "5722", "15.20" ]
+, [ "row-b2gw_2if3~cqbh", "00000000-0000-0000-4325-91400AA348D4", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "Female", "37560", "28080", "74.80", "18546", "49.40", "66.00", "7025", "18.70", "25.00", "11521", "30.70", "41.00", "9534", "25.40", "34.00", "1815", "4.80", "6364", "16.90" ]
+, [ "row-aq4f-mz7q~ckaj", "00000000-0000-0000-373C-E05CC88E72DC", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "Female", "38282", "25056", "65.50", "18924", "49.40", "75.50", "6863", "17.90", "27.40", "12061", "31.50", "48.10", "6132", "16.00", "24.50", "8147", "21.30", "3751", "9.80" ]
+, [ "row-z7ea_ssaz_gndc", "00000000-0000-0000-279F-59CE518FE09A", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "Female", "38282", "26377", "68.90", "19419", "50.70", "73.60", "6892", "18.00", "26.10", "12527", "32.70", "47.50", "6958", "18.20", "26.40", "6830", "17.80", "3749", "9.80" ]
+, [ "row-hgbt.aey2_tcdy", "00000000-0000-0000-3A33-423818A8A829", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "Female", "38677", "28405", "73.40", "20237", "52.30", "71.20", "6947", "18.00", "24.50", "13290", "34.40", "46.80", "8168", "21.10", "28.80", "2674", "6.90", "6049", "15.60" ]
+, [ "row-wnyt.3rpp_t4e5", "00000000-0000-0000-5D28-17E6BEDBD14E", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "Female", "38643", "29365", "76.00", "20497", "53.00", "69.80", "6952", "18.00", "23.70", "13545", "35.10", "46.10", "8868", "22.90", "30.20", "1355", "3.50", "6371", "16.50" ]
+, [ "row-cc6f-jypb.dxwp", "00000000-0000-0000-CF98-3AC758309AC4", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "Female", "38750", "25946", "67.00", "20942", "54.00", "80.70", "7098", "18.30", "27.40", "13844", "35.70", "53.40", "5004", "12.90", "19.30", "7717", "19.90", "4045", "10.40" ]
+, [ "row-j6ka-jm7v-h2gn", "00000000-0000-0000-91DA-43B04B586E27", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "Female", "38750", "27409", "70.70", "21614", "55.80", "78.90", "7146", "18.40", "26.10", "14468", "37.30", "52.80", "5795", "15.00", "21.10", "6290", "16.20", "4009", "10.30" ]
+, [ "row-dibc_8wry_r8zv", "00000000-0000-0000-B740-DBD835A7576A", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "Female", "39010", "29185", "74.80", "22387", "57.40", "76.70", "7171", "18.40", "24.60", "15216", "39.00", "52.10", "6798", "17.40", "23.30", "2412", "6.20", "6024", "15.40" ]
+, [ "row-9phm.5ucs_da4n", "00000000-0000-0000-CDC5-8E4E7AA21F0A", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "Female", "39010", "29514", "75.70", "22491", "57.70", "76.20", "7171", "18.40", "24.30", "15320", "39.30", "51.90", "7023", "18.00", "23.80", "2164", "5.50", "5930", "15.20" ]
+, [ "row-275i~9i5k~x5sr", "00000000-0000-0000-B80F-73867099B763", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "Female", "38631", "30108", "77.90", "22675", "58.70", "75.30", "7174", "18.60", "23.80", "15501", "40.10", "51.50", "7433", "19.20", "24.70", "970", "2.50", "6178", "16.00" ]
+, [ "row-izaz.xfff_3dic", "00000000-0000-0000-80B3-5B87124884B6", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "Female", "38957", "25869", "66.40", "22648", "58.10", "87.50", "7065", "18.10", "27.30", "15583", "40.00", "60.20", "3221", "8.30", "12.50", "8175", "21.00", "4062", "10.40" ]
+, [ "row-3jxc_ir6b~6qp3", "00000000-0000-0000-D82A-2FF390C6F86A", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "Female", "38957", "27603", "70.90", "23580", "60.50", "85.40", "7117", "18.30", "25.80", "16463", "42.30", "59.60", "4023", "10.30", "14.60", "6497", "16.70", "4017", "10.30" ]
+, [ "row-gvzu.xi3m.58bc", "00000000-0000-0000-B9C6-676D9266ABE0", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "Female", "38756", "29137", "75.20", "24294", "62.70", "83.40", "7114", "18.40", "24.40", "17180", "44.30", "59.00", "4843", "12.50", "16.60", "2161", "5.60", "6233", "16.10" ]
+, [ "row-gzap.nae4~5dm9", "00000000-0000-0000-53D2-C9586E88421A", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "Female", "38756", "29452", "76.00", "24413", "63.00", "82.90", "7115", "18.40", "24.20", "17298", "44.60", "58.70", "5039", "13.00", "17.10", "1945", "5.00", "6140", "15.80" ]
+, [ "row-cntu.88ze.szzb", "00000000-0000-0000-56D3-7357E0744358", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "Female", "38787", "30063", "77.50", "24736", "63.80", "82.30", "7129", "18.40", "23.70", "17607", "45.40", "58.60", "5327", "13.70", "17.70", "1039", "2.70", "6393", "16.50" ]
+, [ "row-upin~sz25-89x7", "00000000-0000-0000-C260-11454362AD20", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "Female", "38751", "25415", "65.60", "24509", "63.20", "96.40", "7178", "18.50", "28.20", "17331", "44.70", "68.20", "906", "2.30", "3.60", "8790", "22.70", "3786", "9.80" ]
+, [ "row-sd4k.j3u5.sbv4", "00000000-0000-0000-1BDF-F71BF5D78D96", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "Female", "38751", "27039", "69.80", "25960", "67.00", "96.00", "7212", "18.60", "26.70", "18748", "48.40", "69.30", "1079", "2.80", "4.00", "7201", "18.60", "3770", "9.70" ]
+, [ "row-hmxj~ybcp-v52v", "00000000-0000-0000-EC4A-BDD91DE693A9", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "Female", "38643", "28671", "74.20", "27323", "70.70", "95.30", "7231", "18.70", "25.20", "20092", "52.00", "70.10", "1348", "3.50", "4.70", "3507", "9.10", "5358", "13.90" ]
+, [ "row-g6fv~zx6v.dvdv", "00000000-0000-0000-5105-C1D6080493A4", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "Female", "38643", "29069", "75.20", "27654", "71.60", "95.10", "7232", "18.70", "24.90", "20422", "52.80", "70.30", "1415", "3.70", "4.90", "3157", "8.20", "5320", "13.80" ]
+, [ "row-w55g_3jjz~tm72", "00000000-0000-0000-B1E3-96B7C4E040C2", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "Female", "38621", "29765", "77.10", "28209", "73.00", "94.80", "7233", "18.70", "24.30", "20976", "54.30", "70.50", "1556", "4.00", "5.20", "1788", "4.60", "5739", "14.90" ]
+, [ "row-y2hg~tdyf-3w39", "00000000-0000-0000-331B-2F1D5ED34E29", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "Female", "38582", "25671", "66.50", "24687", "64.00", "96.20", "7366", "19.10", "28.70", "17321", "44.90", "67.50", "984", "2.60", "3.80", "8694", "22.50", "3525", "9.10" ]
+, [ "row-iih5_8pzr.w8d7", "00000000-0000-0000-32D0-FEE9A5183FC4", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "Female", "38582", "27397", "71.00", "26212", "67.90", "95.70", "7431", "19.30", "27.10", "18781", "48.70", "68.60", "1185", "3.10", "4.30", "7002", "18.10", "3520", "9.10" ]
+, [ "row-i4y6_m32m.ppyr", "00000000-0000-0000-C8E9-62D65DA15A5D", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "Female", "38435", "29142", "75.80", "27688", "72.00", "95.00", "7449", "19.40", "25.60", "20239", "52.70", "69.40", "1454", "3.80", "5.00", "3467", "9.00", "5031", "13.10" ]
+, [ "row-hzna~wedc_zte8", "00000000-0000-0000-1425-C42CD7C31049", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "Female", "38435", "29557", "76.90", "28027", "72.90", "94.80", "7450", "19.40", "25.20", "20577", "53.50", "69.60", "1530", "4.00", "5.20", "3074", "8.00", "5012", "13.00" ]
+, [ "row-hxzr_spyz-dxmt", "00000000-0000-0000-9C42-A0431C94A1E1", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "Female", "38445", "30332", "78.90", "28642", "74.50", "94.40", "7452", "19.40", "24.60", "21190", "55.10", "69.90", "1690", "4.40", "5.60", "1884", "4.90", "5412", "14.10" ]
+, [ "row-swe5.rw6v-utc6", "00000000-0000-0000-03BF-690CAA5EA803", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "Female", "36844", "25388", "68.90", "24303", "66.00", "95.70", "7236", "19.60", "28.50", "17067", "46.30", "67.20", "1085", "2.90", "4.30", "7773", "21.10", "3178", "8.60" ]
+, [ "row-xffh~vqyg.7s5j", "00000000-0000-0000-141B-2CB1DBA88177", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "Female", "36844", "26836", "72.80", "25580", "69.40", "95.30", "7287", "19.80", "27.20", "18293", "49.60", "68.20", "1256", "3.40", "4.70", "6328", "17.20", "3178", "8.60" ]
+, [ "row-j9en_pvhh.cvtx", "00000000-0000-0000-47C8-31ECFC5BCC08", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "Female", "36747", "28618", "77.90", "27015", "73.50", "94.40", "7309", "19.90", "25.50", "19706", "53.60", "68.90", "1603", "4.40", "5.60", "2838", "7.70", "4565", "12.40" ]
+, [ "row-49te.633r-3wja", "00000000-0000-0000-0CAA-7D27C5FD606B", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "Female", "36747", "28901", "78.60", "27244", "74.10", "94.30", "7310", "19.90", "25.30", "19934", "54.20", "69.00", "1657", "4.50", "5.70", "2581", "7.00", "4542", "12.40" ]
+, [ "row-swj2~yxfp.rdya", "00000000-0000-0000-D560-2DCBC5C858F6", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "Female", "36143", "26418", "73.10", "25223", "69.80", "95.50", "7279", "20.10", "27.60", "17944", "49.60", "67.90", "1195", "3.30", "4.50", "6514", "18.00", "2740", "7.60" ]
+, [ "row-5jyz~wrcc~eaym", "00000000-0000-0000-FFF7-A789D56E6379", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "Female", "36143", "27436", "75.90", "26065", "72.10", "95.00", "7303", "20.20", "26.60", "18762", "51.90", "68.40", "1371", "3.80", "5.00", "5504", "15.20", "2740", "7.60" ]
+, [ "row-bdw3~n7t9~grvx", "00000000-0000-0000-FE14-B4E822ADE609", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "4 Year  June", "Male", "38074", "15079", "39.60", "9742", "25.60", "64.60", "4102", "10.80", "27.20", "5640", "14.80", "37.40", "5348", "14.00", "35.50", "12019", "31.60", "9638", "25.30" ]
+, [ "row-bd6u~shjb_mrzy", "00000000-0000-0000-C27C-25580845B80F", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "5 Year  June", "Male", "38074", "18637", "48.90", "10715", "28.10", "57.50", "4206", "11.00", "22.60", "6509", "17.10", "34.90", "7964", "20.90", "42.70", "5070", "13.30", "12451", "32.70" ]
+, [ "row-xhcg~3qda-shhv", "00000000-0000-0000-934C-447D93E75BDB", 0, 1542139135, null, 1542139135, null, "{ }", "2001", "6 Year", "Male", "38074", "19757", "51.90", "10973", "28.80", "55.50", "4224", "11.10", "21.40", "6749", "17.70", "34.20", "8888", "23.30", "45.00", "2594", "6.80", "13645", "35.80" ]
+, [ "row-pa3i.tj57.wcac", "00000000-0000-0000-AF67-896A01AA726B", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "4 Year  June", "Male", "37471", "15987", "42.70", "11112", "29.70", "69.50", "4280", "11.40", "26.80", "6832", "18.20", "42.70", "4888", "13.00", "30.60", "12093", "32.30", "7948", "21.20" ]
+, [ "row-qh29_nc2t-uzzz", "00000000-0000-0000-A5E9-65DC301C0507", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "5 Year  June", "Male", "37471", "19795", "52.80", "12425", "33.20", "62.80", "4462", "11.90", "22.50", "7963", "21.30", "40.20", "7509", "20.00", "37.90", "5109", "13.60", "10589", "28.30" ]
+, [ "row-izqx-fnpz_6gfb", "00000000-0000-0000-681F-62FEB088C07F", 0, 1542139135, null, 1542139135, null, "{ }", "2002", "6 Year", "Male", "37471", "21014", "56.10", "12706", "33.90", "60.50", "4478", "12.00", "21.30", "8228", "22.00", "39.20", "8447", "22.50", "40.20", "2771", "7.40", "11550", "30.80" ]
+, [ "row-8haz~npzn.5ymp", "00000000-0000-0000-2982-7082B463962E", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "4 Year  June", "Male", "37059", "17048", "46.00", "12064", "32.60", "70.80", "4981", "13.40", "29.20", "7083", "19.10", "41.50", "4984", "13.40", "29.20", "12100", "32.70", "6842", "18.50" ]
+, [ "row-rst7_js9z~v6ez", "00000000-0000-0000-4398-C71576D416B5", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "5 Year  June", "Male", "37059", "21002", "56.70", "13516", "36.50", "64.40", "5129", "13.80", "24.40", "8387", "22.60", "39.90", "7486", "20.20", "35.60", "4923", "13.30", "9313", "25.10" ]
+, [ "row-dysh~7k57~ffmp", "00000000-0000-0000-DD74-904148A68B84", 0, 1542139135, null, 1542139135, null, "{ }", "2003", "6 Year", "Male", "37134", "22277", "60.00", "13893", "37.40", "62.40", "5136", "13.80", "23.10", "8757", "23.60", "39.30", "8384", "22.60", "37.60", "2455", "6.60", "10134", "27.30" ]
+, [ "row-kr5k~zuzr-ses5", "00000000-0000-0000-367D-918019CBA789", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "4 Year  June", "Male", "37734", "18828", "49.90", "13682", "36.30", "72.70", "5682", "15.10", "30.20", "8000", "21.20", "42.50", "5146", "13.60", "27.30", "11804", "31.30", "5982", "15.90" ]
+, [ "row-m54a.v8cv_ui8x", "00000000-0000-0000-947F-504E57076C00", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "5 Year  June", "Male", "38095", "22915", "60.20", "15258", "40.10", "66.60", "5817", "15.30", "25.40", "9441", "24.80", "41.20", "7657", "20.10", "33.40", "4381", "11.50", "8064", "21.20" ]
+, [ "row-5uyb_wqcn.2h6i", "00000000-0000-0000-E3C4-692B86F1AFE3", 0, 1542139135, null, 1542139135, null, "{ }", "2004", "6 Year", "Male", "38101", "24299", "63.80", "15685", "41.20", "64.50", "5825", "15.30", "24.00", "9860", "25.90", "40.60", "8614", "22.60", "35.50", "2653", "7.00", "8942", "23.50" ]
+, [ "row-22xf-d7xj~4ubt", "00000000-0000-0000-CFC1-77C058F99975", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year  June", "Male", "39096", "20559", "52.60", "15565", "39.80", "75.70", "5649", "14.40", "27.50", "9916", "25.40", "48.20", "4993", "12.80", "24.30", "11196", "28.60", "5406", "13.80" ]
+, [ "row-4ffs-t8tj-b8x5", "00000000-0000-0000-5A42-FF6533D86D41", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "4 Year August", "Male", "39096", "22122", "56.60", "16299", "41.70", "73.70", "5725", "14.60", "25.90", "10574", "27.00", "47.80", "5822", "14.90", "26.30", "9634", "24.60", "5406", "13.80" ]
+, [ "row-7jda~evqf_qcyu", "00000000-0000-0000-47AB-628C6847F853", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "5 Year  June", "Male", "39470", "24583", "62.30", "17374", "44.00", "70.70", "5827", "14.80", "23.70", "11547", "29.30", "47.00", "7209", "18.30", "29.30", "3992", "10.10", "8210", "20.80" ]
+, [ "row-xwww_3756.n97r", "00000000-0000-0000-8A25-9827DD4CC5FF", 0, 1542139135, null, 1542139135, null, "{ }", "2005", "6 Year", "Male", "39351", "25912", "65.80", "17815", "45.30", "68.80", "5831", "14.80", "22.50", "11984", "30.50", "46.20", "8097", "20.60", "31.20", "2070", "5.30", "8719", "22.20" ]
+, [ "row-j8y5.ifxn_kfm5", "00000000-0000-0000-A1F2-3C166CF6E405", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year  June", "Male", "39596", "21840", "55.20", "17628", "44.50", "80.70", "5787", "14.60", "26.50", "11841", "29.90", "54.20", "4212", "10.60", "19.30", "10420", "26.30", "5452", "13.80" ]
+, [ "row-eqhw.crfy.qsh6", "00000000-0000-0000-3C49-260103914C12", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "4 Year August", "Male", "39596", "23597", "59.60", "18537", "46.80", "78.60", "5855", "14.80", "24.80", "12682", "32.00", "53.70", "5060", "12.80", "21.40", "8685", "21.90", "5431", "13.70" ]
+, [ "row-qe3m_3dgz.y6a6", "00000000-0000-0000-AD60-71E0A5AFE5ED", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year  June", "Male", "40146", "25751", "64.10", "19531", "48.60", "75.80", "5904", "14.70", "22.90", "13627", "33.90", "52.90", "6220", "15.50", "24.20", "3816", "9.50", "8078", "20.10" ]
+, [ "row-4sqy~fnsm-ig7k", "00000000-0000-0000-83D8-BBC164A6E124", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "5 Year August", "Male", "40146", "26194", "65.20", "19698", "49.10", "75.20", "5904", "14.70", "22.50", "13794", "34.40", "52.70", "6496", "16.20", "24.80", "3486", "8.70", "7946", "19.80" ]
+, [ "row-qmmw-5rpx.dxug", "00000000-0000-0000-33F7-B0214696255D", 0, 1542139135, null, 1542139135, null, "{ }", "2006", "6 Year", "Male", "39415", "27013", "68.50", "20014", "50.80", "74.10", "5890", "14.90", "21.80", "14124", "35.80", "52.30", "6999", "17.80", "25.90", "1514", "3.80", "8440", "21.40" ]
+, [ "row-8rh8-h7r6~m8ns", "00000000-0000-0000-18C5-0E0C620847AC", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year  June", "Male", "40519", "22511", "55.60", "19458", "48.00", "86.40", "5893", "14.50", "26.20", "13565", "33.50", "60.30", "3053", "7.50", "13.60", "10785", "26.60", "5678", "14.00" ]
+, [ "row-ptuh_t2xw~ygt7", "00000000-0000-0000-8AF5-DEB89353C5E5", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "4 Year August", "Male", "40519", "24466", "60.40", "20636", "50.90", "84.30", "5960", "14.70", "24.40", "14676", "36.20", "60.00", "3830", "9.50", "15.70", "8906", "22.00", "5614", "13.90" ]
+, [ "row-vg4d~rkma-8dp8", "00000000-0000-0000-420D-C1228A6212DD", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year  June", "Male", "40166", "26267", "65.40", "21476", "53.50", "81.80", "5909", "14.70", "22.50", "15567", "38.80", "59.30", "4791", "11.90", "18.20", "3346", "8.30", "8425", "21.00" ]
+, [ "row-q2k7.9zfz-pa6b", "00000000-0000-0000-CD1E-E59B066AD896", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "5 Year August", "Male", "40166", "26701", "66.50", "21691", "54.00", "81.20", "5910", "14.70", "22.10", "15781", "39.30", "59.10", "5010", "12.50", "18.80", "3017", "7.50", "8327", "20.70" ]
+, [ "row-6tg9-jxia~2njc", "00000000-0000-0000-0C79-4CC453851B93", 0, 1542139135, null, 1542139135, null, "{ }", "2007", "6 Year", "Male", "40211", "27588", "68.60", "22231", "55.30", "80.60", "5980", "14.90", "21.70", "16251", "40.40", "58.90", "5357", "13.30", "19.40", "1748", "4.30", "8647", "21.50" ]
+, [ "row-z2iz-j8gp-zgqc", "00000000-0000-0000-C2C1-9F882053D16F", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year  June", "Male", "40968", "22758", "55.60", "21515", "52.50", "94.50", "5997", "14.60", "26.40", "15518", "37.90", "68.20", "1243", "3.00", "5.50", "11595", "28.30", "5345", "13.00" ]
+, [ "row-6jqn_8r72.hdac", "00000000-0000-0000-ECFC-C9FF2DE4634B", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "4 Year August", "Male", "40968", "24534", "59.90", "23044", "56.20", "93.90", "6052", "14.80", "24.70", "16992", "41.50", "69.30", "1490", "3.60", "6.10", "9862", "24.10", "5326", "13.00" ]
+, [ "row-yw4z_n52n~ggxx", "00000000-0000-0000-320D-69D9952D507C", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year  June", "Male", "40719", "26461", "65.00", "24631", "60.50", "93.10", "6082", "14.90", "23.00", "18549", "45.60", "70.10", "1830", "4.50", "6.90", "4980", "12.20", "7281", "17.90" ]
+, [ "row-mc2e-u6ba.tj5w", "00000000-0000-0000-EFF2-1637903C822D", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "5 Year August", "Male", "40719", "26938", "66.20", "25024", "61.50", "92.90", "6089", "15.00", "22.60", "18935", "46.50", "70.30", "1914", "4.70", "7.10", "4543", "11.20", "7252", "17.80" ]
+, [ "row-q7nw~x86c_aws2", "00000000-0000-0000-8348-B0B66500FD03", 0, 1542139135, null, 1542139135, null, "{ }", "2008", "6 Year", "Male", "40612", "27810", "68.50", "25652", "63.20", "92.20", "6091", "15.00", "21.90", "19561", "48.20", "70.30", "2158", "5.30", "7.80", "2563", "6.30", "7806", "19.20" ]
+, [ "row-bmje.mvc9.ud5c", "00000000-0000-0000-F3D2-3312EC63E731", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year  June", "Male", "40139", "22565", "56.20", "21302", "53.10", "94.40", "6034", "15.00", "26.70", "15268", "38.00", "67.70", "1263", "3.10", "5.60", "11552", "28.80", "4845", "12.10" ]
+, [ "row-gw45.jxtg~dwwn", "00000000-0000-0000-2681-AC3DF18FF7F7", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "4 Year August", "Male", "40139", "24573", "61.20", "23046", "57.40", "93.80", "6104", "15.20", "24.80", "16942", "42.20", "68.90", "1527", "3.80", "6.20", "9575", "23.90", "4843", "12.10" ]
+, [ "row-d8st~urbr-chig", "00000000-0000-0000-E1DA-E631A5B7F2EF", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year  June", "Male", "39880", "26740", "67.10", "24783", "62.10", "92.70", "6135", "15.40", "22.90", "18648", "46.80", "69.70", "1957", "4.90", "7.30", "4926", "12.40", "6735", "16.90" ]
+, [ "row-y48g_i23q~qhzg", "00000000-0000-0000-3300-230F2AD82C84", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "5 Year August", "Male", "39880", "27224", "68.30", "25177", "63.10", "92.50", "6138", "15.40", "22.50", "19039", "47.70", "69.90", "2047", "5.10", "7.50", "4466", "11.20", "6719", "16.80" ]
+, [ "row-v77k~mpwq_3mc4", "00000000-0000-0000-F50F-BA4EFD5A5502", 0, 1542139135, null, 1542139135, null, "{ }", "2009", "6 Year", "Male", "39842", "28173", "70.70", "25874", "64.90", "91.80", "6140", "15.40", "21.80", "19734", "49.50", "70.00", "2299", "5.80", "8.20", "2657", "6.70", "7406", "18.60" ]
+, [ "row-437r~3zwf.c3pi", "00000000-0000-0000-CAD0-499D67222DA2", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year  June", "Male", "38680", "23061", "59.60", "21471", "55.50", "93.10", "6051", "15.60", "26.20", "15420", "39.90", "66.90", "1590", "4.10", "6.90", "10575", "27.30", "4133", "10.70" ]
+, [ "row-5zrw-qj8i_rbxv", "00000000-0000-0000-4C09-637E06AA0FB3", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "4 Year August", "Male", "38680", "24845", "64.20", "22983", "59.40", "92.50", "6134", "15.90", "24.70", "16849", "43.60", "67.80", "1862", "4.80", "7.50", "8799", "22.70", "4131", "10.70" ]
+, [ "row-s9mk_zgnv~kvdp", "00000000-0000-0000-A950-92A441013877", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year  June", "Male", "38495", "26876", "69.80", "24537", "63.70", "91.30", "6158", "16.00", "22.90", "18379", "47.70", "68.40", "2339", "6.10", "8.70", "4364", "11.30", "5963", "15.50" ]
+, [ "row-vj92_69yv_7st3", "00000000-0000-0000-5A0F-90245D04E3A7", 0, 1542139135, null, 1542139135, null, "{ }", "2010", "5 Year August", "Male", "38495", "27231", "70.70", "24810", "64.40", "91.10", "6160", "16.00", "22.60", "18650", "48.40", "68.50", "2421", "6.30", "8.90", "4021", "10.40", "5953", "15.50" ]
+, [ "row-j8xj.htq6~nbeq", "00000000-0000-0000-A99F-22D89BFA0818", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year  June", "Male", "38220", "23581", "61.70", "22165", "58.00", "94.00", "6285", "16.40", "26.70", "15880", "41.50", "67.30", "1416", "3.70", "6.00", "9805", "25.70", "3926", "10.30" ]
+, [ "row-w6ym_hh63_2qj7", "00000000-0000-0000-F4C0-6542B9F11BE2", 0, 1542139135, null, 1542139135, null, "{ }", "2011", "4 Year August", "Male", "38220", "24973", "65.30", "23299", "61.00", "93.30", "6336", "16.60", "25.40", "16963", "44.40", "67.90", "1674", "4.40", "6.70", "8423", "22.00", "3924", "10.30" ]
+ ]
+}
