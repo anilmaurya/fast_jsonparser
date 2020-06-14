@@ -2,7 +2,7 @@ sample_json = '{"a":"Alpha","b":true,"c":12345,"d":[true,[false,[-123456789,null
 
 require 'benchmark'
 require 'json'
-require './../fast_jsonparser'
+require './lib/fast_jsonparser/fast_jsonparser'
 require 'oj'
 
 def run_report(rep, json)

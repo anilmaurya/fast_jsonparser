@@ -2,7 +2,7 @@
 
 require 'benchmark'
 require 'json'
-require './../fast_jsonparser'
+require './lib/fast_jsonparser/fast_jsonparser'
 require 'oj'
 
 def run_report(rep, src)
@@ -25,11 +25,11 @@ def run_report(rep, src)
 end
 
 Benchmark.bm do |rep|
-  run_report(rep, './graduation.json')
+  run_report(rep, './benchmark/graduation.json')
 end
 
 Benchmark.bm do |rep|
-  run_report(rep, './virus-info.json')
+  run_report(rep, './benchmark/virus-info.json')
 end
 
 
