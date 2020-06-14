@@ -3,19 +3,22 @@
 ## Fastest Json parser for Ruby
 
 Ruby wrapper for [simdjson](https://simdjson.org) (Parsing gigabytes of JSON per second)
+
 Initial code imported from [simdjson_ruby](https://github.com/saka1/simdjson_ruby)
 
 Comparison with Oj gem & JSON.parse
 
 1. Parsing JSON from file
-
+```
 FastJsonparser.load(src) is 40% faster than Oj.load_file(src)
 FastJsonparser.load(src) is 155% faster than JSON.parse(File.read(src))
+```
 
 2. Parsing local JSON
-
+```
 FastJsonparser.parse(json) is 19% faster than Oj.load(json)
 FastJsonparser.parse(json) is 96% faster than JSON.parse(json)
+```
 
 ## Installation
 
