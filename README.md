@@ -4,6 +4,8 @@
 
 Ruby wrapper for [simdjson](https://simdjson.org) (Parsing gigabytes of JSON per second)
 
+The simdjson library uses commonly available SIMD instructions and microparallel algorithms to parse JSON 2.5 times faster than anything else out there.
+
 Initial code imported from [simdjson_ruby](https://github.com/saka1/simdjson_ruby)
 
 Comparison with [Oj](https://github.com/ohler55/oj) gem & JSON.parse
