@@ -84,6 +84,13 @@ FastJsonparser.parse('{"one": 1, "two": 2}')
 FastJsonparser.parse("123: 1") # FastJsonparser::ParseError (parse error)
 ```
 
+### Example
+
+```
+> sample_json = '{"a":"Alpha","b":true,"c":12345,"d":[true,[false,[-123456789,null],3.9676,["Something else.",false],null]],"e":{"zero":null,"one":1,"two":2,"three":[3],"four":[0,1,2,3,4]},"f":null,"h":{"a":{"b":{"c":{"d":{"e":{"f":{"g":null}}}}}}},"i":[[[[[[[null]]]]]]]}'
+> FastJsonparser.parse(sample_json)
+=> {:a=>"Alpha", :b=>true, :c=>12345, :d=>[true, [false, [-123456789, nil], 3.9676, ["Something else.", false], nil]], :e=>{:zero=>nil, :one=>1, :two=>2, :three=>[3], :four=>[0, 1, 2, 3, 4]}, :f=>nil, :h=>{:a=>{:b=>{:c=>{:d=>{:e=>{:f=>{:g=>nil}}}}}}}, :i=>[[[[[[[nil]]]]]]]} 
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
