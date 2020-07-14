@@ -15,4 +15,8 @@ class FastJsonparserTest < Minitest::Test
     result = FastJsonparser.parse(sample_json)
     assert_equal result[:a], "Alpha"
   end
+
+  def test_file_stream_is_working
+    assert_nil FastJsonparser.load_many('./benchmark/nginx_json_logs.json')
+  end
 end

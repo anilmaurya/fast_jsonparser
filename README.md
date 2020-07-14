@@ -38,6 +38,17 @@ FastJsonparser.parse(json) is 96% faster than JSON.parse(json)
 # standard JSON   13.025884   0.031287  13.057171 ( 13.264931) ~ 96% more
 ```
 
+3. Streaming json from file
+```
+FastJsonparser.load_many(src) is 153% faster than Yajl::Parser.new.parse(File.new(src, 'r'))
+```
+[Benchmark result](https://github.com/anilmaurya/fast_jsonparser/blob/master/benchmark/stream_benchmark.rb)
+```
+#                   user     system      total        real
+# FastJsonparser  3.844446   0.141822   3.986268 (  3.884655)
+# YAJL            9.699621   0.110060   9.809681 (  9.826104) ~ 150% more
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -78,7 +89,27 @@ FastJsonparser.parse('{"one": 1, "two": 2}')
 
 ```
 
-3. Raise FastJsonparser::ParseError when invalid JSON provided for parsing
+3. Streaming JSON from file
+
+File with multiple json can be stream with `load_many` method
+
+Example: logs.json with following content
+```
+{"time": "17/May/2015:08:05:32 +0000", "remote_ip": "93.180.71.3", "remote_user": "-"}
+{"time": "17/May/2015:08:05:23 +0000", "remote_ip": "93.180.71.3", "remote_user": "-"}
+{"time": "17/May/2015:08:05:24 +0000", "remote_ip": "80.91.33.133", "remote_user": "-"}
+```
+
+`load_many` accepts file_path & block as arguments
+```
+> FastJsonparser.load_many(file_path) { |obj| p obj[:time]}
+"17/May/2015:08:05:32 +0000"
+"17/May/2015:08:05:23 +0000"
+"17/May/2015:08:05:24 +0000"
+```
+
+
+4. Raise FastJsonparser::ParseError when invalid JSON provided for parsing
 
 ```
 FastJsonparser.parse("123: 1") # FastJsonparser::ParseError (parse error)

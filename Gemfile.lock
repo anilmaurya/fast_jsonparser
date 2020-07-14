@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fast_jsonparser (0.1.0)
+    fast_jsonparser (0.2.0)
 
 GEM
   remote: https://rubygems.org/
@@ -11,6 +11,7 @@ GEM
     rake (13.0.1)
     rake-compiler (1.1.0)
       rake
+    yajl-ruby (1.4.1)
 
 PLATFORMS
   ruby
@@ -22,6 +23,7 @@ DEPENDENCIES
   oj
   rake (~> 13.0)
   rake-compiler
+  yajl-ruby
 
 BUNDLED WITH
    2.0.1

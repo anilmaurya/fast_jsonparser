@@ -93,6 +93,27 @@ static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg)
     return Qnil;
 }
 
+static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg)
+{
+    Check_Type(arg, T_STRING);
+
+    dom::parser parser;
+    auto [docs, error] = parser.load_many(RSTRING_PTR(arg));
+    if (error == SUCCESS)
+    {
+        for (dom::element doc : docs)
+        {
+            if (rb_block_given_p())
+            {
+                rb_yield(make_ruby_object(doc));
+            }
+        }
+        return Qnil;
+    }
+    rb_raise(rb_eFastJsonparserParseError, "parse error");
+    return Qnil;
+}
+
 extern "C"
 {
 
@@ -102,5 +123,6 @@ extern "C"
         rb_eFastJsonparserParseError = rb_define_class_under(rb_mFastJsonparser, "ParseError", rb_eStandardError);
         rb_define_module_function(rb_mFastJsonparser, "parse", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_parse), 1);
         rb_define_module_function(rb_mFastJsonparser, "load", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load), 1);
+        rb_define_module_function(rb_mFastJsonparser, "load_many", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load_many), 1);
     }
 }
