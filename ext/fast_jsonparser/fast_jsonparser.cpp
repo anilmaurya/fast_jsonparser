@@ -48,7 +48,7 @@ static VALUE make_ruby_object(dom::element element)
         case dom::element_type::STRING:
         {
             std::string_view view(element);
-            return rb_str_new(view.data(), view.size());
+            return rb_utf8_str_new(view.data(), view.size());
         }
         case dom::element_type::BOOL:
         {

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 require 'tempfile'
 require 'json'
@@ -16,6 +18,12 @@ class FastJsonparserTest < Minitest::Test
     sample_json = '{"a":"Alpha","b":true,"c":12345,"d":[true,[false,[-123456789,null],3.9676,["Something else.",false],null]],"e":{"zero":null,"one":1,"two":2,"three":[3],"four":[0,1,2,3,4]},"f":null,"h":{"a":{"b":{"c":{"d":{"e":{"f":{"g":null}}}}}}},"i":[[[[[[[null]]]]]]]}'
     result = FastJsonparser.parse(sample_json)
     assert_equal result[:a], "Alpha"
+  end
+
+  def test_string_encoding
+    result = FastJsonparser.parse('"École"')
+    assert_equal Encoding::UTF_8, result.encoding
+    assert_equal "École", result
   end
 
   def test_file_stream_is_working
