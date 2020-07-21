@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 require 'tempfile'
 require 'json'
@@ -13,8 +15,12 @@ class FastJsonparserTest < Minitest::Test
   end
 
   def test_symbols_encoding
-    hash = FastJsonparser.parse('{"École": 1}')
+    hash = FastJsonparser.parse('{"École": 1}', symbolize_names: true)
     assert_includes hash, :"École"
+    assert_equal Encoding::UTF_8, hash.keys.first.encoding
+
+    hash = FastJsonparser.parse('{"École": 1}', symbolize_names: false)
+    assert_includes hash, "École"
     assert_equal Encoding::UTF_8, hash.keys.first.encoding
   end
 
