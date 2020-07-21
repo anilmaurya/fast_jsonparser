@@ -35,6 +35,12 @@ class FastJsonparserTest < Minitest::Test
     assert_equal result[:a], "Alpha"
   end
 
+  def test_string_encoding
+    result = FastJsonparser.parse('"École"')
+    assert_equal Encoding::UTF_8, result.encoding
+    assert_equal "École", result
+  end
+
   def test_file_stream_is_working
     assert_nil FastJsonparser.load_many('./benchmark/nginx_json_logs.json') {}
   end
