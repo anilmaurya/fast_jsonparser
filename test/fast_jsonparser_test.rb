@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 require 'tempfile'
 require 'json'
@@ -5,6 +7,21 @@ require 'json'
 class FastJsonparserTest < Minitest::Test
   def test_that_it_has_a_version_number
     refute_nil ::FastJsonparser::VERSION
+  end
+
+  def test_string_encoding
+    result = FastJsonparser.parse('"École"')
+    assert_equal Encoding::UTF_8, result.encoding
+  end
+
+  def test_symbols_encoding
+    hash = FastJsonparser.parse('{"École": 1}', symbolize_names: true)
+    assert_includes hash, :"École"
+    assert_equal Encoding::UTF_8, hash.keys.first.encoding
+
+    hash = FastJsonparser.parse('{"École": 1}', symbolize_names: false)
+    assert_includes hash, "École"
+    assert_equal Encoding::UTF_8, hash.keys.first.encoding
   end
 
   def test_json_load_from_file_is_working

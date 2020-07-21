@@ -7,7 +7,7 @@ VALUE rb_eFastJsonparserUnknownError, rb_eFastJsonparserParseError;
 using namespace simdjson;
 
 // Convert tape to Ruby's Object
-static VALUE make_ruby_object(dom::element element)
+static VALUE make_ruby_object(dom::element element, bool symbolize_names)
 {
     switch (element.type())
     {
@@ -16,7 +16,7 @@ static VALUE make_ruby_object(dom::element element)
             VALUE ary = rb_ary_new();
             for (dom::element x : element)
             {
-                VALUE e = make_ruby_object(x);
+                VALUE e = make_ruby_object(x, symbolize_names);
                 rb_ary_push(ary, e);
             }
             return ary;
@@ -27,9 +27,12 @@ static VALUE make_ruby_object(dom::element element)
             for (dom::key_value_pair field : dom::object(element))
             {
                 std::string_view view(field.key);
-                VALUE k = rb_intern(view.data());
-                VALUE v = make_ruby_object(field.value);
-                rb_hash_aset(hash, ID2SYM(k), v);
+                VALUE k = rb_utf8_str_new(view.data(), view.size());
+                if (symbolize_names) {
+                    k = ID2SYM(rb_intern_str(k));
+                }
+                VALUE v = make_ruby_object(field.value, symbolize_names);
+                rb_hash_aset(hash, k, v);
             }
             return hash;
         }
@@ -48,7 +51,7 @@ static VALUE make_ruby_object(dom::element element)
         case dom::element_type::STRING:
         {
             std::string_view view(element);
-            return rb_str_new(view.data(), view.size());
+            return rb_utf8_str_new(view.data(), view.size());
         }
         case dom::element_type::BOOL:
         {
@@ -63,7 +66,7 @@ static VALUE make_ruby_object(dom::element element)
     rb_raise(rb_eException, "[BUG] must not happen");
 }
 
-static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg)
+static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg, VALUE symbolize_names)
 {
     Check_Type(arg, T_STRING);
 
@@ -73,10 +76,10 @@ static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg)
     {
         rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
     }
-    return make_ruby_object(doc);
+    return make_ruby_object(doc, RTEST(symbolize_names));
 }
 
-static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg)
+static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg, VALUE symbolize_names)
 {
     Check_Type(arg, T_STRING);
 
@@ -86,10 +89,10 @@ static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg)
     {
         rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
     }
-    return make_ruby_object(doc);
+    return make_ruby_object(doc, RTEST(symbolize_names));
 }
 
-static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE batch_size)
+static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE symbolize_names, VALUE batch_size)
 {
     Check_Type(arg, T_STRING);
     Check_Type(batch_size, T_FIXNUM);
@@ -104,7 +107,7 @@ static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE batch_siz
 
         for (dom::element doc : docs)
         {
-            rb_yield(make_ruby_object(doc));
+            rb_yield(make_ruby_object(doc, RTEST(symbolize_names)));
         }
 
         return Qnil;
@@ -120,14 +123,13 @@ extern "C"
     {
         VALUE rb_mFastJsonparser = rb_const_get(rb_cObject, rb_intern("FastJsonparser"));
 
-        rb_define_module_function(rb_mFastJsonparser, "parse", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_parse), 1);
-        rb_define_module_function(rb_mFastJsonparser, "load", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load), 1);
-        rb_define_module_function(rb_mFastJsonparser, "_load_many", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load_many), 2);
+        rb_define_module_function(rb_mFastJsonparser, "_parse", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_parse), 2);
+        rb_define_module_function(rb_mFastJsonparser, "_load", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load), 2);
+        rb_define_module_function(rb_mFastJsonparser, "_load_many", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load_many), 3);
 
         rb_eFastJsonparserParseError = rb_const_get(rb_mFastJsonparser, rb_intern("ParseError"));
         rb_global_variable(&rb_eFastJsonparserParseError);
         rb_eFastJsonparserUnknownError = rb_const_get(rb_mFastJsonparser, rb_intern("UnknownError"));
         rb_global_variable(&rb_eFastJsonparserUnknownError);
-
     }
 }
