@@ -9,53 +9,55 @@ using namespace simdjson;
 // Convert tape to Ruby's Object
 static VALUE make_ruby_object(dom::element element)
 {
-    auto t = element.type();
-    if (t == dom::element_type::ARRAY)
+    switch (element.type())
     {
-        VALUE ary = rb_ary_new();
-        for (dom::element x : element)
+        case dom::element_type::ARRAY:
         {
-            VALUE e = make_ruby_object(x);
-            rb_ary_push(ary, e);
+            VALUE ary = rb_ary_new();
+            for (dom::element x : element)
+            {
+                VALUE e = make_ruby_object(x);
+                rb_ary_push(ary, e);
+            }
+            return ary;
         }
-        return ary;
-    }
-    else if (t == dom::element_type::OBJECT)
-    {
-        VALUE hash = rb_hash_new();
-        for (dom::key_value_pair field : dom::object(element))
+        case dom::element_type::OBJECT:
         {
-            std::string_view view(field.key);
-            VALUE k = rb_intern(view.data());
-            VALUE v = make_ruby_object(field.value);
-            rb_hash_aset(hash, ID2SYM(k), v);
+            VALUE hash = rb_hash_new();
+            for (dom::key_value_pair field : dom::object(element))
+            {
+                std::string_view view(field.key);
+                VALUE k = rb_intern(view.data());
+                VALUE v = make_ruby_object(field.value);
+                rb_hash_aset(hash, ID2SYM(k), v);
+            }
+            return hash;
         }
-        return hash;
-    }
-    else if (t == dom::element_type::INT64)
-    {
-        return LONG2NUM(element.get<int64_t>());
-    }
-    else if (t == dom::element_type::UINT64)
-    {
-        return ULONG2NUM(element.get<uint64_t>());
-    }
-    else if (t == dom::element_type::DOUBLE)
-    {
-        return DBL2NUM(double(element));
-    }
-    else if (t == dom::element_type::STRING)
-    {
-        std::string_view view(element);
-        return rb_str_new(view.data(), view.size());
-    }
-    else if (t == dom::element_type::BOOL)
-    {
-        return bool(element) ? Qtrue : Qfalse;
-    }
-    else if (t == dom::element_type::NULL_VALUE)
-    {
-        return Qnil;
+        case dom::element_type::INT64:
+        {
+            return LONG2NUM(element.get<int64_t>());
+        }
+        case dom::element_type::UINT64:
+        {
+            return ULONG2NUM(element.get<uint64_t>());
+        }
+        case dom::element_type::DOUBLE:
+        {
+            return DBL2NUM(double(element));
+        }
+        case dom::element_type::STRING:
+        {
+            std::string_view view(element);
+            return rb_str_new(view.data(), view.size());
+        }
+        case dom::element_type::BOOL:
+        {
+            return bool(element) ? Qtrue : Qfalse;
+        }
+        case dom::element_type::NULL_VALUE:
+        {
+            return Qnil;
+        }
     }
     // unknown case (bug)
     rb_raise(rb_eException, "[BUG] must not happen");

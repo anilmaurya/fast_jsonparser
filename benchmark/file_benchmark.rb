@@ -1,8 +1,10 @@
 #!/usr/bin/env ruby
 
+$LOAD_PATH.unshift(File.expand_path('../../lib', __FILE__))
+
 require 'benchmark'
 require 'json'
-require './lib/fast_jsonparser/fast_jsonparser'
+require 'fast_jsonparser'
 require 'oj'
 
 def run_report(rep, src)
