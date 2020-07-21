@@ -1,4 +1,6 @@
 require "test_helper"
+require 'tempfile'
+require 'json'
 
 class FastJsonparserTest < Minitest::Test
   def test_that_it_has_a_version_number
@@ -17,6 +19,19 @@ class FastJsonparserTest < Minitest::Test
   end
 
   def test_file_stream_is_working
-    assert_nil FastJsonparser.load_many('./benchmark/nginx_json_logs.json')
+    assert_nil FastJsonparser.load_many('./benchmark/nginx_json_logs.json') {}
+  end
+
+  def test_load_many_batch_size
+    Tempfile.create('documents') do |f|
+      f.write({foo: "a" * 5_000}.to_json)
+      f.close
+
+      assert_raises FastJsonparser::BatchSizeTooSmall do
+        FastJsonparser.load_many(f.path, batch_size: 1_000) {}
+      end
+
+      FastJsonparser.load_many(f.path, batch_size: 6_000) {}
+    end
   end
 end
