@@ -7,6 +7,17 @@ class FastJsonparserTest < Minitest::Test
     refute_nil ::FastJsonparser::VERSION
   end
 
+  def test_string_encoding
+    result = FastJsonparser.parse('"École"')
+    assert_equal Encoding::UTF_8, result.encoding
+  end
+
+  def test_symbols_encoding
+    hash = FastJsonparser.parse('{"École": 1}')
+    assert_includes hash, :"École"
+    assert_equal Encoding::UTF_8, hash.keys.first.encoding
+  end
+
   def test_json_load_from_file_is_working
     result = FastJsonparser.load("./benchmark/graduation.json")
     assert_equal result[:meta].length, 1
