@@ -22,6 +22,18 @@ class FastJsonparserTest < Minitest::Test
     assert_nil FastJsonparser.load_many('./benchmark/nginx_json_logs.json') {}
   end
 
+  def test_parse_errors
+    error = assert_raises FastJsonparser::ParseError do
+      FastJsonparser.parse('{')
+    end
+    assert_equal "The JSON document has an improper structure: missing or superfluous commas, braces, missing keys, etc.", error.message
+
+    error = assert_raises FastJsonparser::ParseError do
+      FastJsonparser.parse('{"')
+    end
+    assert_equal "A string is opened, but never closed.", error.message
+  end
+
   def test_load_many_batch_size
     Tempfile.create('documents') do |f|
       f.write({foo: "a" * 5_000}.to_json)
