@@ -27,7 +27,7 @@ static VALUE make_ruby_object(dom::element element)
             for (dom::key_value_pair field : dom::object(element))
             {
                 std::string_view view(field.key);
-                VALUE k = rb_intern(view.data());
+                VALUE k = rb_intern_str(rb_utf8_str_new(view.data(), view.size()));
                 VALUE v = make_ruby_object(field.value);
                 rb_hash_aset(hash, ID2SYM(k), v);
             }
@@ -48,7 +48,7 @@ static VALUE make_ruby_object(dom::element element)
         case dom::element_type::STRING:
         {
             std::string_view view(element);
-            return rb_str_new(view.data(), view.size());
+            return rb_utf8_str_new(view.data(), view.size());
         }
         case dom::element_type::BOOL:
         {
