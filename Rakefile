@@ -3,6 +3,7 @@ require "rake/testtask"
 require "rake/extensiontask"
 
 Rake::ExtensionTask.new("fast_jsonparser") do |ext|
+  ext.ext_dir = 'ext/fast_jsonparser'
   ext.lib_dir = "lib/fast_jsonparser"
 end
 
