@@ -69,13 +69,11 @@ static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg)
 
     dom::parser parser;
     auto [doc, error] = parser.parse(RSTRING_PTR(arg), RSTRING_LEN(arg));
-    if (error == SUCCESS)
+    if (error != SUCCESS)
     {
-        return make_ruby_object(doc);
+        rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
     }
-    // TODO better error handling
-    rb_raise(rb_eFastJsonparserParseError, "parse error");
-    return Qnil;
+    return make_ruby_object(doc);
 }
 
 static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg)
@@ -84,13 +82,11 @@ static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg)
 
     dom::parser parser;
     auto [doc, error] = parser.load(RSTRING_PTR(arg));
-    if (error == SUCCESS)
+    if (error != SUCCESS)
     {
-        return make_ruby_object(doc);
+        rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
     }
-    // TODO better error handling
-    rb_raise(rb_eFastJsonparserParseError, "parse error");
-    return Qnil;
+    return make_ruby_object(doc);
 }
 
 static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE batch_size)
@@ -101,15 +97,16 @@ static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE batch_siz
     try {
         dom::parser parser;
         auto [docs, error] = parser.load_many(RSTRING_PTR(arg), FIX2INT(batch_size));
-        if (error == SUCCESS)
+        if (error != SUCCESS)
         {
-            for (dom::element doc : docs)
-            {
-                rb_yield(make_ruby_object(doc));
-            }
-            return Qnil;
+            rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
         }
-        rb_raise(rb_eFastJsonparserParseError, "parse error");
+
+        for (dom::element doc : docs)
+        {
+            rb_yield(make_ruby_object(doc));
+        }
+
         return Qnil;
     } catch (simdjson::simdjson_error error) {
         rb_raise(rb_eFastJsonparserUnknownError, "%s", error.what());
