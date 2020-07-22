@@ -107,9 +107,22 @@ Example: logs.json with following content
 "17/May/2015:08:05:23 +0000"
 "17/May/2015:08:05:24 +0000"
 ```
+If size of json batch is greater than 1 MB then use `batch_size` option
 
+```
+FastJsonparser.load_many(f.path, batch_size: 2_000) {}
+```
 
-4. Raise FastJsonparser::ParseError when invalid JSON provided for parsing
+4. Accept optional param :symbolize_keys (default symbolize_keys: true)
+
+If string key is expected in parsed result then use
+
+```
+FastJsonparser.parse('{"one": 1, "two": 2}', symbolize_keys: false)
+
+```
+
+5. Raise FastJsonparser::ParseError when invalid JSON provided for parsing
 
 ```
 FastJsonparser.parse("123: 1") # FastJsonparser::ParseError (parse error)

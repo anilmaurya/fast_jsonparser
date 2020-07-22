@@ -7,66 +7,67 @@ VALUE rb_eFastJsonparserUnknownError, rb_eFastJsonparserParseError;
 using namespace simdjson;
 
 // Convert tape to Ruby's Object
-static VALUE make_ruby_object(dom::element element, bool symbolize_names)
+static VALUE make_ruby_object(dom::element element, bool symbolize_keys)
 {
     switch (element.type())
     {
-        case dom::element_type::ARRAY:
+    case dom::element_type::ARRAY:
+    {
+        VALUE ary = rb_ary_new();
+        for (dom::element x : element)
         {
-            VALUE ary = rb_ary_new();
-            for (dom::element x : element)
+            VALUE e = make_ruby_object(x, symbolize_keys);
+            rb_ary_push(ary, e);
+        }
+        return ary;
+    }
+    case dom::element_type::OBJECT:
+    {
+        VALUE hash = rb_hash_new();
+        for (dom::key_value_pair field : dom::object(element))
+        {
+            std::string_view view(field.key);
+            VALUE k = rb_utf8_str_new(view.data(), view.size());
+            if (symbolize_keys)
             {
-                VALUE e = make_ruby_object(x, symbolize_names);
-                rb_ary_push(ary, e);
+                k = ID2SYM(rb_intern_str(k));
             }
-            return ary;
+            VALUE v = make_ruby_object(field.value, symbolize_keys);
+            rb_hash_aset(hash, k, v);
         }
-        case dom::element_type::OBJECT:
-        {
-            VALUE hash = rb_hash_new();
-            for (dom::key_value_pair field : dom::object(element))
-            {
-                std::string_view view(field.key);
-                VALUE k = rb_utf8_str_new(view.data(), view.size());
-                if (symbolize_names) {
-                    k = ID2SYM(rb_intern_str(k));
-                }
-                VALUE v = make_ruby_object(field.value, symbolize_names);
-                rb_hash_aset(hash, k, v);
-            }
-            return hash;
-        }
-        case dom::element_type::INT64:
-        {
-            return LONG2NUM(element.get<int64_t>());
-        }
-        case dom::element_type::UINT64:
-        {
-            return ULONG2NUM(element.get<uint64_t>());
-        }
-        case dom::element_type::DOUBLE:
-        {
-            return DBL2NUM(double(element));
-        }
-        case dom::element_type::STRING:
-        {
-            std::string_view view(element);
-            return rb_utf8_str_new(view.data(), view.size());
-        }
-        case dom::element_type::BOOL:
-        {
-            return bool(element) ? Qtrue : Qfalse;
-        }
-        case dom::element_type::NULL_VALUE:
-        {
-            return Qnil;
-        }
+        return hash;
+    }
+    case dom::element_type::INT64:
+    {
+        return LONG2NUM(element.get<int64_t>());
+    }
+    case dom::element_type::UINT64:
+    {
+        return ULONG2NUM(element.get<uint64_t>());
+    }
+    case dom::element_type::DOUBLE:
+    {
+        return DBL2NUM(double(element));
+    }
+    case dom::element_type::STRING:
+    {
+        std::string_view view(element);
+        return rb_utf8_str_new(view.data(), view.size());
+    }
+    case dom::element_type::BOOL:
+    {
+        return bool(element) ? Qtrue : Qfalse;
+    }
+    case dom::element_type::NULL_VALUE:
+    {
+        return Qnil;
+    }
     }
     // unknown case (bug)
     rb_raise(rb_eException, "[BUG] must not happen");
 }
 
-static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg, VALUE symbolize_names)
+static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg, VALUE symbolize_keys)
 {
     Check_Type(arg, T_STRING);
 
@@ -76,10 +77,10 @@ static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg, VALUE symbolize_nam
     {
         rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
     }
-    return make_ruby_object(doc, RTEST(symbolize_names));
+    return make_ruby_object(doc, RTEST(symbolize_keys));
 }
 
-static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg, VALUE symbolize_names)
+static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg, VALUE symbolize_keys)
 {
     Check_Type(arg, T_STRING);
 
@@ -89,15 +90,16 @@ static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg, VALUE symbolize_name
     {
         rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
     }
-    return make_ruby_object(doc, RTEST(symbolize_names));
+    return make_ruby_object(doc, RTEST(symbolize_keys));
 }
 
-static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE symbolize_names, VALUE batch_size)
+static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE symbolize_keys, VALUE batch_size)
 {
     Check_Type(arg, T_STRING);
     Check_Type(batch_size, T_FIXNUM);
 
-    try {
+    try
+    {
         dom::parser parser;
         auto [docs, error] = parser.load_many(RSTRING_PTR(arg), FIX2INT(batch_size));
         if (error != SUCCESS)
@@ -107,11 +109,13 @@ static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE symbolize
 
         for (dom::element doc : docs)
         {
-            rb_yield(make_ruby_object(doc, RTEST(symbolize_names)));
+            rb_yield(make_ruby_object(doc, RTEST(symbolize_keys)));
         }
 
         return Qnil;
-    } catch (simdjson::simdjson_error error) {
+    }
+    catch (simdjson::simdjson_error error)
+    {
         rb_raise(rb_eFastJsonparserUnknownError, "%s", error.what());
     }
 }

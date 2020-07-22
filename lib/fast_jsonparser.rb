@@ -11,16 +11,16 @@ module FastJsonparser
   DEFAULT_BATCH_SIZE = 1_000_000 # from include/simdjson/dom/parser.h
 
   class << self
-    def parse(source, symbolize_names: true)
-      _parse(source, symbolize_names)
+    def parse(source, symbolize_keys: true)
+      _parse(source, symbolize_keys)
     end
 
-    def load(source, symbolize_names: true)
-      _load(source, symbolize_names)
+    def load(source, symbolize_keys: true)
+      _load(source, symbolize_keys)
     end
 
-    def load_many(source, symbolize_names: true, batch_size: DEFAULT_BATCH_SIZE, &block)
-      _load_many(source, symbolize_names, batch_size, &block)
+    def load_many(source, symbolize_keys: true, batch_size: DEFAULT_BATCH_SIZE, &block)
+      _load_many(source, symbolize_keys, batch_size, &block)
     rescue UnknownError => error
       case error.message
       when "This parser can't support a document that big"
