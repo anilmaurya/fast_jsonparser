@@ -5,6 +5,7 @@
 VALUE rb_eFastJsonparserUnknownError, rb_eFastJsonparserParseError;
 
 using namespace simdjson;
+static dom::parser parser;
 
 // Convert tape to Ruby's Object
 static VALUE make_ruby_object(dom::element element, bool symbolize_keys)
@@ -71,7 +72,6 @@ static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg, VALUE symbolize_key
 {
     Check_Type(arg, T_STRING);
 
-    dom::parser parser;
     auto [doc, error] = parser.parse(RSTRING_PTR(arg), RSTRING_LEN(arg));
     if (error != SUCCESS)
     {
@@ -84,7 +84,6 @@ static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg, VALUE symbolize_keys
 {
     Check_Type(arg, T_STRING);
 
-    dom::parser parser;
     auto [doc, error] = parser.load(RSTRING_PTR(arg));
     if (error != SUCCESS)
     {
@@ -98,9 +97,7 @@ static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE symbolize
     Check_Type(arg, T_STRING);
     Check_Type(batch_size, T_FIXNUM);
 
-    try
-    {
-        dom::parser parser;
+    try {
         auto [docs, error] = parser.load_many(RSTRING_PTR(arg), FIX2INT(batch_size));
         if (error != SUCCESS)
         {
