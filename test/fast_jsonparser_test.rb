@@ -69,4 +69,86 @@ class FastJsonparserTest < Minitest::Test
       FastJsonparser.load_many(f.path, batch_size: 6_000) {}
     end
   end
+
+  def test_compat_forward_slash_escape
+    assert_compat('"\/"', "/")
+  end
+
+  def test_compat_backward_slash_escape
+    assert_compat('"\\\\"', '\\')
+  end
+
+  def test_compat_illegal_escape
+    refute_compat('["Illegal backslash escape: \x15"]', ["Illegal backslash escape: x15"], :raises)
+  end
+
+  def test_compat_utf8
+    assert_compat('"École"', "École")
+  end
+
+  def test_compat_NaN_and_Infinity
+    assert_compat('[NaN]', :raises)
+    assert_compat('[Infinity]', :raises)
+    assert_compat('[-Infinity]', :raises)
+  end
+
+  def test_compat_hex_numbers
+    assert_compat('[0x42]', :raises)
+  end
+
+  def test_compat_weird_keys
+    assert_compat('{[1]:2}', :raises)
+    assert_compat('{{1:2}:2}', :raises)
+    assert_compat('{null:2}', :raises)
+  end
+
+  def test_compat_trailing_commas
+    assert_compat('{1:2,}', :raises)
+    assert_compat('{,,,,}', :raises)
+    assert_compat('[1,]', :raises)
+    assert_compat('[,,,,]', :raises)
+  end
+
+  def test_compat_trailing_comments
+    assert_compat('{} // comment', :raises)
+    refute_compat('{} /* comment */', {}, :raises)
+    assert_compat('{1:/*comment*/2}', :raises)
+    refute_compat('{"a":/*comment*/"b"}', { "a" => "b" }, :raises)
+  end
+
+  def test_compat_float_precision
+    assert_compat '1.3553e142', 1.3553e142
+    assert_compat '1.3553E142', 1.3553E142
+  end
+
+  def test_compat_big_floats
+    assert_compat '100000000000000000000000000000000000000000.0', 100000000000000000000000000000000000000000.0
+  end
+
+  def test_compat_big_integers
+    assert_compat '18446744073709551615', 18446744073709551615
+    refute_compat '18446744073709551616', 18446744073709551616, :raises
+
+    assert_compat '-9223372036854775808', -9223372036854775808
+    refute_compat '-9223372036854775809', -9223372036854775809, :raises
+  end
+
+  private
+
+  def assert_compat(source, expected)
+    assert_equal expected, parse(JSON, source), "This test is invalid"
+    assert_equal expected, parse(FastJsonparser, source), "#{source.inspect} is not parsed the same by JSON and FastJsonparser"
+  end
+
+  def refute_compat(source, expected, got)
+    refute_equal expected, got
+    assert_equal expected, parse(JSON, source)
+    assert_equal got, parse(FastJsonparser, source)
+  end
+
+  def parse(parser, source)
+    parser.parse(source)
+  rescue => error
+    :raises
+  end
 end
