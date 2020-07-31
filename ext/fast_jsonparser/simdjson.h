@@ -2308,7 +2308,7 @@ using ErrorValues [[deprecated("This is an alias and will be removed, use error_
  * @deprecated Error codes should be stored and returned as `error_code`, use `error_message()` instead.
  */
 [[deprecated("Error codes should be stored and returned as `error_code`, use `error_message()` instead.")]]
-inline const std::string &error_message(int error) noexcept;
+inline const std::string error_message(int error) noexcept;
 
 } // namespace simdjson
 
@@ -6367,7 +6367,7 @@ namespace internal {
   // We store the error code so we can validate the error message is associated with the right code
   struct error_code_info {
     error_code code;
-    std::string message;
+    const char* message;
   };
   // These MUST match the codes in error_code. We check this constraint in basictests.
   extern SIMDJSON_DLLIMPORTEXPORT const error_code_info error_codes[];
@@ -6376,10 +6376,10 @@ namespace internal {
 
 inline const char *error_message(error_code error) noexcept {
   // If you're using error_code, we're trusting you got it from the enum.
-  return internal::error_codes[int(error)].message.c_str();
+  return internal::error_codes[int(error)].message;
 }
 
-inline const std::string &error_message(int error) noexcept {
+inline const std::string error_message(int error) noexcept {
   if (error < 0 || error >= error_code::NUM_ERROR_CODES) {
     return internal::error_codes[UNEXPECTED_ERROR].message;
   }
