@@ -5,7 +5,38 @@
 VALUE rb_eFastJsonparserUnknownError, rb_eFastJsonparserParseError;
 
 using namespace simdjson;
-static dom::parser parser;
+
+typedef struct {
+    dom::parser *parser;
+} parser_t;
+
+static void Parser_delete(void *ptr) {
+    parser_t *data = (parser_t*) ptr;
+    delete data->parser;
+}
+
+static size_t Parser_memsize(const void *parser) {
+    return sizeof(dom::parser); // TODO: low priority, figure the real size, e.g. internal buffers etc.
+}
+
+static const rb_data_type_t parser_data_type = {
+    "Parser",
+    { 0, Parser_delete, Parser_memsize, },
+    0, 0, RUBY_TYPED_FREE_IMMEDIATELY
+};
+
+static VALUE parser_allocate(VALUE klass) {
+    parser_t *data;
+    VALUE obj = TypedData_Make_Struct(klass, parser_t, &parser_data_type, data);
+    data->parser = new dom::parser;
+    return obj;
+}
+
+static inline dom::parser * get_parser(VALUE self) {
+    parser_t *data;
+    TypedData_Get_Struct(self, parser_t, &parser_data_type, data);
+    return data->parser;
+}
 
 // Convert tape to Ruby's Object
 static VALUE make_ruby_object(dom::element element, bool symbolize_keys)
@@ -71,8 +102,9 @@ static VALUE make_ruby_object(dom::element element, bool symbolize_keys)
 static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg, VALUE symbolize_keys)
 {
     Check_Type(arg, T_STRING);
+    dom::parser *parser = get_parser(self);
 
-    auto [doc, error] = parser.parse(RSTRING_PTR(arg), RSTRING_LEN(arg));
+    auto [doc, error] = parser->parse(RSTRING_PTR(arg), RSTRING_LEN(arg));
     if (error != SUCCESS)
     {
         rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
@@ -83,8 +115,9 @@ static VALUE rb_fast_jsonparser_parse(VALUE self, VALUE arg, VALUE symbolize_key
 static VALUE rb_fast_jsonparser_load(VALUE self, VALUE arg, VALUE symbolize_keys)
 {
     Check_Type(arg, T_STRING);
+    dom::parser *parser = get_parser(self);
 
-    auto [doc, error] = parser.load(RSTRING_PTR(arg));
+    auto [doc, error] = parser->load(RSTRING_PTR(arg));
     if (error != SUCCESS)
     {
         rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
@@ -96,9 +129,10 @@ static VALUE rb_fast_jsonparser_load_many(VALUE self, VALUE arg, VALUE symbolize
 {
     Check_Type(arg, T_STRING);
     Check_Type(batch_size, T_FIXNUM);
+    dom::parser *parser = get_parser(self);
 
     try {
-        auto [docs, error] = parser.load_many(RSTRING_PTR(arg), FIX2INT(batch_size));
+        auto [docs, error] = parser->load_many(RSTRING_PTR(arg), FIX2INT(batch_size));
         if (error != SUCCESS)
         {
             rb_raise(rb_eFastJsonparserParseError, "%s", error_message(error));
@@ -123,10 +157,12 @@ extern "C"
     void Init_fast_jsonparser(void)
     {
         VALUE rb_mFastJsonparser = rb_const_get(rb_cObject, rb_intern("FastJsonparser"));
+        VALUE rb_cFastJsonparserNative = rb_const_get(rb_mFastJsonparser, rb_intern("Native"));
 
-        rb_define_module_function(rb_mFastJsonparser, "_parse", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_parse), 2);
-        rb_define_module_function(rb_mFastJsonparser, "_load", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load), 2);
-        rb_define_module_function(rb_mFastJsonparser, "_load_many", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load_many), 3);
+        rb_define_alloc_func(rb_cFastJsonparserNative, parser_allocate);
+        rb_define_method(rb_cFastJsonparserNative, "_parse", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_parse), 2);
+        rb_define_method(rb_cFastJsonparserNative, "_load", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load), 2);
+        rb_define_method(rb_cFastJsonparserNative, "_load_many", reinterpret_cast<VALUE (*)(...)>(rb_fast_jsonparser_load_many), 3);
 
         rb_eFastJsonparserParseError = rb_const_get(rb_mFastJsonparser, rb_intern("ParseError"));
         rb_global_variable(&rb_eFastJsonparserParseError);
