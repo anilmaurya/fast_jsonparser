@@ -77,4 +77,9 @@ class FastJsonparserTest < Minitest::Test
       break
     end
   end
+
+  def test_large_integer_parsing
+    result = FastJsonparser.parse("[{ \"duration\": 7386425359 }]")
+    assert_equal result[0][:duration], 7386425359
+  end
 end
