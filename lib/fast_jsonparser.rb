@@ -12,15 +12,15 @@ module FastJsonparser
 
   class << self
     def parse(source, symbolize_keys: true)
-      _parse(source, symbolize_keys)
+      parser._parse(source, symbolize_keys)
     end
 
     def load(source, symbolize_keys: true)
-      _load(source, symbolize_keys)
+      parser._load(source, symbolize_keys)
     end
 
     def load_many(source, symbolize_keys: true, batch_size: DEFAULT_BATCH_SIZE, &block)
-      _load_many(source, symbolize_keys, batch_size, &block)
+      Native.new._load_many(source, symbolize_keys, batch_size, &block)
     rescue UnknownError => error
       case error.message
       when "This parser can't support a document that big"
@@ -30,7 +30,17 @@ module FastJsonparser
       end
     end
 
-    require "fast_jsonparser/fast_jsonparser" # loads cpp extension
-    private :_parse, :_load, :_load_many
+    private
+
+    def parser
+      @parser ||= Native.new
+    end
   end
+
+  class Native
+  end
+
+  require "fast_jsonparser/fast_jsonparser" # loads cpp extension
+
+  private_constant :Native
 end
