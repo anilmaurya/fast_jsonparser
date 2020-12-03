@@ -132,7 +132,7 @@ FastJsonparser.parse("123: 1") # FastJsonparser::ParseError (parse error)
 
 `FastJsonparser` behaves mostly like stdlib's `JSON`, but there are a few corner cases:
 
-- `FastJsonparser` will use symbols for hash keys by default. You can pass `symbolize_names: false` to have strings instead like `JSON`.
+- `FastJsonparser` will use symbols for hash keys by default. You can pass `symbolize_keys: false` to have strings instead like `JSON`.
 - `FastJsonparser` will raise on integers outside of the 64bits range (`-9223372036854775808..18446744073709551615`), `JSON` will parse them fine.
 - `FastJsonparser` will raise on invalid string escapings (`"\x15"`), `JSON` will often handle some of them.
 - `FastJsonparser` will raise on `/**/` comments. `JSON` will sometimes ignore them, sometimes raise.
