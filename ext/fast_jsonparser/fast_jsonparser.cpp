@@ -71,11 +71,19 @@ static VALUE make_ruby_object(dom::element element, bool symbolize_keys)
     }
     case dom::element_type::INT64:
     {
-        return LONG2NUM(element.get<int64_t>());
+        if (SIZEOF_LONG == 4) {
+          return LL2NUM(element.get<int64_t>());
+        } else {
+          return LONG2NUM(element.get<int64_t>());
+        }
     }
     case dom::element_type::UINT64:
     {
-        return ULONG2NUM(element.get<uint64_t>());
+        if (SIZEOF_LONG_LONG == 4) {
+            return ULL2NUM(element.get<uint64_t>());
+        } else {
+            return ULONG2NUM(element.get<uint64_t>());
+        }
     }
     case dom::element_type::DOUBLE:
     {
